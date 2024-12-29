@@ -1,6 +1,6 @@
 import express, {Application, Request, Response} from 'express';
 import dotenv from 'dotenv';
-import routes from '.src/routes/index.js';
+import routes from './routes/index';
 
 const app: Application = express();
 dotenv.config();

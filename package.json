@@ -2,7 +2,8 @@
   "name": "backend-relacional-prisma_prueba",
   "version": "1.0.0",
   "description": "Prueba para hacer un servidor con acceso a base de datos relacional postgre, prisma como interface",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
@@ -18,11 +19,14 @@
   "author": "Rodrigo Madeira",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.1.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "prisma": "^6.1.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
