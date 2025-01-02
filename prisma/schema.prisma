@@ -9,34 +9,38 @@ datasource db {
 
 model Tipo_producto {
     id       String     @id
-    tipo     String     @unique
+    tipo     String
     Producto Producto[]
 }
 
 model Producto {
-    id              String         @id
-    tipo_producto   Tipo_producto? @relation(fields: [tipo_productoId], references: [id])
-    tipo_productoId String?
-    codigo_red      Codigo_Red[]
-    marca           String         @unique
-    descripcion     String
-    precio_usd      Float
-    precio_arg      Float
-    tasa_iva        Float
-    costo_repo_usd  Float
-    mkup            Float
-    sku             String
-    stock_total     Int
-    is_current      Boolean
+    id             String         @id @default(uuid())
+    marca          String
+    descripcion    String
+    precio_usd     Float
+    precio_arg     Float
+    tasa_iva       Float
+    costo_repo_usd Float
+    mkup           Float
+    stock_disp     Int
+    stock_larp     Int
+    sku            String?
+    is_current     Boolean
+    tipoId         String?
+    tipo_producto  Tipo_producto? @relation(fields: [tipoId], references: [id])
+    ConceptoId     String?
+    Concepto       Concepto?      @relation(fields: [ConceptoId], references: [id])
+    codigo_red     Codigo_Red[]
 }
 
 model Concepto {
-    id       Int    @id @default(autoincrement())
-    concepto String @unique
+    id       String     @id
+    concepto String     @unique
+    Producto Producto[]
 }
 
 model Codigo_Red {
-    id           String    @id
+    id           String    @id @default(uuid())
     codigo       String    @unique
     codigo_largo String
     stock_dis    Int
