@@ -46,7 +46,7 @@ export const obtainDataFromXlsx = async (
   // let codReducidoToUploadBuffer: Buffer<ArrayBuffer>;
 
   return new Promise((resolve, reject) => {
-    // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona
+    // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona y a los listeners
     myFileStream
       .on('data', (row: ProductExcelTotal) => {
         const {
@@ -161,3 +161,24 @@ obtainDataFromXlsx('importado_Tevelam_general.xlsx') // archivo tiene que estar 
     ),
   )
   .catch(error => console.log('error', error));
+/* *************  Diferencia ArrayBuffer vs Buffer ************************ */
+/* function toArrayBuffer(buffer) {
+  const arrayBuffer = new ArrayBuffer(buffer.length);
+  const view = new Uint8Array(arrayBuffer);
+  for (let i = 0; i < buffer.length; ++i) {
+    view[i] = buffer[i];
+  }
+  return arrayBuffer;
+} or
+ var buffer = Buffer.from( new Uint8Array(arrayBuffer) );
+
+
+  function toBuffer(arrayBuffer) {
+  const buffer = Buffer.alloc(arrayBuffer.byteLength);
+  const view = new Uint8Array(arrayBuffer);
+  for (let i = 0; i < buffer.length; ++i) {
+    buffer[i] = view[i];
+  }
+  return buffer;
+}
+*/

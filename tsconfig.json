@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts", "tests/**/*.ts", "prisma/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "prisma/*.ts", "files/*.ts"],
   "exclude": ["node_modules", ".vscode"],
 
   "compilerOptions": {
