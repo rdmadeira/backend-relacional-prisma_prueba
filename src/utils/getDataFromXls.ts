@@ -30,7 +30,9 @@ export const obtainDataFromXlsx = async (
   xlsxName: string,
 ): Promise<{
   productsToUpload: Product[];
+  productsToUploadBuffer: Buffer[];
   codReducidoToUpload: CodigoReducido[];
+  codReducidoToUploadBuffer: Buffer[];
 }> => {
   const xlsPath = path.resolve('src', 'xls');
   const myFile = xlsx.readFile(xlsPath.concat('/' + xlsxName));
@@ -44,6 +46,9 @@ export const obtainDataFromXlsx = async (
   // let productsToUploadBuffer: Buffer<ArrayBuffer>;
   const codReducidoToUpload: CodigoReducido[] = [];
   // let codReducidoToUploadBuffer: Buffer<ArrayBuffer>;
+  const productsToUploadBuffer: Buffer[] = [];
+
+  const codReducidoToUploadBuffer: Buffer[] = [];
 
   return new Promise((resolve, reject) => {
     // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona y a los listeners
@@ -110,6 +115,7 @@ export const obtainDataFromXlsx = async (
             productsToUpload.push({
               ...product,
             });
+            productsToUploadBuffer.push(Buffer.from(JSON.stringify(product)));
 
             // const buf = Buffer.from(JSON.stringify(product));
             // productsToUploadBuffer.push(buf);
@@ -119,17 +125,18 @@ export const obtainDataFromXlsx = async (
                 // Si el id del producto es igual
                 product.stock_disp += stock_disp;
                 product.stock_larp += stock_larp;
-
                 /* productsToUploadBuffer[index] = Buffer.from(
                   JSON.stringify(product),
                   ); */
               }
+              productsToUploadBuffer.push(Buffer.from(JSON.stringify(product)));
             });
           }
 
           codReducidoToUpload.push({
             ...codRed,
           });
+          codReducidoToUploadBuffer.push(Buffer.from(JSON.stringify(codRed)));
         }
         /* productsToUploadBuffer = Buffer.from(JSON.stringify(productsToUpload));
         codReducidoToUploadBuffer = Buffer.from(
@@ -147,6 +154,8 @@ export const obtainDataFromXlsx = async (
         return resolve({
           productsToUpload: productsToUpload,
           codReducidoToUpload: codReducidoToUpload,
+          productsToUploadBuffer,
+          codReducidoToUploadBuffer,
         });
       });
   });
