@@ -30,9 +30,9 @@ export const obtainDataFromXlsx = async (
   xlsxName: string,
 ): Promise<{
   productsToUpload: Product[];
-  productsToUploadBuffer: Buffer[];
   codReducidoToUpload: CodigoReducido[];
-  codReducidoToUploadBuffer: Buffer[];
+  /* productsToUploadBuffer: Buffer[];
+  codReducidoToUploadBuffer: Buffer[]; */
 }> => {
   const xlsPath = path.resolve('src', 'xls');
   const myFile = xlsx.readFile(xlsPath.concat('/' + xlsxName));
@@ -46,9 +46,9 @@ export const obtainDataFromXlsx = async (
   // let productsToUploadBuffer: Buffer<ArrayBuffer>;
   const codReducidoToUpload: CodigoReducido[] = [];
   // let codReducidoToUploadBuffer: Buffer<ArrayBuffer>;
-  const productsToUploadBuffer: Buffer[] = [];
+  /* const productsToUploadBuffer: Buffer[] = [];
 
-  const codReducidoToUploadBuffer: Buffer[] = [];
+  const codReducidoToUploadBuffer: Buffer[] = []; */
 
   return new Promise((resolve, reject) => {
     // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona y a los listeners
@@ -115,7 +115,7 @@ export const obtainDataFromXlsx = async (
             productsToUpload.push({
               ...product,
             });
-            productsToUploadBuffer.push(Buffer.from(JSON.stringify(product)));
+            /* productsToUploadBuffer.push(Buffer.from(JSON.stringify(product))); */
 
             // const buf = Buffer.from(JSON.stringify(product));
             // productsToUploadBuffer.push(buf);
@@ -129,14 +129,14 @@ export const obtainDataFromXlsx = async (
                   JSON.stringify(product),
                   ); */
               }
-              productsToUploadBuffer.push(Buffer.from(JSON.stringify(product)));
+              /* productsToUploadBuffer.push(Buffer.from(JSON.stringify(product))); */
             });
           }
 
           codReducidoToUpload.push({
             ...codRed,
           });
-          codReducidoToUploadBuffer.push(Buffer.from(JSON.stringify(codRed)));
+          /* codReducidoToUploadBuffer.push(Buffer.from(JSON.stringify(codRed))); */
         }
         /* productsToUploadBuffer = Buffer.from(JSON.stringify(productsToUpload));
         codReducidoToUploadBuffer = Buffer.from(
@@ -152,10 +152,10 @@ export const obtainDataFromXlsx = async (
           `Codigos reducidos extraídos con suceso: ${codReducidoToUpload.length} códigos`,
         );
         return resolve({
-          productsToUpload: productsToUpload,
-          codReducidoToUpload: codReducidoToUpload,
-          productsToUploadBuffer,
-          codReducidoToUploadBuffer,
+          productsToUpload,
+          codReducidoToUpload,
+          /* productsToUploadBuffer,
+          codReducidoToUploadBuffer, */
         });
       });
   });
@@ -165,8 +165,9 @@ obtainDataFromXlsx('importado_Tevelam_general.xlsx') // archivo tiene que estar 
   .then(data =>
     console.log(
       'Finalizado programa...',
-      // transformar BufferArray en string
       data.productsToUpload,
+      data.codReducidoToUpload,
+      // transformar BufferArray en string
     ),
   )
   .catch(error => console.log('error', error));
