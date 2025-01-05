@@ -1,5 +1,11 @@
 {
-  "include": ["src/**/*.ts", "tests/**/*.ts", "prisma/*.ts", "files/*.ts"],
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "prisma/*.ts",
+    "files/*.ts",
+    "src/utils/getDataFromXls.3ts"
+  ],
   "exclude": ["node_modules", ".vscode"],
 
   "compilerOptions": {
