@@ -1,12 +1,18 @@
 import {Request, Response} from 'express';
+import os from 'os';
 
 import {seedproductstoDB, updateProductstoDB} from '../../prisma/seed';
 import {obtainDataFromXlsx, prepareDataToDB} from '../utils/getDataFromXls';
+
+const tmpPath = os.tmpdir();
 
 export const createProductsAndCodRedToDBHandle = (
   req: Request,
   res: Response,
 ) => {
+  const {originalname, mimetype, buffer} = req.file;
+  console.log(originalname, mimetype, buffer);
+
   const xlsFineName = 'importado_Tevelam_general.xlsx';
   obtainDataFromXlsx(xlsFineName)
     .then(flatdata => {
@@ -26,8 +32,8 @@ export const updateProductsAndCodRedToDBHandle = (
   req: Request,
   res: Response,
 ) => {
-  /* const {originalname, mimetype, buffer} = req.body.files[0];
-  console.log(originalname, mimetype, buffer); */
+  const {originalname, mimetype, buffer} = req.file;
+  console.log(originalname, mimetype, buffer);
 
   const xlsFineName = 'importado_Tevelam_general.xlsx';
   obtainDataFromXlsx(xlsFineName)
