@@ -1,8 +1,8 @@
 import xlsx from 'xlsx';
-import path from 'path';
 import {Readable} from 'stream';
 
 import {Product, CodigoReducido, ProductExcelTotal} from '../entities/products';
+import {readAllProducts} from '../../prisma/read';
 
 //Cambio de Header para adaptarse a la DB:
 const adaptHeadersToDBKeys = (sheet: xlsx.WorkSheet) => {
@@ -22,19 +22,20 @@ const adaptHeadersToDBKeys = (sheet: xlsx.WorkSheet) => {
       'stock_disp',
       'stock_larp',
       'sku',
+      'rubro',
     ],
   ]);
 };
 
 export const obtainDataFromXlsx = async (
-  xlsxName: string,
+  buffer: Buffer<ArrayBufferLike>,
 ): Promise<{
   productsToFlatArray: Product[];
   codReducidoToFlatArray: CodigoReducido[];
 }> => {
-  const xlsPath = path.resolve('src', 'xls');
-  const myFile = xlsx.readFile(xlsPath.concat('/' + xlsxName));
-  const mySheet = myFile.Sheets['Hoja3'];
+  // const xlsPath = path.resolve('src', 'xls');
+  const myFile = xlsx.read(buffer /* xlsPath.concat('/' + xlsxName) */);
+  const mySheet = myFile.Sheets['Hoja2'];
   adaptHeadersToDBKeys(mySheet);
 
   // Transformar en stream y leer la data:
@@ -49,10 +50,13 @@ export const obtainDataFromXlsx = async (
     myFileStream
       .on('data', (row: ProductExcelTotal) => {
         if (
-          row.tipo_de_producto === 'MR-AUD' ||
-          row.tipo_de_producto === 'MR-ILU' ||
-          row.tipo_de_producto === 'MR-INS' ||
-          row.tipo_de_producto === 'MR-VID'
+          (row.tipo_de_producto === 'MR-AUD' ||
+            row.tipo_de_producto === 'MR-ILU' ||
+            row.tipo_de_producto === 'MR-INS' ||
+            row.tipo_de_producto === 'MR-VID') &&
+          row.codigo_reducido &&
+          typeof row.codigo_reducido === 'string' &&
+          row.descripcion
         ) {
           const {
             marca,
@@ -69,6 +73,7 @@ export const obtainDataFromXlsx = async (
             concepto: ConceptoId,
             codigo_reducido,
             codigo_de_producto,
+            rubro,
           } = row;
 
           const id = row?.codigo_de_producto?.replace(
@@ -79,7 +84,7 @@ export const obtainDataFromXlsx = async (
           const product: Product = {
             id,
             marca,
-            descripcion,
+            descripcion: descripcion.replace(/\n/, ' '),
             precio_usd,
             precio_arg,
             tasa_iva,
@@ -91,6 +96,7 @@ export const obtainDataFromXlsx = async (
             tipoId,
             ConceptoId,
             is_current: false,
+            rubro: rubro || '',
           };
 
           const codRed: CodigoReducido = {
@@ -158,12 +164,8 @@ export const prepareDataToDB = (data: {
   return {productsToDB, codRedToDB: data.codReducidoToFlatArray};
 };
 
-// obtainDataFromXlsx('importado_Tevelam_general.xlsx') // archivo tiene que estar en la carpeta src/xls
-//   .then(data => {
-//     const dataToTB = prepareDataToDB(data);
-//     console.log('productosToDB', dataToTB.productsToDB.length);
-//     console.log('codRedToDB', dataToTB.codRedToDB.length);
-//
-//     console.log('Finalizado programa...');
-//   })
-//   .catch(error => console.log('error', error));
+export const getProductsFromDB = async () => {
+  const allProducts = await readAllProducts();
+
+  return allProducts;
+};

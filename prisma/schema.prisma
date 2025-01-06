@@ -26,6 +26,7 @@ model Producto {
     stock_larp     Int
     sku            String?
     is_current     Boolean
+    rubro          String
     tipoId         String?
     tipo_producto  Tipo_producto? @relation(fields: [tipoId], references: [id])
     ConceptoId     String?

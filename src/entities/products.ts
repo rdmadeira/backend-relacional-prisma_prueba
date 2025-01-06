@@ -11,6 +11,7 @@ export interface Product {
   stock_larp: number;
   sku: string | null;
   is_current: boolean;
+  rubro: string;
   tipoId: string;
   ConceptoId: string;
 }
@@ -39,4 +40,5 @@ export interface ProductExcelTotal {
   stock_disp: number;
   stock_larp: number;
   sku: string;
+  rubro: string | undefined;
 }
