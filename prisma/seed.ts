@@ -26,11 +26,22 @@ export async function updateProductstoDB(data: {
 }) {
   try {
     for (const prod of data.productsToDB) {
-      await prisma.producto.update({
+      await prisma.producto.upsert({
         where: {
           id: prod.id,
         },
-        data: prod,
+        update: {
+          precio_arg: prod.precio_arg,
+          precio_usd: prod.precio_usd,
+          costo_repo_usd: prod.costo_repo_usd,
+          mkup: prod.mkup,
+          descripcion: prod.descripcion,
+          stock_disp: prod.stock_disp,
+          stock_larp: prod.stock_larp,
+          is_current: prod.is_current,
+          rubro: prod.rubro,
+        },
+        create: prod,
       });
     }
     for (const codRed of data.codRedToDB) {

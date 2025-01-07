@@ -79,6 +79,8 @@ export const getAllProductsHandle = (req: Request, res: Response) => {
     .then(data => {
       /* console.log('allProducts', Buffer.from(JSON.stringify(data))); */
       const msg = 'Solicitud de todos los productos con exito.';
+      console.log('Productos leidos con exito');
+
       res.status(200).json({
         message: msg,
         data: data,

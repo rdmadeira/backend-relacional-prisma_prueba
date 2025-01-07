@@ -35,7 +35,7 @@ export const obtainDataFromXlsx = async (
 }> => {
   // const xlsPath = path.resolve('src', 'xls');
   const myFile = xlsx.read(buffer /* xlsPath.concat('/' + xlsxName) */);
-  const mySheet = myFile.Sheets['Hoja2'];
+  const mySheet = myFile.Sheets['Hoja3'];
   adaptHeadersToDBKeys(mySheet);
 
   // Transformar en stream y leer la data:
