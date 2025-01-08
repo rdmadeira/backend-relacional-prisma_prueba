@@ -7,6 +7,20 @@ datasource db {
     url      = env("DATABASE_URL2")
 }
 
+model Marca {
+    id        String     @id @default(uuid())
+    marca     String     @unique
+    producto  Producto[]
+    Empresa   Empresa?   @relation(fields: [empresaId], references: [id])
+    empresaId Int?
+}
+
+model Empresa {
+    id      Int     @id @default(autoincrement())
+    empresa String  @unique
+    marca   Marca[]
+}
+
 model Tipo_producto {
     id       String     @id
     tipo     String
@@ -14,8 +28,8 @@ model Tipo_producto {
 }
 
 model Producto {
-    id             String         @id @default(uuid())
-    marca          String
+    id String @id @default(uuid())
+
     descripcion    String
     precio_usd     Float
     precio_arg     Float
@@ -32,6 +46,8 @@ model Producto {
     ConceptoId     String?
     Concepto       Concepto?      @relation(fields: [ConceptoId], references: [id])
     codigo_red     Codigo_Red[]
+    Marca          Marca?         @relation(fields: [marca], references: [marca])
+    marca          String?
 }
 
 model Concepto {

@@ -42,3 +42,9 @@ export interface ProductExcelTotal {
   sku: string;
   rubro: string | undefined;
 }
+
+export interface Marca {
+  id?: string;
+  marca: string;
+  empresaId: number;
+}

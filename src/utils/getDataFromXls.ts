@@ -1,7 +1,12 @@
 import xlsx from 'xlsx';
 import {Readable} from 'stream';
 
-import {Product, CodigoReducido, ProductExcelTotal} from '../entities/products';
+import {
+  Product,
+  CodigoReducido,
+  ProductExcelTotal,
+  Marca,
+} from '../entities/products';
 import {readAllProducts} from '../../prisma/read';
 
 //Cambio de Header para adaptarse a la DB:
@@ -35,7 +40,7 @@ export const obtainDataFromXlsx = async (
 }> => {
   // const xlsPath = path.resolve('src', 'xls');
   const myFile = xlsx.read(buffer /* xlsPath.concat('/' + xlsxName) */);
-  const mySheet = myFile.Sheets['Hoja3'];
+  const mySheet = myFile.Sheets['Hoja2'];
   adaptHeadersToDBKeys(mySheet);
 
   // Transformar en stream y leer la data:
@@ -140,6 +145,7 @@ export const prepareDataToDB = (data: {
   codReducidoToFlatArray: CodigoReducido[];
 }) => {
   const productsToDB: Product[] = [];
+
   data.productsToFlatArray.forEach((product: Product) => {
     const existentIndex = productsToDB.findIndex(
       prodToDB => product.id === prodToDB.id,
@@ -160,8 +166,67 @@ export const prepareDataToDB = (data: {
     'data.codReducidoToFlatArray',
     data.codReducidoToFlatArray.length,
   );
+  const arrayOfMarcas: string[] = productsToDB.map(({marca}) => {
+    return marca;
+  });
+  const marcaToDB: Marca[] = [];
 
-  return {productsToDB, codRedToDB: data.codReducidoToFlatArray};
+  const arrayOfMarcasSinRepetir = [...new Set(arrayOfMarcas)];
+
+  arrayOfMarcasSinRepetir.forEach(marca => {
+    let empresaId: number;
+    const marcasDiscopro = [
+      'Adam',
+      'Apogee',
+      'Aston',
+      'Celestion',
+      'C-series',
+      'DAS',
+      'DFX',
+      'Focusrite',
+      'Novation',
+      'Klark Teknik',
+      'Költ',
+      'Midas',
+      'Mode',
+      'SHURE',
+      'tannoy',
+      'PLS',
+      'Hercules',
+      'Proled',
+    ];
+    const marcasTevelam = [
+      'Behringer',
+      'Benson',
+      'Bugera',
+      'Gator',
+      'J series',
+      'JBL CAR AUDIO',
+      'JBL Selenium',
+      'Legend',
+      'Mapex',
+      'Marshall',
+      'Medeli',
+      'Natal',
+      'Newen',
+      'Orion',
+      'TC Electronic',
+      'TC Helicon',
+      'Turbosound',
+      'Warwick',
+      'Washburn',
+    ];
+
+    if (new RegExp(marcasDiscopro.join('|')).test(marca)) {
+      empresaId = 1;
+    } else {
+      empresaId = 2;
+    }
+    console.log({marca, empresaId});
+    marcaToDB.push({marca, empresaId});
+  });
+
+  return {productsToDB, codRedToDB: data.codReducidoToFlatArray, marcaToDB};
 };
 
 export const getProductsFromDB = async () => {

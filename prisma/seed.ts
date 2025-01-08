@@ -1,4 +1,4 @@
-import {Concepto, PrismaClient, Tipo_producto} from '@prisma/client';
+import {Concepto, PrismaClient, Tipo_producto, Empresa} from '@prisma/client';
 import {Product, CodigoReducido} from '../src/entities/products';
 
 const prisma = new PrismaClient();
@@ -65,6 +65,7 @@ import path from 'path';
 const seedAll = async (data: {
   tipo_producto: Tipo_producto[];
   concepto: Concepto[];
+  empresa: Empresa[];
 }) => {
   try {
     await prisma.concepto.createMany({
@@ -73,8 +74,11 @@ const seedAll = async (data: {
     await prisma.tipo_producto.createMany({
       data: data.tipo_producto,
     });
+    await prisma.empresa.createMany({
+      data: data.empresa,
+    });
 
-    console.log('created many concepto and tipo_producto on db');
+    console.log('created many concepto, tipo_producto on db and empresa');
 
     fs.readFile(
       path.resolve('src', 'xls', 'importado_Tevelam_general.xlsx'),
@@ -84,6 +88,14 @@ const seedAll = async (data: {
         const flatData = await obtainDataFromXlsx(data);
 
         const dataToDB = prepareDataToDB(flatData);
+
+        /* await prisma.empresa.createMany({
+          data: [{empresa: 'discopro'}, {empresa: 'tevelam'}],
+        });*/
+
+        await prisma.marca.createMany({
+          data: dataToDB.marcaToDB,
+        });
 
         await prisma.producto.createMany({
           data: dataToDB.productsToDB,
@@ -99,7 +111,20 @@ const seedAll = async (data: {
   }
 };
 
-/* seedAll({
+/* const seedOne = async () => {
+  await prisma.empresa.createMany({
+    data: [
+      {empresa: 'discopro'},
+      {empresa: 'tevelam'},
+      {empresa: 'inexistente'},
+    ],
+  });
+};
+
+seedOne()
+  .then(() => console.log('ok'))
+  .catch(error => error); */
+seedAll({
   tipo_producto: [
     {id: 'MR-AUD', tipo: 'MR-AUD'},
     {id: 'MR-ILU', tipo: 'MR-ILU'},
@@ -111,10 +136,19 @@ const seedAll = async (data: {
     {id: 'GR21', concepto: 'GR21'},
     {id: 'GR21I', concepto: 'GR21I'},
   ],
+  empresa: [
+    {id: 1, empresa: 'discopro'},
+    {id: 2, empresa: 'tevelam'},
+    {id: 3, empresa: 'inexistente'},
+  ],
 })
-  .then(() => console.log('created many productos and codigo_red on db'))
+  .then(() =>
+    console.log(
+      'created many empresa, marca, concepto, tipo_producto, productos, codigo_red on db',
+    ),
+  )
   .catch(err => {
     console.log('err', err);
 
     throw err;
-  }); */
+  });
