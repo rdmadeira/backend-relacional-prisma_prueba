@@ -25,12 +25,15 @@ export async function updateProductstoDB(data: {
   codRedToDB: CodigoReducido[];
 }) {
   try {
+    const arrayOfPromises = [];
     for (const prod of data.productsToDB) {
-      await prisma.producto.upsert({
+      console.log('prod', prod);
+
+      const updateRequest = prisma.producto.update({
         where: {
           id: prod.id,
         },
-        update: {
+        data: {
           precio_arg: prod.precio_arg,
           precio_usd: prod.precio_usd,
           costo_repo_usd: prod.costo_repo_usd,
@@ -41,28 +44,36 @@ export async function updateProductstoDB(data: {
           is_current: prod.is_current,
           rubro: prod.rubro,
         },
-        create: prod,
       });
+      arrayOfPromises.push(updateRequest);
     }
     for (const codRed of data.codRedToDB) {
-      await prisma.codigo_Red.update({
+      console.log('codRed', codRed);
+
+      const updateRequest = prisma.codigo_Red.update({
         where: {
           codigo: codRed.codigo,
         },
         data: codRed,
       });
+      arrayOfPromises.push(updateRequest);
     }
+    await Promise.all(arrayOfPromises); // tuve que sacar el await de los prisma.update y puse un Promise.all para agilizar
+    console.log('terminó el upgrade');
   } catch (error) {
     console.log('error', error);
     throw error;
   }
 }
 
-import {obtainDataFromXlsx, prepareDataToDB} from '../src/utils/getDataFromXls';
+import {
+  obtainDataFromXlsx,
+  prepareDataToSeed,
+} from '../src/utils/getDataFromXls';
 import fs from 'fs';
 import path from 'path';
 
-const seedAll = async (data: {
+export const seedAll = async (data: {
   tipo_producto: Tipo_producto[];
   concepto: Concepto[];
   empresa: Empresa[];
@@ -78,7 +89,7 @@ const seedAll = async (data: {
       data: data.empresa,
     });
 
-    console.log('created many concepto, tipo_producto on db and empresa');
+    console.log('created many concepto, tipo_producto, empresa on db');
 
     fs.readFile(
       path.resolve('src', 'xls', 'importado_Tevelam_general.xlsx'),
@@ -87,11 +98,7 @@ const seedAll = async (data: {
 
         const flatData = await obtainDataFromXlsx(data);
 
-        const dataToDB = prepareDataToDB(flatData);
-
-        /* await prisma.empresa.createMany({
-          data: [{empresa: 'discopro'}, {empresa: 'tevelam'}],
-        });*/
+        const dataToDB = prepareDataToSeed(flatData);
 
         await prisma.marca.createMany({
           data: dataToDB.marcaToDB,
@@ -124,7 +131,8 @@ const seedAll = async (data: {
 seedOne()
   .then(() => console.log('ok'))
   .catch(error => error); */
-seedAll({
+
+/* seedAll({
   tipo_producto: [
     {id: 'MR-AUD', tipo: 'MR-AUD'},
     {id: 'MR-ILU', tipo: 'MR-ILU'},
@@ -152,3 +160,4 @@ seedAll({
 
     throw err;
   });
+ */

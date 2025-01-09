@@ -140,7 +140,7 @@ export const obtainDataFromXlsx = async (
   });
 };
 
-export const prepareDataToDB = (data: {
+export const prepareProductsToDB = (data: {
   productsToFlatArray: Product[];
   codReducidoToFlatArray: CodigoReducido[];
 }) => {
@@ -166,6 +166,15 @@ export const prepareDataToDB = (data: {
     'data.codReducidoToFlatArray',
     data.codReducidoToFlatArray.length,
   );
+  return {productsToDB, codRedToDB: data.codReducidoToFlatArray};
+};
+
+export const prepareDataToSeed = (data: {
+  productsToFlatArray: Product[];
+  codReducidoToFlatArray: CodigoReducido[];
+}) => {
+  const {productsToDB} = prepareProductsToDB(data);
+
   const arrayOfMarcas: string[] = productsToDB.map(({marca}) => {
     return marca;
   });
@@ -176,51 +185,54 @@ export const prepareDataToDB = (data: {
   arrayOfMarcasSinRepetir.forEach(marca => {
     let empresaId: number;
     const marcasDiscopro = [
-      'Adam',
-      'Apogee',
-      'Aston',
-      'Celestion',
-      'C-series',
-      'DAS',
-      'DFX',
-      'Focusrite',
-      'Novation',
-      'Klark Teknik',
-      'Költ',
-      'Midas',
-      'Mode',
-      'SHURE',
-      'tannoy',
-      'PLS',
-      'Hercules',
-      'Proled',
+      'Adam'.toLowerCase(),
+      'Apogee'.toLowerCase(),
+      'Aston'.toLowerCase(),
+      'Celestion'.toLowerCase(),
+      'C-series'.toLowerCase(),
+      'DAS'.toLowerCase(),
+      'DFX'.toLowerCase(),
+      'Focusrite'.toLowerCase(),
+      'Novation'.toLowerCase(),
+      'Klark Teknik'.toLowerCase(),
+      'Költ'.toLowerCase(),
+      'Midas'.toLowerCase(),
+      'Mode'.toLowerCase(),
+      'SHURE'.toLowerCase(),
+      'tannoy'.toLowerCase(),
+      'PLS'.toLowerCase(),
+      'Hercules'.toLowerCase(),
+      'Proled'.toLowerCase(),
     ];
     const marcasTevelam = [
-      'Behringer',
-      'Benson',
-      'Bugera',
-      'Gator',
-      'J series',
-      'JBL CAR AUDIO',
-      'JBL Selenium',
-      'Legend',
-      'Mapex',
-      'Marshall',
-      'Medeli',
-      'Natal',
-      'Newen',
-      'Orion',
-      'TC Electronic',
-      'TC Helicon',
-      'Turbosound',
-      'Warwick',
-      'Washburn',
+      'Behringer'.toLowerCase(),
+      'Benson'.toLowerCase(),
+      'Bugera'.toLowerCase(),
+      'Gator'.toLowerCase(),
+      'J Series'.toLowerCase(),
+      'JBL CAR AUDIO'.toLowerCase(),
+      'JBL Selenium'.toLowerCase(),
+      'Legend'.toLowerCase(),
+      'Lexsen'.toLowerCase(),
+      'Mapex'.toLowerCase(),
+      'Marshall'.toLowerCase(),
+      'Medeli'.toLowerCase(),
+      'Natal'.toLowerCase(),
+      'Newen'.toLowerCase(),
+      'Orion'.toLowerCase(),
+      'TC Electronic'.toLowerCase(),
+      'TC Helicon'.toLowerCase(),
+      'Turbosound'.toLowerCase(),
+      'Warwick'.toLowerCase(),
+      'Washburn'.toLowerCase(),
     ];
 
-    if (new RegExp(marcasDiscopro.join('|')).test(marca)) {
+    if (new RegExp(marcasDiscopro.join('|')).test(marca.toLowerCase())) {
       empresaId = 1;
-    } else {
+    } else if (new RegExp(marcasTevelam.join('|')).test(marca.toLowerCase())) {
       empresaId = 2;
+    } else {
+      empresaId = 3;
     }
     console.log({marca, empresaId});
     marcaToDB.push({marca, empresaId});

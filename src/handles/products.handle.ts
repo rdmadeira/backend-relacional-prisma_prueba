@@ -4,7 +4,7 @@ import {Request, Response} from 'express';
 import {seedproductstoDB, updateProductstoDB} from '../../prisma/seed';
 import {
   obtainDataFromXlsx,
-  prepareDataToDB,
+  prepareProductsToDB,
   getProductsFromDB,
 } from '../utils/getDataFromXls';
 
@@ -25,7 +25,7 @@ export const createProductsAndCodRedToDBHandle = (
   buffer &&
     obtainDataFromXlsx(buffer)
       .then(flatdata => {
-        const dataToDB = prepareDataToDB(flatdata);
+        const dataToDB = prepareProductsToDB(flatdata);
 
         seedproductstoDB(dataToDB)
           .then(() => {
@@ -56,7 +56,7 @@ export const updateProductsAndCodRedToDBHandle = (
   buffer &&
     obtainDataFromXlsx(buffer)
       .then(flatdata => {
-        const dataToDB = prepareDataToDB(flatdata);
+        const dataToDB = prepareProductsToDB(flatdata);
 
         updateProductstoDB(dataToDB)
           .then(() => {
