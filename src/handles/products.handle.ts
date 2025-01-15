@@ -1,12 +1,8 @@
 import {Request, Response} from 'express';
 // import os from 'os';
 
-import {seedproductstoDB, updateProductstoDB} from '../../prisma/seed';
-import {
-  obtainDataFromXlsx,
-  prepareProductsToDB,
-  getProductsFromDB,
-} from '../utils/getDataFromXls';
+import {createproductstoDB, updateProductstoDB} from '../../prisma/seed';
+import {obtainDataFromXlsx, getProductsFromDB} from '../utils/getDataFromXls';
 
 // const tmpPath = os.tmpdir();
 
@@ -25,9 +21,9 @@ export const createProductsAndCodRedToDBHandle = (
   buffer &&
     obtainDataFromXlsx(buffer)
       .then(flatdata => {
-        const dataToDB = prepareProductsToDB(flatdata);
+        /* const dataToDB = prepareProductsToDB(flatdata); */
 
-        seedproductstoDB(dataToDB)
+        createproductstoDB(flatdata)
           .then(() => {
             const msg = 'db actualizada con suceso';
             console.log(msg);
@@ -47,6 +43,8 @@ export const updateProductsAndCodRedToDBHandle = (
   req: Request,
   res: Response,
 ) => {
+  console.log('Inicio del update:... ', new Date(Date.now()).toString());
+
   const {originalname, mimetype, buffer} = req.file || {
     originalname: undefined,
     mimetype: undefined,
@@ -56,11 +54,10 @@ export const updateProductsAndCodRedToDBHandle = (
   buffer &&
     obtainDataFromXlsx(buffer)
       .then(flatdata => {
-        const dataToDB = prepareProductsToDB(flatdata);
+        /* const dataToDB = prepareProductsToDB(flatdata); */
 
-        updateProductstoDB(dataToDB)
-          .then(() => {
-            const msg = 'db actualizada con suceso';
+        updateProductstoDB(flatdata)
+          .then(msg => {
             console.log(msg);
             res.status(200).json({message: msg});
           })

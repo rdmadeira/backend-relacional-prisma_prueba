@@ -1,95 +1,184 @@
 import {Concepto, PrismaClient, Tipo_producto, Empresa} from '@prisma/client';
-import {Product, CodigoReducido} from '../src/entities/products';
+import {ProductExcelTotal} from '../src/entities/products';
+import {Prisma} from '@prisma/client';
 
-const prisma = new PrismaClient();
+//prismaClient tiene que ser de unica instancia para servers comunes:
+export const prisma = new PrismaClient();
 
-export async function seedproductstoDB(data: {
-  productsToDB: Product[];
-  codRedToDB: CodigoReducido[];
+export async function createproductstoDB(flatData: {
+  productsToFlatArray: ProductExcelTotal[];
 }) {
   try {
-    await prisma.producto.createMany({
-      data: data.productsToDB,
-    });
-    await prisma.codigo_Red.createMany({
-      data: data.codRedToDB,
-    });
+    for (const prod of flatData.productsToFlatArray) {
+      const prodId = prod.codigo_de_producto.replace(
+        prod?.codigo_de_producto?.slice(12, 16),
+        '',
+      );
+      await prisma.producto.upsert({
+        where: {
+          id: prodId,
+        },
+        update: {
+          descripcion: prod.descripcion,
+          marca: prod.marca,
+          tipoId: prod.tipo_de_producto,
+          mkup: prod.mkup,
+          ConceptoId: prod.concepto,
+          precio_usd: prod.precio_usd,
+          precio_arg: prod.precio_arg,
+          costo_repo_usd: prod.costo_repo_usd,
+          sku: prod.sku,
+          stock_disp: prod.stock_disp,
+          stock_larp: prod.stock_larp,
+          tasa_iva: prod.tasa_iva,
+          is_current: false,
+          rubro: prod.rubro || '',
+        },
+        create: {
+          id: prodId,
+          descripcion: prod.descripcion,
+          marca: prod.marca,
+          tipoId: prod.tipo_de_producto,
+          mkup: prod.mkup,
+          ConceptoId: prod.concepto,
+          precio_usd: prod.precio_usd,
+          precio_arg: prod.precio_arg,
+          costo_repo_usd: prod.costo_repo_usd,
+          sku: prod.sku,
+          stock_disp: prod.stock_disp,
+          stock_larp: prod.stock_larp,
+          tasa_iva: prod.tasa_iva,
+          is_current: false,
+          rubro: prod.rubro || '',
+        },
+      });
+      await prisma.codigo_Red.upsert({
+        where: {
+          codigo: prod.codigo_reducido,
+        },
+        update: {
+          codigo: prod.codigo_reducido,
+          codigo_largo: prod.codigo_de_producto,
+          stock_dis: prod.stock_disp,
+          stock_lar: prod.stock_larp,
+          productoId: prodId,
+        },
+        create: {
+          codigo: prod.codigo_reducido,
+          codigo_largo: prod.codigo_de_producto,
+          stock_dis: prod.stock_disp,
+          stock_lar: prod.stock_larp,
+          productoId: prodId,
+        },
+      });
+    }
   } catch (error) {
     console.log('error', error);
     throw error;
   }
 }
 
+import marcas from '../src/data/marcas.json';
+
 export async function updateProductstoDB(data: {
-  productsToDB: Product[];
-  codRedToDB: CodigoReducido[];
+  productsToFlatArray: ProductExcelTotal[];
 }) {
   try {
-    const arrayOfPromises = [];
-    for (const prod of data.productsToDB) {
-      console.log('prod', prod);
+    // const arrayOfPromises = [];
 
-      const updateRequest = prisma.producto.update({
-        where: {
-          id: prod.id,
-        },
-        data: {
-          precio_arg: prod.precio_arg,
-          precio_usd: prod.precio_usd,
-          costo_repo_usd: prod.costo_repo_usd,
-          mkup: prod.mkup,
-          descripcion: prod.descripcion,
-          stock_disp: prod.stock_disp,
-          stock_larp: prod.stock_larp,
-          is_current: prod.is_current,
-          rubro: prod.rubro,
-        },
-      });
-      arrayOfPromises.push(updateRequest);
-    }
-    for (const codRed of data.codRedToDB) {
-      console.log('codRed', codRed);
+    const marcasTevelam: string[] = marcas.tevelam;
+    const marcasDiscopro: string[] = marcas.discopro;
 
-      const updateRequest = prisma.codigo_Red.update({
-        where: {
-          codigo: codRed.codigo,
-        },
-        data: codRed,
-      });
-      arrayOfPromises.push(updateRequest);
-    }
-    await Promise.all(arrayOfPromises); // tuve que sacar el await de los prisma.update y puse un Promise.all para agilizar
-    console.log('terminó el upgrade');
+    const marcasTodas = marcasTevelam.concat(marcasDiscopro);
+
+    const marcasOR = marcasTodas.map((item: string) => {
+      return {
+        marca: item,
+      };
+    });
+
+    const marcasORCodRed = marcasTodas.map((item: string) => {
+      return {
+        marcaId: item,
+      };
+    });
+
+    const arrayOfPromises: Prisma.PrismaPromise<Prisma.BatchPayload>[] = [];
+
+    data.productsToFlatArray.forEach(product => {
+      if (marcasOR.find(marcaOR => marcaOR.marca === product.marca)) {
+        const prodId = product.codigo_de_producto.replace(
+          product?.codigo_de_producto?.slice(12, 16),
+          '',
+        );
+        const promise1 = prisma.producto.updateMany({
+          where: {
+            id: prodId,
+            OR: marcasOR,
+          },
+          data: {
+            precio_arg: product.precio_arg,
+            precio_usd: product.precio_usd,
+            costo_repo_usd: product.costo_repo_usd,
+            mkup: product.mkup,
+            descripcion: product.descripcion,
+            stock_disp: product.stock_disp,
+            stock_larp: product.stock_larp,
+            is_current: true,
+            rubro: product.rubro,
+          },
+        });
+        const promise2 = prisma.codigo_Red.updateMany({
+          where: {
+            AND: [{codigo: product.codigo_reducido, OR: marcasORCodRed}],
+          },
+          data: {
+            codigo: product.codigo_reducido,
+            codigo_largo: product.codigo_de_producto,
+            stock_dis: product.stock_disp,
+            stock_lar: product.stock_larp,
+            productoId: prodId,
+            marcaId: product.marca,
+          },
+        });
+        arrayOfPromises.push(promise1, promise2);
+      }
+    });
+    await Promise.all(arrayOfPromises);
+
+    console.log('terminó el upgrade a las ' + new Date(Date.now()).toString());
+    return 'successful upgraded in updateProductsToDB';
   } catch (error) {
-    console.log('error', error);
+    console.log('error a las ' + new Date(Date.now()).toString(), error);
     throw error;
   }
 }
 
 import {
   obtainDataFromXlsx,
-  prepareDataToSeed,
+  /* prepareDataToSeed, */
 } from '../src/utils/getDataFromXls';
 import fs from 'fs';
 import path from 'path';
 
-export const seedAll = async (data: {
+export const seedAll = async (data?: {
   tipo_producto: Tipo_producto[];
   concepto: Concepto[];
   empresa: Empresa[];
 }) => {
   try {
-    await prisma.concepto.createMany({
-      data: data.concepto,
-    });
-    await prisma.tipo_producto.createMany({
-      data: data.tipo_producto,
-    });
-    await prisma.empresa.createMany({
-      data: data.empresa,
-    });
-
-    console.log('created many concepto, tipo_producto, empresa on db');
+    if (data) {
+      await prisma.concepto.createMany({
+        data: data.concepto,
+      });
+      await prisma.tipo_producto.createMany({
+        data: data.tipo_producto,
+      });
+      await prisma.empresa.createMany({
+        data: data.empresa,
+      });
+      console.log('created many concepto, tipo_producto, empresa on db');
+    }
 
     fs.readFile(
       path.resolve('src', 'xls', 'importado_Tevelam_general.xlsx'),
@@ -98,18 +187,66 @@ export const seedAll = async (data: {
 
         const flatData = await obtainDataFromXlsx(data);
 
-        const dataToDB = prepareDataToSeed(flatData);
+        const marcasTevelam: string[] = marcas.tevelam;
+        const marcasDiscopro: string[] = marcas.discopro;
 
-        await prisma.marca.createMany({
-          data: dataToDB.marcaToDB,
+        const marcasTodas = marcasTevelam.concat(marcasDiscopro);
+        const marcasOR = marcasTodas.map((item: string) => {
+          return {
+            marca: item,
+          };
+        });
+        const marcasORCodRed = marcasTodas.map((item: string) => {
+          return {
+            marcaId: item,
+          };
         });
 
-        await prisma.producto.createMany({
-          data: dataToDB.productsToDB,
-        });
-        await prisma.codigo_Red.createMany({
-          data: dataToDB.codRedToDB,
-        });
+        const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+          product => {
+            const prodId = product.codigo_de_producto.replace(
+              product?.codigo_de_producto?.slice(12, 16),
+              '',
+            );
+
+            return [
+              prisma.producto.update({
+                where: {
+                  id: prodId,
+                  OR: marcasOR,
+                },
+                data: {
+                  precio_arg: product.precio_arg,
+                  precio_usd: product.precio_usd,
+                  costo_repo_usd: product.costo_repo_usd,
+                  mkup: product.mkup,
+                  descripcion: product.descripcion,
+                  stock_disp: product.stock_disp,
+                  stock_larp: product.stock_larp,
+                  is_current: true,
+                  rubro: product.rubro,
+                },
+              }),
+              prisma.codigo_Red.update({
+                where: {
+                  codigo: product.codigo_reducido,
+                  OR: marcasORCodRed,
+                },
+                data: {
+                  codigo: product.codigo_reducido,
+                  codigo_largo: product.codigo_de_producto,
+                  stock_dis: product.stock_disp,
+                  stock_lar: product.stock_larp,
+                  productoId: prodId,
+                  marcaId: product.marca,
+                },
+              }),
+            ];
+          },
+        );
+
+        await prisma.$transaction(arrayOftransactions);
+        return 'successfull seedAll';
       },
     );
   } catch (error) {
@@ -118,20 +255,22 @@ export const seedAll = async (data: {
   }
 };
 
-/* const seedOne = async () => {
-  await prisma.empresa.createMany({
+export const seedOne = async () => {
+  await prisma.codigo_Red.updateMany({
     data: [
-      {empresa: 'discopro'},
-      {empresa: 'tevelam'},
-      {empresa: 'inexistente'},
+      {marcaId: 'discopro'},
+      {marcaId: 'tevelam'},
+      {marcaId: 'inexistente'},
     ],
   });
-};
 
+  console.log('terminado seedOne');
+};
+/*
 seedOne()
   .then(() => console.log('ok'))
-  .catch(error => error); */
-
+  .catch(error => error);
+ */
 /* seedAll({
   tipo_producto: [
     {id: 'MR-AUD', tipo: 'MR-AUD'},
@@ -160,4 +299,11 @@ seedOne()
 
     throw err;
   });
- */
+*/
+/* seedAll()
+  .then(msg => console.log('updated codigo_red on db' + msg))
+  .catch(err => {
+    console.log('err', err);
+
+    throw err;
+  }); */

@@ -23,6 +23,7 @@ export interface CodigoReducido {
   stock_dis: number;
   stock_lar: number;
   productoId: string;
+  marcaId: string;
 }
 
 export interface ProductExcelTotal {

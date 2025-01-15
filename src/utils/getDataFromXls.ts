@@ -32,11 +32,11 @@ const adaptHeadersToDBKeys = (sheet: xlsx.WorkSheet) => {
   ]);
 };
 
+// Seed & update:
 export const obtainDataFromXlsx = async (
   buffer: Buffer<ArrayBufferLike>,
 ): Promise<{
-  productsToFlatArray: Product[];
-  codReducidoToFlatArray: CodigoReducido[];
+  productsToFlatArray: ProductExcelTotal[];
 }> => {
   // const xlsPath = path.resolve('src', 'xls');
   const myFile = xlsx.read(buffer /* xlsPath.concat('/' + xlsxName) */);
@@ -46,9 +46,9 @@ export const obtainDataFromXlsx = async (
   // Transformar en stream y leer la data:
   const myFileStream: Readable = await xlsx.stream.to_json(mySheet); // Stream lo hace mas rápido para archivos grandes
 
-  const productsToFlatArray: Product[] = [];
+  const productsToFlatArray: ProductExcelTotal[] = [];
 
-  const codReducidoToFlatArray: CodigoReducido[] = [];
+  /* const codReducidoToFlatArray: CodigoReducido[] = []; */
 
   return new Promise((resolve, reject) => {
     // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona y a los listeners
@@ -63,7 +63,8 @@ export const obtainDataFromXlsx = async (
           typeof row.codigo_reducido === 'string' &&
           row.descripcion
         ) {
-          const {
+          productsToFlatArray.push(row);
+          /* const {
             marca,
             descripcion,
             precio_usd,
@@ -118,7 +119,7 @@ export const obtainDataFromXlsx = async (
 
           codReducidoToFlatArray.push({
             ...codRed,
-          });
+          }); */
         }
       })
       .on('error', error => {
@@ -129,26 +130,30 @@ export const obtainDataFromXlsx = async (
         console.log(
           `Productos extraídos de Excel con suceso: ${productsToFlatArray.length} productos`,
         );
-        console.log(
+        /* console.log(
           `Codigos reducidos extraídos de Excel con suceso: ${codReducidoToFlatArray.length} códigos`,
-        );
+        ); */
         return resolve({
           productsToFlatArray,
-          codReducidoToFlatArray,
         });
       });
   });
 };
 
+// Solo se usa para crear por seed:
 export const prepareProductsToDB = (data: {
-  productsToFlatArray: Product[];
-  codReducidoToFlatArray: CodigoReducido[];
+  productsToFlatArray: ProductExcelTotal[];
 }) => {
   const productsToDB: Product[] = [];
+  const codRed: CodigoReducido[] = [];
 
-  data.productsToFlatArray.forEach((product: Product) => {
+  data.productsToFlatArray.forEach((product: ProductExcelTotal) => {
+    const prodId = product.codigo_de_producto.replace(
+      product?.codigo_de_producto?.slice(12, 16),
+      '',
+    );
     const existentIndex = productsToDB.findIndex(
-      prodToDB => product.id === prodToDB.id,
+      prodToDB => prodId === prodToDB.id,
     );
 
     if (existentIndex >= 0) {
@@ -157,23 +162,44 @@ export const prepareProductsToDB = (data: {
       existentProduct.stock_larp += product.stock_larp;
     } else {
       productsToDB.push({
-        ...product,
+        id: prodId,
+        descripcion: product.descripcion,
+        marca: product.marca,
+        tipoId: product.tipo_de_producto,
+        mkup: product.mkup,
+        ConceptoId: product.concepto,
+        precio_usd: product.precio_usd,
+        precio_arg: product.precio_arg,
+        costo_repo_usd: product.costo_repo_usd,
+        sku: product.sku,
+        stock_disp: product.stock_disp,
+        stock_larp: product.stock_larp,
+        tasa_iva: product.tasa_iva,
+        is_current: false,
+        rubro: product.rubro || '',
       });
     }
+    codRed.push({
+      codigo: product.codigo_reducido,
+      codigo_largo: product.codigo_de_producto,
+      stock_dis: product.stock_disp,
+      stock_lar: product.stock_larp,
+      productoId: prodId,
+      marcaId: product.marca,
+    });
   });
   console.log('productsToDB.length', productsToDB.length);
-  console.log(
-    'data.codReducidoToFlatArray',
-    data.codReducidoToFlatArray.length,
-  );
-  return {productsToDB, codRedToDB: data.codReducidoToFlatArray};
+  console.log('data.codReducidoToFlatArray', codRed.length);
+  return {productsToDB, codRedToDB: codRed};
 };
 
+import marcas from '../data/marcas.json';
+
+// Solo se usa para crear por seed:
 export const prepareDataToSeed = (data: {
-  productsToFlatArray: Product[];
-  codReducidoToFlatArray: CodigoReducido[];
+  productsToFlatArray: ProductExcelTotal[];
 }) => {
-  const {productsToDB} = prepareProductsToDB(data);
+  const {productsToDB, codRedToDB} = prepareProductsToDB(data);
 
   const arrayOfMarcas: string[] = productsToDB.map(({marca}) => {
     return marca;
@@ -184,48 +210,8 @@ export const prepareDataToSeed = (data: {
 
   arrayOfMarcasSinRepetir.forEach(marca => {
     let empresaId: number;
-    const marcasDiscopro = [
-      'Adam'.toLowerCase(),
-      'Apogee'.toLowerCase(),
-      'Aston'.toLowerCase(),
-      'Celestion'.toLowerCase(),
-      'C-series'.toLowerCase(),
-      'DAS'.toLowerCase(),
-      'DFX'.toLowerCase(),
-      'Focusrite'.toLowerCase(),
-      'Novation'.toLowerCase(),
-      'Klark Teknik'.toLowerCase(),
-      'Költ'.toLowerCase(),
-      'Midas'.toLowerCase(),
-      'Mode'.toLowerCase(),
-      'SHURE'.toLowerCase(),
-      'tannoy'.toLowerCase(),
-      'PLS'.toLowerCase(),
-      'Hercules'.toLowerCase(),
-      'Proled'.toLowerCase(),
-    ];
-    const marcasTevelam = [
-      'Behringer'.toLowerCase(),
-      'Benson'.toLowerCase(),
-      'Bugera'.toLowerCase(),
-      'Gator'.toLowerCase(),
-      'J Series'.toLowerCase(),
-      'JBL CAR AUDIO'.toLowerCase(),
-      'JBL Selenium'.toLowerCase(),
-      'Legend'.toLowerCase(),
-      'Lexsen'.toLowerCase(),
-      'Mapex'.toLowerCase(),
-      'Marshall'.toLowerCase(),
-      'Medeli'.toLowerCase(),
-      'Natal'.toLowerCase(),
-      'Newen'.toLowerCase(),
-      'Orion'.toLowerCase(),
-      'TC Electronic'.toLowerCase(),
-      'TC Helicon'.toLowerCase(),
-      'Turbosound'.toLowerCase(),
-      'Warwick'.toLowerCase(),
-      'Washburn'.toLowerCase(),
-    ];
+    const marcasDiscopro = marcas.discopro;
+    const marcasTevelam = marcas.discopro;
 
     if (new RegExp(marcasDiscopro.join('|')).test(marca.toLowerCase())) {
       empresaId = 1;
@@ -238,7 +224,7 @@ export const prepareDataToSeed = (data: {
     marcaToDB.push({marca, empresaId});
   });
 
-  return {productsToDB, codRedToDB: data.codReducidoToFlatArray, marcaToDB};
+  return {productsToDB, codRedToDB, marcaToDB};
 };
 
 export const getProductsFromDB = async () => {

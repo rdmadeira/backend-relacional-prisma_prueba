@@ -8,11 +8,12 @@ datasource db {
 }
 
 model Marca {
-    id        String     @id @default(uuid())
-    marca     String     @unique
-    producto  Producto[]
-    Empresa   Empresa?   @relation(fields: [empresaId], references: [id])
-    empresaId Int?
+    id         String       @id @default(uuid())
+    marca      String       @unique
+    producto   Producto[]
+    Empresa    Empresa?     @relation(fields: [empresaId], references: [id])
+    empresaId  Int?
+    codigo_Red Codigo_Red[]
 }
 
 model Empresa {
@@ -28,8 +29,7 @@ model Tipo_producto {
 }
 
 model Producto {
-    id String @id @default(uuid())
-
+    id             String         @id @default(uuid())
     descripcion    String
     precio_usd     Float
     precio_arg     Float
@@ -62,6 +62,8 @@ model Codigo_Red {
     codigo_largo String
     stock_dis    Int
     stock_lar    Int
-    productoId   String?
+    productoId   String
     Producto     Producto? @relation(fields: [productoId], references: [id])
+    Marca        Marca?    @relation(fields: [marcaId], references: [marca])
+    marcaId      String?
 }
