@@ -1,0 +1,69 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL2")
+}
+
+model Marca {
+    id         String       @id @default(uuid())
+    marca      String       @unique
+    producto   Producto[]
+    Empresa    Empresa?     @relation(fields: [empresaId], references: [id])
+    empresaId  Int?
+    codigo_Red Codigo_Red[]
+}
+
+model Empresa {
+    id      Int     @id @default(autoincrement())
+    empresa String  @unique
+    marca   Marca[]
+}
+
+model Tipo_producto {
+    id       String     @id
+    tipo     String
+    Producto Producto[]
+}
+
+model Producto {
+    id             String         @id @default(uuid())
+    descripcion    String
+    precio_usd     Float
+    precio_arg     Float
+    tasa_iva       Float
+    costo_repo_usd Float
+    mkup           Float
+    stock_disp     Int
+    stock_larp     Int
+    sku            String?
+    is_current     Boolean
+    rubro          String
+    tipoId         String?
+    tipo_producto  Tipo_producto? @relation(fields: [tipoId], references: [id])
+    ConceptoId     String?
+    Concepto       Concepto?      @relation(fields: [ConceptoId], references: [id])
+    codigo_red     Codigo_Red[]
+    Marca          Marca?         @relation(fields: [marca], references: [marca])
+    marca          String?
+}
+
+model Concepto {
+    id       String     @id
+    concepto String     @unique
+    Producto Producto[]
+}
+
+model Codigo_Red {
+    id           String    @id @default(uuid())
+    codigo       String    @unique
+    codigo_largo String
+    stock_dis    Int
+    stock_lar    Int
+    productoId   String
+    Producto     Producto? @relation(fields: [productoId], references: [id])
+    Marca        Marca?    @relation(fields: [marcaId], references: [marca])
+    marcaId      String?
+}
