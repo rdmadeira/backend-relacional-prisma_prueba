@@ -26,3 +26,6 @@ import { onRequest } from "firebase-functions/v2/https";
 //
 // app.listen(port, () => console.log("Server running on port: ", port));
 export const tevelamFunctions = onRequest(app);
+export const testFunctions = onRequest({}, (request, response) => {
+    response.status(200).json({ msg: "test functions ok" });
+});
