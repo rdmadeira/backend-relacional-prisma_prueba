@@ -49,3 +49,9 @@ export interface Marca {
   marca: string;
   empresaId: number;
 }
+
+export interface iFile {
+  originalname: string;
+  mimetype: string;
+  buffer: Buffer;
+}

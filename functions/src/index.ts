@@ -2,8 +2,14 @@ import express, { Application, Request, Response } from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors";
+import { applicationDefault, initializeApp } from "firebase-admin/app";
 
 import routes from "./routes/index.js";
+
+/* import serviceAccount from "./firebase/config.js";
+console.log("serviceAccount", serviceAccount); */
+
+initializeApp({ credential: applicationDefault() }); // puse el comando en powershell $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Administrador\Downloads\tevelam-5c6b4-firebase-adminsdk-iit3y-d8193a4ed1.json"
 
 const app: Application = express();
 dotenv.config({ path: process.cwd() });

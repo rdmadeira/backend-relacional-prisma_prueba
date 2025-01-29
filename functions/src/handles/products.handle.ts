@@ -6,6 +6,7 @@ import {
   obtainDataFromXlsx,
   getProductsFromDB,
 } from "../utils/getDataFromXls.js";
+import { iFile } from "entities/products.js";
 
 // const tmpPath = os.tmpdir();
 
@@ -13,7 +14,7 @@ export const createProductsAndCodRedToDBHandle = (
   req: Request,
   res: Response,
 ) => {
-  const { originalname, mimetype, buffer } = req.file || {
+  const { originalname, mimetype, buffer } = (req.file as iFile) || {
     originalname: undefined,
     mimetype: undefined,
     buffer: undefined,
