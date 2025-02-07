@@ -76,21 +76,26 @@ export const updateProductsAndCodRedToDBHandle = (
 };
 
 export const getAllProductsHandle = (req: Request, res: Response) => {
-  getProductsFromDB()
-    .then(data => {
-      /* console.log('allProducts', Buffer.from(JSON.stringify(data))); */
-      const msg = "Solicitud de todos los productos con exito.";
-      console.log("Productos leidos con exito");
+  const { query } = req;
 
-      res.status(200).json({
-        message: msg,
-        data: data,
+  if (query) {
+    getProductsFromDB(query.empresa as string)
+      .then(data => {
+        console.log("empresa", query.empresa);
+        /* console.log('allProducts', Buffer.from(JSON.stringify(data))); */
+        const msg = "Solicitud de todos los productos con exito.";
+        console.log("Productos leidos con exito");
+
+        res.status(200).json({
+          message: msg,
+          data: data,
+        });
+      })
+      .catch(err => {
+        const msg = "Hubo un problema en alimentar la db";
+        console.log(msg, err);
+        res.status(500).json({ message: msg });
+        throw err;
       });
-    })
-    .catch(err => {
-      const msg = "Hubo un problema en alimentar la db";
-      console.log(msg, err);
-      res.status(500).json({ message: msg });
-      throw err;
-    });
+  }
 };

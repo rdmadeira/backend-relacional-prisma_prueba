@@ -39,7 +39,7 @@ export default [
         ...globals.node,
       },
 
-      ecmaVersion: 2020,
+      ecmaVersion: "latest",
       sourceType: "module",
 
       parserOptions: {

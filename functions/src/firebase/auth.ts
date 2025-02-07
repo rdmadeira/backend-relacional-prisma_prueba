@@ -30,7 +30,7 @@ async function request() {
   // to return the ID Token.
   const res = await client.request({ url });
   console.log(token);
-  console.log("res", res.config.headers);
+  console.log("res.config.headers", res.config.headers);
   return res.config.headers;
 }
 

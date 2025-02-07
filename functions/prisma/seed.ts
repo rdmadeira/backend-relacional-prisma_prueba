@@ -163,8 +163,8 @@ import {
   obtainDataFromXlsx,
   /* prepareDataToSeed, */
 } from "../src/utils/getDataFromXls.js";
-import fs from "fs";
-import path from "path";
+import * as fs from "fs";
+import * as path from "path";
 
 export const seedAll = async (data?: {
   tipo_producto: Tipo_producto[];
@@ -187,7 +187,7 @@ export const seedAll = async (data?: {
 
     fs.readFile(
       path.resolve("src", "xls", "importado_Tevelam_general.xlsx"),
-      async (err, data) => {
+      async (err: any | undefined, data: any) => {
         if (err) throw err;
 
         const flatData = await obtainDataFromXlsx(data);
@@ -260,22 +260,114 @@ export const seedAll = async (data?: {
   }
 };
 
-export const seedOne = async () => {
-  await prisma.codigo_Red.updateMany({
-    data: [
-      { marcaId: "discopro" },
-      { marcaId: "tevelam" },
-      { marcaId: "inexistente" },
-    ],
-  });
+export const seedOne = async (/* marcas: {
+  tevelam: string[];
+  discopro: string[];
+} */) => {
+  // SEED DE MARCA EN PRODUCTOS Y COD_RED:
+
+  fs.readFile(
+    path.resolve("src", "xls", "importado_Tevelam_general.xlsx"),
+    async (err: any | undefined, data: any) => {
+      if (err) throw err;
+
+      const flatData = await obtainDataFromXlsx(data);
+
+      const marcasTevelam: string[] = marcas.tevelam;
+      const marcasDiscopro: string[] = marcas.discopro;
+
+      const marcasTodas = marcasTevelam.concat(marcasDiscopro);
+      const marcasOR = marcasTodas.map((item: string) => {
+        return {
+          marca: item,
+        };
+      });
+      const marcasORCodRed = marcasTodas.map((item: string) => {
+        return {
+          marcaId: item,
+        };
+      });
+
+      const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+        product => {
+          const prodId = product.codigo_de_producto.replace(
+            product?.codigo_de_producto?.slice(12, 16),
+            "",
+          );
+
+          return [
+            prisma.producto.update({
+              where: {
+                id: prodId,
+                OR: marcasOR,
+              },
+              data: {
+                marca: product.marca,
+              },
+            }),
+            prisma.codigo_Red.update({
+              where: {
+                codigo: product.codigo_reducido,
+                OR: marcasORCodRed,
+              },
+              data: {
+                marcaId: product.marca,
+              },
+            }),
+          ];
+        },
+      );
+
+      await prisma.$transaction(arrayOftransactions);
+      return "successfull seedmarca";
+    },
+  );
+
+  // SEED DE EMPRESA:
+  /* await prisma.empresa.createMany({
+        data: [
+          { id: 1, empresa: "discopro" },
+          { id: 2, empresa: "tevelam" },
+          { id: 3, empresa: "inexistente" },
+          ],
+          }); */
+
+  /* ******************************************************************* */
+  // SEED DE MARCAS:
+  /* const arrayOfMarcas: { id: string; marca: string; empresaId: number }[] = [];
+
+  for (const key in marcas) {
+    // for...of no tiene in-built en typescript
+    const empresa = await prisma.empresa.findUnique({
+      where: {
+        empresa: key,
+      },
+    });
+    if (empresa) {
+      const marcasPorEmpresas: string[] = marcas[key as keyof typeof marcas];
+      marcasPorEmpresas.forEach(item =>
+        arrayOfMarcas.push({
+          id: item,
+          marca: item,
+          empresaId: empresa.id,
+        }),
+      );
+    }
+  }
+  console.log("arrayOfMarcas", arrayOfMarcas);
+
+  await prisma.marca.createMany({
+    data: arrayOfMarcas,
+  }); */
+  /* ******************************************************************* */
 
   console.log("terminado seedOne");
 };
-/*
-seedOne()
-  .then(() => console.log('ok'))
+
+seedOne(/* marcas */)
+  .then(() => console.log("ok"))
   .catch(error => error);
- */
+
 /* seedAll({
   tipo_producto: [
     {id: 'MR-AUD', tipo: 'MR-AUD'},

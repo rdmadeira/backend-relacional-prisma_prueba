@@ -228,8 +228,8 @@ export const prepareDataToSeed = (data: {
   return { productsToDB, codRedToDB, marcaToDB };
 };
 
-export const getProductsFromDB = async () => {
-  const allProducts = await readAllProducts();
+export const getProductsFromDB = async (empresa: string) => {
+  const allProducts = await readAllProducts(empresa);
 
   return allProducts;
 };
