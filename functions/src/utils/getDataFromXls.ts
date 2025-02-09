@@ -1,7 +1,14 @@
-import { utils, read, stream /* * as XLSX */ } from "xlsx/xlsx.mjs";
-import { WorkSheet } from "xlsx/types";
-import { Readable } from "stream";
+import /* { utils, read, stream } */ * as XLSX from "xlsx/xlsx.mjs";
 
+/* load 'fs' for readFile and writeFile support - https://www.npmjs.com/package/xlsx */
+XLSX.set_fs(fs);
+import * as fs from "fs";
+
+/* load 'stream' for stream support - https://www.npmjs.com/package/xlsx*/
+import { Readable } from "stream";
+XLSX.stream.set_readable(Readable);
+
+import { WorkSheet } from "xlsx/types";
 import {
   Product,
   CodigoReducido,
@@ -12,7 +19,7 @@ import { readAllProducts } from "../../prisma/read.js";
 
 //Cambio de Header para adaptarse a la DB:
 const adaptHeadersToDBKeys = (sheet: WorkSheet) => {
-  utils.sheet_add_aoa(sheet, [
+  XLSX.utils.sheet_add_aoa(sheet, [
     [
       "codigo_reducido",
       "tipo_de_producto",
@@ -40,12 +47,12 @@ export const obtainDataFromXlsx = async (
   productsToFlatArray: ProductExcelTotal[];
 }> => {
   // const xlsPath = path.resolve('src', 'xls');
-  const myFile = read(buffer /* xlsPath.concat('/' + xlsxName) */);
+  const myFile = XLSX.read(buffer /* xlsPath.concat('/' + xlsxName) */);
   const mySheet = myFile.Sheets["Hoja2"];
   adaptHeadersToDBKeys(mySheet);
 
   // Transformar en stream y leer la data:
-  const myFileStream: Readable = await stream.to_json(mySheet); // Stream lo hace mas rápido para archivos grandes
+  const myFileStream: Readable = await XLSX.stream.to_json(mySheet); // Stream lo hace mas rápido para archivos grandes
 
   const productsToFlatArray: ProductExcelTotal[] = [];
 

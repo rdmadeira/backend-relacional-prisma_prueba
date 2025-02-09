@@ -271,9 +271,11 @@ export const seedOne = async (/* marcas: {
     async (err: any | undefined, data: any) => {
       if (err) throw err;
 
+      console.log("data", data);
+
       const flatData = await obtainDataFromXlsx(data);
 
-      const marcasTevelam: string[] = marcas.tevelam;
+      /* const marcasTevelam: string[] = marcas.tevelam;
       const marcasDiscopro: string[] = marcas.discopro;
 
       const marcasTodas = marcasTevelam.concat(marcasDiscopro);
@@ -286,7 +288,7 @@ export const seedOne = async (/* marcas: {
         return {
           marcaId: item,
         };
-      });
+      }); */
 
       const arrayOftransactions = flatData.productsToFlatArray.flatMap(
         product => {
@@ -295,20 +297,28 @@ export const seedOne = async (/* marcas: {
             "",
           );
 
+          // El connect or create para cuando no existe data, estaba dando errores por no haber records
           return [
             prisma.producto.update({
               where: {
                 id: prodId,
-                OR: marcasOR,
               },
               data: {
-                marca: product.marca,
+                Marca: {
+                  connectOrCreate: {
+                    where: {
+                      marca: product.marca,
+                    },
+                    create: {
+                      marca: product.marca,
+                    },
+                  },
+                },
               },
             }),
-            prisma.codigo_Red.update({
+            prisma.codigo_Red.updateMany({
               where: {
-                codigo: product.codigo_reducido,
-                OR: marcasORCodRed,
+                productoId: prodId,
               },
               data: {
                 marcaId: product.marca,
@@ -364,9 +374,9 @@ export const seedOne = async (/* marcas: {
   console.log("terminado seedOne");
 };
 
-seedOne(/* marcas */)
-  .then(() => console.log("ok"))
-  .catch(error => error);
+// seedOne(/* marcas */)
+//   .then(() => console.log("ok"))
+//   .catch(error => error);
 
 /* seedAll({
   tipo_producto: [
