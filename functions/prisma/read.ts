@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const readAllProducts = async (empresa: string) => {
+export const readAllProducts = async (empresa: string, iscurrent: boolean) => {
   const empresaDB = await prisma.empresa.findUnique({
     where: {
       empresa: empresa,
@@ -15,6 +15,9 @@ export const readAllProducts = async (empresa: string) => {
       id: {
         not: undefined,
       },
+      OR: iscurrent
+        ? [{ is_current: true }]
+        : [{ is_current: true }, { is_current: false }],
       Marca: {
         empresaId: empresaDB?.id,
       },
@@ -23,6 +26,7 @@ export const readAllProducts = async (empresa: string) => {
       codigo_red: true,
       Marca: true,
     },
+    orderBy: [{ marca: "asc" }, { rubro: "asc" }],
   });
 
   return filteredProducts;

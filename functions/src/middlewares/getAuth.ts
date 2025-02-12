@@ -12,7 +12,6 @@ export const authenticator = async (
     req.headers.authorization.split(" ")[1];
 
   const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-  console.log("secret", secret);
 
   if (!jwtToken) {
     const notAuthorized = new Error("Not Authorized");

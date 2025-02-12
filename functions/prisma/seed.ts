@@ -264,9 +264,82 @@ export const seedOne = async (/* marcas: {
   tevelam: string[];
   discopro: string[];
 } */) => {
-  // SEED DE MARCA EN PRODUCTOS Y COD_RED:
+  // SEED RUBRO BY EXCEL:
+  /* fs.readFile(
+    path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
+    async (err: any | undefined, data: any) => {
+      if (err) throw err;
 
-  fs.readFile(
+      const flatData = await obtainDataFromXlsx(data);
+      const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+        product => {
+          const prodId = product.codigo_de_producto.replace(
+            product?.codigo_de_producto?.slice(12, 16),
+            "",
+          );
+
+          
+          return [
+            prisma.producto.updateMany({
+              where: { AND: [{ id: prodId }, { rubro: "" }] },
+              data: {
+                rubro: product.rubro || "",
+              },
+            }),
+          ];
+        },
+      );
+      await prisma.$transaction(arrayOftransactions);
+      return "successfull seedAll";
+    },
+  ); */
+
+  // SEED IS_CURRENT BY EXCEL:
+  /* fs.readFile(
+    path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
+    async (err: any | undefined, data: any) => {
+      if (err) throw err;
+
+      const flatData = await obtainDataFromXlsx(data);
+ */
+  /* const marcasTevelam: string[] = marcas.tevelam;
+      const marcasDiscopro: string[] = marcas.discopro;
+
+      const marcasTodas = marcasTevelam.concat(marcasDiscopro);
+ */
+  /* const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+        product => {
+          const prodId = product.codigo_de_producto.replace(
+            product?.codigo_de_producto?.slice(12, 16),
+            "",
+          );
+          console.log("product.is_current", product.is_current);
+
+          return [
+            prisma.producto.updateMany({
+              where: {
+                AND: [
+                  {
+                    id: prodId,
+                  },
+                  { is_current: false },
+                ],
+              },
+              data: {
+                is_current: product.is_current ? true : false,
+              },
+            }),
+          ];
+        },
+      );
+
+      await prisma.$transaction(arrayOftransactions);
+      return "successfull seedAll";
+    },
+  ); */
+
+  // SEED DE CONNECT DE MARCA EN PRODUCTOS Y COD_RED:
+  /* fs.readFile(
     path.resolve("src", "xls", "importado_Tevelam_general.xlsx"),
     async (err: any | undefined, data: any) => {
       if (err) throw err;
@@ -274,21 +347,6 @@ export const seedOne = async (/* marcas: {
       console.log("data", data);
 
       const flatData = await obtainDataFromXlsx(data);
-
-      /* const marcasTevelam: string[] = marcas.tevelam;
-      const marcasDiscopro: string[] = marcas.discopro;
-
-      const marcasTodas = marcasTevelam.concat(marcasDiscopro);
-      const marcasOR = marcasTodas.map((item: string) => {
-        return {
-          marca: item,
-        };
-      });
-      const marcasORCodRed = marcasTodas.map((item: string) => {
-        return {
-          marcaId: item,
-        };
-      }); */
 
       const arrayOftransactions = flatData.productsToFlatArray.flatMap(
         product => {
@@ -331,7 +389,7 @@ export const seedOne = async (/* marcas: {
       await prisma.$transaction(arrayOftransactions);
       return "successfull seedmarca";
     },
-  );
+  ); */
 
   // SEED DE EMPRESA:
   /* await prisma.empresa.createMany({

@@ -35,6 +35,7 @@ const adaptHeadersToDBKeys = (sheet: WorkSheet) => {
       "stock_disp",
       "stock_larp",
       "sku",
+      "is_current",
       "rubro",
     ],
   ]);
@@ -235,8 +236,8 @@ export const prepareDataToSeed = (data: {
   return { productsToDB, codRedToDB, marcaToDB };
 };
 
-export const getProductsFromDB = async (empresa: string) => {
-  const allProducts = await readAllProducts(empresa);
+export const getProductsFromDB = async (empresa: string, iscurrent: string) => {
+  const allProducts = await readAllProducts(empresa, JSON.parse(iscurrent));
 
   return allProducts;
 };

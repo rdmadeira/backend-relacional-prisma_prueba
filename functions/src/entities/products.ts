@@ -42,6 +42,7 @@ export interface ProductExcelTotal {
   stock_larp: number;
   sku: string;
   rubro: string | undefined;
+  is_current: boolean;
 }
 
 export interface Marca {

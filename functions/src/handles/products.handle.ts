@@ -79,7 +79,7 @@ export const getAllProductsHandle = (req: Request, res: Response) => {
   const { query } = req;
 
   if (query) {
-    getProductsFromDB(query.empresa as string)
+    getProductsFromDB(query.empresa as string, query.iscurrent as string)
       .then(data => {
         console.log("empresa", query.empresa);
         /* console.log('allProducts', Buffer.from(JSON.stringify(data))); */
