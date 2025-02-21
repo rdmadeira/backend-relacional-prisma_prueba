@@ -41,6 +41,7 @@ model Producto {
     sku            String?
     is_current     Boolean
     rubro          String
+    nombre         String         @default("")
     tipoId         String?
     tipo_producto  Tipo_producto? @relation(fields: [tipoId], references: [id])
     ConceptoId     String?

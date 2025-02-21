@@ -37,6 +37,7 @@ const adaptHeadersToDBKeys = (sheet: WorkSheet) => {
       "sku",
       "is_current",
       "rubro",
+      "nombre",
     ],
   ]);
 };
@@ -73,6 +74,7 @@ export const obtainDataFromXlsx = async (
           row.descripcion
         ) {
           productsToFlatArray.push(row);
+
           /* const {
             marca,
             descripcion,
@@ -142,6 +144,7 @@ export const obtainDataFromXlsx = async (
         /* console.log(
           `Codigos reducidos extraídos de Excel con suceso: ${codReducidoToFlatArray.length} códigos`,
         ); */
+
         return resolve({
           productsToFlatArray,
         });

@@ -264,6 +264,36 @@ export const seedOne = async (/* marcas: {
   tevelam: string[];
   discopro: string[];
 } */) => {
+  // SEED NOMBRE:
+  fs.readFile(
+    path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
+    async (err: any | undefined, data: any) => {
+      if (err) throw err;
+
+      const flatData = await obtainDataFromXlsx(data);
+      const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+        product => {
+          const prodId = product.codigo_de_producto.replace(
+            product?.codigo_de_producto?.slice(12, 16),
+            "",
+          );
+          // console.log("product.nombre", product.nombre);
+
+          return [
+            prisma.producto.updateMany({
+              where: { AND: [{ id: prodId }, { nombre: "" }] },
+              data: {
+                nombre: product.nombre || "",
+              },
+            }),
+          ];
+        },
+      );
+      await prisma.$transaction(arrayOftransactions);
+      return "successfull seedAll";
+    },
+  );
+
   // SEED RUBRO BY EXCEL:
   /* fs.readFile(
     path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),

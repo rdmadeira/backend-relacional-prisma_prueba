@@ -81,7 +81,7 @@ export const getAllProductsHandle = (req: Request, res: Response) => {
   if (query) {
     getProductsFromDB(query.empresa as string, query.iscurrent as string)
       .then(data => {
-        console.log("empresa", query.empresa);
+        console.log("query.empresa", query.empresa);
         /* console.log('allProducts', Buffer.from(JSON.stringify(data))); */
         const msg = "Solicitud de todos los productos con exito.";
         console.log("Productos leidos con exito");

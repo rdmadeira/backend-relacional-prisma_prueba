@@ -43,6 +43,7 @@ export interface ProductExcelTotal {
   sku: string;
   rubro: string | undefined;
   is_current: boolean;
+  nombre: string;
 }
 
 export interface Marca {
