@@ -6,6 +6,7 @@ import {
   createProductsAndCodRedToDBHandle,
   getAllProductsHandle,
 } from "../handles/products.handle.js";
+import { authenticator } from "../middlewares/getAuth.js";
 
 const router = Router();
 const storage = multer.memoryStorage();
@@ -17,6 +18,6 @@ router.post(
   updateProductsAndCodRedToDBHandle,
 );
 router.post("/create", createProductsAndCodRedToDBHandle);
-router.get("/", getAllProductsHandle);
+router.get("/", authenticator, getAllProductsHandle);
 
 export default router;

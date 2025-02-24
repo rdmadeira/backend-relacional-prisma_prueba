@@ -74,63 +74,6 @@ export const obtainDataFromXlsx = async (
           row.descripcion
         ) {
           productsToFlatArray.push(row);
-
-          /* const {
-            marca,
-            descripcion,
-            precio_usd,
-            precio_arg,
-            tasa_iva,
-            costo_repo_usd,
-            mkup,
-            stock_disp,
-            stock_larp,
-            sku,
-            tipo_de_producto: tipoId,
-            concepto: ConceptoId,
-            codigo_reducido,
-            codigo_de_producto,
-            rubro,
-          } = row;
-
-          const id = row?.codigo_de_producto?.replace(
-            row?.codigo_de_producto?.slice(12, 16),
-            '',
-          );
-
-          const product: Product = {
-            id,
-            marca,
-            descripcion: descripcion.replace(/\n/, ' '),
-            precio_usd,
-            precio_arg,
-            tasa_iva,
-            costo_repo_usd,
-            mkup,
-            stock_disp,
-            stock_larp,
-            sku: sku ? sku.toString() : null,
-            tipoId,
-            ConceptoId,
-            is_current: false,
-            rubro: rubro || '',
-          };
-
-          const codRed: CodigoReducido = {
-            codigo: codigo_reducido,
-            codigo_largo: codigo_de_producto,
-            stock_dis: stock_disp,
-            stock_lar: stock_larp,
-            productoId: id,
-          };
-
-          productsToFlatArray.push({
-            ...product,
-          });
-
-          codReducidoToFlatArray.push({
-            ...codRed,
-          }); */
         }
       })
       .on("error", error => {
@@ -141,9 +84,6 @@ export const obtainDataFromXlsx = async (
         console.log(
           `Productos extraídos de Excel con suceso: ${productsToFlatArray.length} productos`,
         );
-        /* console.log(
-          `Codigos reducidos extraídos de Excel con suceso: ${codReducidoToFlatArray.length} códigos`,
-        ); */
 
         return resolve({
           productsToFlatArray,
