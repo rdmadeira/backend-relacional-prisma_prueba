@@ -5,6 +5,7 @@ import cors from "cors";
 import { applicationDefault, initializeApp } from "firebase-admin/app";
 
 import routes from "./routes/index.js";
+import { errorHandler } from "./middlewares/errorsHandler.js";
 
 /* import serviceAccount from "./firebase/config.js";
 console.log("serviceAccount", serviceAccount); */
@@ -34,6 +35,8 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 app.use("/api/v1", routes);
+
+app.use(errorHandler as express.ErrorRequestHandler);
 
 ///////////////////////////////////////////////////////////////////////////
 import { onRequest } from "firebase-functions/v2/https";
