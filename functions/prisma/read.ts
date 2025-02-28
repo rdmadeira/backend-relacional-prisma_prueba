@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { prisma } from "./prismaClient.js";
 
 export const readAllProducts = async (empresa: string, iscurrent: boolean) => {
   const empresaDB = await prisma.empresa.findUnique({

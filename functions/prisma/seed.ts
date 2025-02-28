@@ -1,14 +1,8 @@
-import {
-  Concepto,
-  PrismaClient,
-  Tipo_producto,
-  Empresa,
-  Prisma,
-} from "@prisma/client";
-import { ProductExcelTotal } from "../src/entities/products.js";
+import { Concepto, Tipo_producto, Empresa, Prisma } from "@prisma/client";
+import { prisma } from "./prismaClient.js";
 
+import { ProductExcelTotal } from "../src/entities/products.js";
 //prismaClient tiene que ser de unica instancia para servers comunes:
-export const prisma = new PrismaClient();
 
 export async function createproductstoDB(flatData: {
   productsToFlatArray: ProductExcelTotal[];

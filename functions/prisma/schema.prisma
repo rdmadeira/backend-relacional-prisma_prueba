@@ -49,6 +49,7 @@ model Producto {
     codigo_red     Codigo_Red[]
     Marca          Marca?         @relation(fields: [marca], references: [marca])
     marca          String?
+    carrito        Carrito[]
 }
 
 model Concepto {
@@ -67,4 +68,31 @@ model Codigo_Red {
     Producto     Producto? @relation(fields: [productoId], references: [id])
     Marca        Marca?    @relation(fields: [marcaId], references: [marca])
     marcaId      String?
+}
+
+model Carrito {
+    id           String     @id @default(uuid())
+    cantidad     Int
+    HeaderForm   HeaderForm @relation(fields: [headerFormId], references: [id])
+    headerFormId String
+    Producto     Producto   @relation(fields: [productoId], references: [id])
+    productoId   String
+}
+
+model Order {
+    id           String     @id @default(uuid())
+    iat          Int
+    userId       String
+    HeaderForm   HeaderForm @relation(fields: [headerFormId], references: [id])
+    headerFormId String     @unique
+}
+
+model HeaderForm {
+    id            String    @id @default(uuid())
+    numerocliente String
+    cliente       String
+    condicion     String
+    obs           String
+    order         Order?
+    Carrito       Carrito[]
 }

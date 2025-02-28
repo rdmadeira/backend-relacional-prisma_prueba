@@ -44,13 +44,16 @@ export const authenticator = async (
     return next(notAuthorized);
   }
   try {
-    const ticket = client.verifyIdToken({
+    const ticket = await client.verifyIdToken({
       idToken: decode.payload.credential as string,
       audience: decode.payload.clienyId as string,
     });
-    const payload = (await ticket).getPayload();
+    const payload = ticket.getPayload();
 
     const userId = payload && payload["sub"];
+
+    const isTooLate = payload && payload["exp"] < payload["iat"];
+    console.log("isTooLate", isTooLate);
 
     if (!userId) {
       const notAuthorized = new NotAuthorizedError("Not Authorized!");
@@ -59,7 +62,10 @@ export const authenticator = async (
 
     return next();
   } catch (error) {
-    console.log("error", error);
-    next(error);
+    const notAuthorized = new NotAuthorizedError(
+      "Token expired. Please SignIn!",
+    );
+
+    return error && next(notAuthorized);
   }
 };

@@ -1,10 +1,13 @@
 import { Router, Request, Response } from "express";
 import productsRoutes from "./products.routes.js";
+import ordersRoutes from "./order.routes.js";
 import { authenticator } from "../middlewares/getAuth.js";
 
 const router = Router();
 
+//@ts-ignore
 router.use("/products", authenticator, productsRoutes);
+router.use("/orders", ordersRoutes);
 
 router.get("/", (req: Request, res: Response) => {
   res.status(200).json({
