@@ -14,19 +14,11 @@ export const createOrderHandle = async (req: Request, res: Response) => {
       obs: order.headerForm.obs,
     },
   });
-  console.log("headerForm", createdheaderForm);
 
-  const createdCarrito = await prisma.carrito.createManyAndReturn({
-    data: order.carrito.map(item => ({
-      headerFormId: createdheaderForm.id,
-      cantidad: item.cantidad,
-      productoId: item.productoId,
-    })),
-  });
   const createdOrder = await prisma.order.create({
     data: {
       userId: order.userId,
-      iat: Date.now() / 1000,
+      iat: Date.now(),
       headerFormId: createdheaderForm.id,
     },
     include: {
@@ -34,14 +26,28 @@ export const createOrderHandle = async (req: Request, res: Response) => {
     },
   });
 
-  console.log("createdCarrito", createdCarrito);
+  const createdCarrito = await prisma.carrito.createManyAndReturn({
+    data: order.carrito.map(item => ({
+      cantidad: item.cant,
+      productoId: item.id,
+      orderId: createdOrder.id,
+    })),
+    include: {
+      Producto: true,
+    },
+  });
 
-  console.log("createdOrder", createdOrder);
+  // https://stackoverflow.com/questions/75947475/prisma-typeerror-do-not-know-how-to-serialize-a-bigint
+  //@ts-ignore
+  BigInt.prototype.toJSON = function () {
+    const int = Number.parseInt(this.toString());
+    return int ?? this.toString();
+  };
 
   res.status(200).json({
     msg: "success",
     data: {
-      createdOrder: createdOrder,
+      order: createdOrder,
       carrito: createdCarrito,
     },
   });

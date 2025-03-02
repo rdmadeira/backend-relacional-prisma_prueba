@@ -71,28 +71,28 @@ model Codigo_Red {
 }
 
 model Carrito {
-    id           String     @id @default(uuid())
-    cantidad     Int
-    HeaderForm   HeaderForm @relation(fields: [headerFormId], references: [id])
-    headerFormId String
-    Producto     Producto   @relation(fields: [productoId], references: [id])
-    productoId   String
+    id         String   @id @default(uuid())
+    cantidad   Int
+    Producto   Producto @relation(fields: [productoId], references: [id])
+    productoId String
+    orderId    Int
+    Order      Order    @relation(fields: [orderId], references: [id])
 }
 
 model Order {
-    id           String     @id @default(uuid())
-    iat          Int
+    id           Int        @id @default(autoincrement())
+    iat          BigInt
     userId       String
     HeaderForm   HeaderForm @relation(fields: [headerFormId], references: [id])
     headerFormId String     @unique
+    carrito      Carrito[]
 }
 
 model HeaderForm {
-    id            String    @id @default(uuid())
+    id            String @id @default(uuid())
     numerocliente String
     cliente       String
     condicion     String
     obs           String
     order         Order?
-    Carrito       Carrito[]
 }

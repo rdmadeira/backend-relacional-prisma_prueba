@@ -7,7 +7,8 @@ const router = Router();
 
 //@ts-ignore
 router.use("/products", authenticator, productsRoutes);
-router.use("/orders", ordersRoutes);
+//@ts-ignore
+router.use("/orders", authenticator, ordersRoutes);
 
 router.get("/", (req: Request, res: Response) => {
   res.status(200).json({

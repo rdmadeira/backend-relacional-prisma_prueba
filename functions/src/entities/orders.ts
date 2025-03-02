@@ -13,7 +13,7 @@ export interface HeaderForm {
 }
 
 export interface Carrito {
-  productoId: string;
-  cantidad: number;
+  id: string;
+  cant: number;
   headerFormId: string;
 }
