@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response /* , NextFunction */ } from "express";
 import CustomError from "../errors/CustomError.js";
 
 // Express cuenta la cantidad de parametros de cada middleware.
@@ -7,7 +7,7 @@ export const errorHandler = (
   err: Error,
   req: Request,
   res: Response,
-  next: NextFunction,
+  /* next: NextFunction, */
 ) => {
   // Si es instancia de Custom Error, este creado por nosotros:
   if (err instanceof CustomError) {

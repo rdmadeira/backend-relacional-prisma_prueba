@@ -1,4 +1,4 @@
-import { Concepto, Tipo_producto, Empresa, Prisma } from "@prisma/client";
+import { /* Concepto, Tipo_producto, Empresa, */ Prisma } from "@prisma/client";
 import { prisma } from "./prismaClient.js";
 
 import { ProductExcelTotal } from "../src/entities/products.js";
@@ -153,14 +153,14 @@ export async function updateProductstoDB(data: {
   }
 }
 
-import {
+/* import {
   obtainDataFromXlsx,
-  /* prepareDataToSeed, */
+  
 } from "../src/utils/getDataFromXls.js";
 import * as fs from "fs";
-import * as path from "path";
+import * as path from "path"; */
 
-export const seedAll = async (data?: {
+/* export const seedAll = async (data?: {
   tipo_producto: Tipo_producto[];
   concepto: Concepto[];
   empresa: Empresa[];
@@ -252,42 +252,41 @@ export const seedAll = async (data?: {
     console.log("error", error);
     throw error;
   }
-};
+}; */
 
 export const seedOne = async (/* marcas: {
-  tevelam: string[];
-  discopro: string[];
-} */) => {
+   tevelam: string[];
+   discopro: string[];
+ } */) => {
   // SEED NOMBRE:
-  fs.readFile(
-    path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
-    async (err: any | undefined, data: any) => {
-      if (err) throw err;
-
-      const flatData = await obtainDataFromXlsx(data);
-      const arrayOftransactions = flatData.productsToFlatArray.flatMap(
-        product => {
-          const prodId = product.codigo_de_producto.replace(
-            product?.codigo_de_producto?.slice(12, 16),
-            "",
-          );
-          // console.log("product.nombre", product.nombre);
-
-          return [
-            prisma.producto.updateMany({
-              where: { AND: [{ id: prodId }, { nombre: "" }] },
-              data: {
-                nombre: product.nombre || "",
-              },
-            }),
-          ];
-        },
-      );
-      await prisma.$transaction(arrayOftransactions);
-      return "successfull seedAll";
-    },
-  );
-
+  // fs.readFile(
+  //   path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
+  //   async (err: any | undefined, data: any) => {
+  //     if (err) throw err;
+  //
+  //     const flatData = await obtainDataFromXlsx(data);
+  //     const arrayOftransactions = flatData.productsToFlatArray.flatMap(
+  //       product => {
+  //         const prodId = product.codigo_de_producto.replace(
+  //           product?.codigo_de_producto?.slice(12, 16),
+  //           "",
+  //         );
+  //         // console.log("product.nombre", product.nombre);
+  //
+  //         return [
+  //           prisma.producto.updateMany({
+  //             where: { AND: [{ id: prodId }, { nombre: "" }] },
+  //             data: {
+  //               nombre: product.nombre || "",
+  //             },
+  //           }),
+  //         ];
+  //       },
+  //     );
+  //     await prisma.$transaction(arrayOftransactions);
+  //     return "successfull seedAll";
+  //   },
+  // );
   // SEED RUBRO BY EXCEL:
   /* fs.readFile(
     path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
@@ -317,7 +316,6 @@ export const seedOne = async (/* marcas: {
       return "successfull seedAll";
     },
   ); */
-
   // SEED IS_CURRENT BY EXCEL:
   /* fs.readFile(
     path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
@@ -361,7 +359,6 @@ export const seedOne = async (/* marcas: {
       return "successfull seedAll";
     },
   ); */
-
   // SEED DE CONNECT DE MARCA EN PRODUCTOS Y COD_RED:
   /* fs.readFile(
     path.resolve("src", "xls", "importado_Tevelam_general.xlsx"),
@@ -414,7 +411,6 @@ export const seedOne = async (/* marcas: {
       return "successfull seedmarca";
     },
   ); */
-
   // SEED DE EMPRESA:
   /* await prisma.empresa.createMany({
         data: [
@@ -423,12 +419,48 @@ export const seedOne = async (/* marcas: {
           { id: 3, empresa: "inexistente" },
           ],
           }); */
-
   /* ******************************************************************* */
   // SEED DE MARCAS:
-  /* const arrayOfMarcas: { id: string; marca: string; empresaId: number }[] = [];
+  /* fs.readFile(
+    path.resolve("src", "xls", "importado_Tevelam_general_Discopro.xlsx"),
+    async (err: any | undefined, data: any) => {
+      if (err) throw err;
 
-  for (const key in marcas) {
+      const flatData = await obtainDataFromXlsx(data);
+
+      const arrayOfMarcas: string[] = [];
+      flatData.productsToFlatArray.forEach(item => {
+        if (!arrayOfMarcas.find(marca => marca === item.marca)) {
+          arrayOfMarcas.push(item.marca);
+        }
+      });
+      console.log("arrayOfMarcas", arrayOfMarcas);
+
+      const arrayOftransactions = arrayOfMarcas.flatMap(marca => {
+        return [
+          prisma.marca.upsert({
+            where: {
+              marca: marca,
+            },
+            create: {
+              marca: marca,
+              empresaId: null,
+            },
+            update: {
+              marca: marca,
+            },
+          }),
+        ];
+      });
+
+      await prisma.$transaction(arrayOftransactions);
+      console.log("terminado seedOne");
+
+      return "successfull seedmarca";
+    },
+  ); */
+  //
+  /* for (const key in marcas) {
     // for...of no tiene in-built en typescript
     const empresa = await prisma.empresa.findUnique({
       where: {
@@ -445,54 +477,41 @@ export const seedOne = async (/* marcas: {
         }),
       );
     }
-  }
-  console.log("arrayOfMarcas", arrayOfMarcas);
-
-  await prisma.marca.createMany({
-    data: arrayOfMarcas,
-  }); */
+  } */
+  //
   /* ******************************************************************* */
-
-  console.log("terminado seedOne");
+  //};
+  // seedOne(/* marcas */)
+  //   .then(() => console.log("ok"))
+  //   .catch(error => error);
+  //seedAll(/* {
+  //  tipo_producto: [
+  //    { id: "MR-AUD", tipo: "MR-AUD" },
+  //    { id: "MR-ILU", tipo: "MR-ILU" },
+  //    { id: "MR-INS", tipo: "MR-INS" },
+  //    { id: "MR-VID", tipo: "MR-VID" },
+  //  ],
+  //  concepto: [
+  //    { id: "GR105", concepto: "GR105" },
+  //    { id: "GR21", concepto: "GR21" },
+  //    { id: "GR21I", concepto: "GR21I" },
+  //  ],
+  //  empresa: [
+  //    { id: 1, empresa: "discopro" },
+  //    { id: 2, empresa: "tevelam" },
+  //    { id: 3, empresa: "inexistente" },
+  //  ],
+  //} */)
+  //  .then(() =>
+  //    console.log(
+  //      "created many empresa, marca, concepto, tipo_producto, productos, codigo_red on db",
+  //    ),
+  //  )
+  //  .catch(err => {
+  //    console.log("err", err);
+  //
+  //    throw err;
+  //  });
 };
 
-// seedOne(/* marcas */)
-//   .then(() => console.log("ok"))
-//   .catch(error => error);
-
-/* seedAll({
-  tipo_producto: [
-    {id: 'MR-AUD', tipo: 'MR-AUD'},
-    {id: 'MR-ILU', tipo: 'MR-ILU'},
-    {id: 'MR-INS', tipo: 'MR-INS'},
-    {id: 'MR-VID', tipo: 'MR-VID'},
-  ],
-  concepto: [
-    {id: 'GR105', concepto: 'GR105'},
-    {id: 'GR21', concepto: 'GR21'},
-    {id: 'GR21I', concepto: 'GR21I'},
-  ],
-  empresa: [
-    {id: 1, empresa: 'discopro'},
-    {id: 2, empresa: 'tevelam'},
-    {id: 3, empresa: 'inexistente'},
-  ],
-})
-  .then(() =>
-    console.log(
-      'created many empresa, marca, concepto, tipo_producto, productos, codigo_red on db',
-    ),
-  )
-  .catch(err => {
-    console.log('err', err);
-
-    throw err;
-  });
-*/
-/* seedAll()
-  .then(msg => console.log('updated codigo_red on db' + msg))
-  .catch(err => {
-    console.log('err', err);
-
-    throw err;
-  }); */
+// seedOne();

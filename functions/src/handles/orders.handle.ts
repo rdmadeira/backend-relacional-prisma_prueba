@@ -4,7 +4,6 @@ import { Order } from "../entities/orders.js";
 
 export const createOrderHandle = async (req: Request, res: Response) => {
   const order: Order = req.body;
-  console.log("order", order);
 
   const createdheaderForm = await prisma.headerForm.create({
     data: {
@@ -20,6 +19,7 @@ export const createOrderHandle = async (req: Request, res: Response) => {
       userId: order.userId,
       iat: Date.now(),
       headerFormId: createdheaderForm.id,
+      subtotal: order.subtotal,
     },
     include: {
       HeaderForm: true,

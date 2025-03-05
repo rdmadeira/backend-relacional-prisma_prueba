@@ -3,6 +3,7 @@ export interface Order {
   userId: string;
   carrito: Carrito[];
   headerForm: HeaderForm;
+  subtotal: number;
 }
 
 export interface HeaderForm {
@@ -16,4 +17,5 @@ export interface Carrito {
   id: string;
   cant: number;
   headerFormId: string;
+  precio_arg: number;
 }

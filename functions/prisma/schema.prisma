@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
     provider = "postgresql"
-    url      = env("DATABASE_URL")
+    url      = env("DATABASE_URL2")
 }
 
 model Marca {
@@ -83,6 +83,7 @@ model Order {
     id           Int        @id @default(autoincrement())
     iat          BigInt
     userId       String
+    subtotal     Float?
     HeaderForm   HeaderForm @relation(fields: [headerFormId], references: [id])
     headerFormId String     @unique
     carrito      Carrito[]
