@@ -1,5 +1,5 @@
 import { utils, readFile, stream /* * as XLSX */ } from "xlsx/xlsx.mjs";
-import { WorkSheet } from "xlsx/types";
+// import { WorkSheet } from "xlsx/types";
 
 import path from "path";
 import { Readable } from "stream";
@@ -11,7 +11,8 @@ import {
 } from "../entities/products.js";
 
 //Cambio de Header para adaptarse a la DB:
-const adaptHeadersToDBKeys = (sheet: WorkSheet) => {
+//@ts-ignore
+const adaptHeadersToDBKeys = sheet => {
   utils.sheet_add_aoa(sheet, [
     [
       "codigo_reducido",

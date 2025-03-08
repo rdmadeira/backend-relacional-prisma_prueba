@@ -15,6 +15,7 @@ firebase-debug.*.log*
 functions/lib/
 # Firebase cache
 .firebase/
+src/firebase
 
 # Firebase config
 /functions/src/firebase/privateKey.json

@@ -2,21 +2,15 @@ import express, { Application, Request, Response } from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors";
-// import { applicationDefault, initializeApp } from "firebase-admin/app";
+import { applicationDefault } from "firebase-admin/app";
 
 import routes from "./routes/index.js";
 import { errorHandler } from "./middlewares/errorsHandler.js";
 
-/* import serviceAccount from "./firebase/config.js";
-console.log("serviceAccount", serviceAccount); */
-
-//initializeApp({ credential: applicationDefault() }); // puse el comando en powershell $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Administrador\Downloads\tevelam-5c6b4-firebase-adminsdk-iit3y-d8193a4ed1.json"
-
 import admin from "firebase-admin";
-import serviceAccount from "C:\\Users\\Administrador\\Downloads\\tevelam-5c6b4-firebase-adminsdk-fbsvc-efea4ac616.json" with { type: "json" };
 
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.stringify(serviceAccount)),
+  credential: applicationDefault(),
 });
 
 const app: Application = express();
@@ -25,27 +19,38 @@ dotenv.config({ path: process.cwd() });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
-  res.header(
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Authorization, Origin, X-Requested-With, Content-Type, Accept",
+  );
+  res.setHeader(
     "Access-Control-Allow-Methods",
     "OPTIONS, DELETE, POST, GET, PATCH, PUT",
   );
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept",
-  );
-  res.set("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Max-Age", "3600");
+
   if (req.method === "OPTIONS") {
-    res.set("Access-Control-Allow-Methods", "GET");
-    res.set("Access-Control-Allow-Headers", "Content-Type");
-    res.set("Access-Control-Max-Age", "3600");
-    next();
+    console.log("req.method", req.method);
+
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "OPTIONS, DELETE, POST, GET, PATCH, PUT",
+    );
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Authorization, Origin, X-Requested-With, Content-Type, Accept",
+    );
+    res.setHeader("Access-Control-Max-Age", "3600");
+    res.status(204).send("OK");
   }
+  next();
 });
 const corsOptions = {
   origin: ["*"], // Whitelist domains
-  credentials: true, // Allow cookies and credentials
 };
 
+app.options("*", cors(corsOptions));
 app.use(cors(corsOptions));
 
 ///////////////////////////////////////////////////////////////////////////
@@ -68,7 +73,7 @@ import { onRequest } from "firebase-functions/v2/https";
 
 export const tevelamFunctions = onRequest(app);
 
-export const testFunctions = onRequest({}, (request, response) => {
+export const testFunctions = onRequest({ cors: true }, (request, response) => {
   response.set("Access-Control-Allow-Origin", "*");
   response.set("Access-Control-Allow-Headers", "Content-Type");
   response.set("Access-Control-Max-Age", "3600");

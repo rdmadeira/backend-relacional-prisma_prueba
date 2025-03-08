@@ -8,7 +8,7 @@ import * as fs from "fs";
 import { Readable } from "stream";
 XLSX.stream.set_readable(Readable);
 
-import { WorkSheet } from "xlsx/types";
+// import { WorkSheet } from "xlsx/types";
 import {
   Product,
   CodigoReducido,
@@ -18,7 +18,8 @@ import {
 import { readAllProducts } from "../../prisma/read.js";
 
 //Cambio de Header para adaptarse a la DB:
-const adaptHeadersToDBKeys = (sheet: WorkSheet) => {
+//@ts-ignore
+const adaptHeadersToDBKeys = sheet => {
   XLSX.utils.sheet_add_aoa(sheet, [
     [
       "codigo_reducido",

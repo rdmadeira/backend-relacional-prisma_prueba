@@ -1,8 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import * as jose from "jose";
 import { OAuth2Client } from "google-auth-library";
-const client = new OAuth2Client();
 import NotAuthorizedError from "../errors/NotAuthorizedError.js";
+
+const client = new OAuth2Client();
 
 export const authenticator = async (
   req: Request,
@@ -46,9 +47,10 @@ export const authenticator = async (
   try {
     const ticket = await client.verifyIdToken({
       idToken: decode.payload.credential as string,
-      audience: decode.payload.clienyId as string,
+      audience: decode.payload.clientId as string,
     });
     const payload = ticket.getPayload();
+    console.log("payload", payload);
 
     const userId = payload && payload["sub"];
 
@@ -60,6 +62,12 @@ export const authenticator = async (
       return next(notAuthorized);
     }
 
+    const authorizedUsers = ["rdmadeira2@gmail.com", "rodrigo@tevelam.com.ar"];
+
+    if (!authorizedUsers.find(userEmail => userEmail === payload.email)) {
+      const notAuthorized = new NotAuthorizedError("Not Authorized!");
+      return next(notAuthorized);
+    }
     return next();
   } catch (error) {
     const notAuthorized = new NotAuthorizedError(
