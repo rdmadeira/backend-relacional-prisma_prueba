@@ -49,8 +49,7 @@ export const obtainDataFromXlsx = async (
 ): Promise<{
   productsToFlatArray: ProductExcelTotal[];
 }> => {
-  // const xlsPath = path.resolve('src', 'xls');
-  const myFile = XLSX.read(buffer /* xlsPath.concat('/' + xlsxName) */);
+  const myFile = XLSX.read(buffer);
   const mySheet = myFile.Sheets["Hoja2"];
   adaptHeadersToDBKeys(mySheet);
 

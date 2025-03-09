@@ -50,7 +50,7 @@ export const authenticator = async (
       audience: decode.payload.clientId as string,
     });
     const payload = ticket.getPayload();
-    console.log("payload", payload);
+    /* console.log("payload", payload); */
 
     const userId = payload && payload["sub"];
 

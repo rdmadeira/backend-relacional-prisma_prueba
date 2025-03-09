@@ -79,6 +79,7 @@ export async function createproductstoDB(flatData: {
 
 import marcas from "../src/data/marcas.json" with { type: "json" };
 
+// Hacer una forma de bulk multiples rows with sql notation, timeout very large for firebase:
 export async function updateProductstoDB(data: {
   productsToFlatArray: ProductExcelTotal[];
 }) {
@@ -114,6 +115,7 @@ export async function updateProductstoDB(data: {
           where: {
             id: prodId,
             OR: marcasOR,
+            is_current: true,
           },
           data: {
             precio_arg: product.precio_arg,
@@ -123,7 +125,6 @@ export async function updateProductstoDB(data: {
             descripcion: product.descripcion,
             stock_disp: product.stock_disp,
             stock_larp: product.stock_larp,
-            is_current: true,
             rubro: product.rubro,
           },
         });
@@ -148,7 +149,7 @@ export async function updateProductstoDB(data: {
     console.log("terminó el upgrade a las " + new Date(Date.now()).toString());
     return "successful upgraded in updateProductsToDB";
   } catch (error) {
-    console.log("error a las " + new Date(Date.now()).toString(), error);
+    console.log("error a las " + new Date(Date.now()).toString());
     throw error;
   }
 }

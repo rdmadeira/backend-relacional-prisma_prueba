@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 // import os from 'os';
 
 import { createproductstoDB, updateProductstoDB } from "../../prisma/seed.js";
@@ -7,6 +7,8 @@ import {
   getProductsFromDB,
 } from "../utils/getDataFromXls.js";
 import { iFile } from "entities/products.js";
+
+import BadRequestError from "../errors/BadRequestError.js";
 
 // const tmpPath = os.tmpdir();
 
@@ -46,6 +48,7 @@ export const createProductsAndCodRedToDBHandle = (
 export const updateProductsAndCodRedToDBHandle = (
   req: Request,
   res: Response,
+  next: NextFunction,
 ) => {
   console.log("Inicio del update:... ", new Date(Date.now()).toString());
 
@@ -58,21 +61,24 @@ export const updateProductsAndCodRedToDBHandle = (
   buffer &&
     obtainDataFromXlsx(buffer)
       .then(flatdata => {
-        /* const dataToDB = prepareProductsToDB(flatdata); */
-
         updateProductstoDB(flatdata)
           .then(msg => {
             console.log(msg);
             res.status(200).json({ message: msg });
           })
           .catch((err: Error) => {
-            const msg = "Hubo un problema en alimentar la db";
-            console.log(msg, err);
-            res.status(500).json({ message: msg });
-            throw err;
+            console.log("err  ", err);
+
+            const obtainDataError = new BadRequestError(err.message);
+            return next(obtainDataError);
           });
       })
-      .catch(error => console.log("error", error));
+      .catch(error => {
+        console.log("error", error);
+
+        const obtainDataError = new BadRequestError(error.message);
+        return next(obtainDataError);
+      });
 };
 
 export const getAllProductsHandle = (req: Request, res: Response) => {
@@ -92,7 +98,7 @@ export const getAllProductsHandle = (req: Request, res: Response) => {
         });
       })
       .catch(err => {
-        const msg = "Hubo un problema en alimentar la db";
+        const msg = "Hubo un problema en consultar la db";
         console.log(msg, err);
         res.status(500).json({ message: msg });
         throw err;
