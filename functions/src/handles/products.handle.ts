@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from "express";
+import busboy from "busboy";
 // import os from 'os';
 
 import { createproductstoDB, updateProductstoDB } from "../../prisma/seed.js";
@@ -8,6 +9,10 @@ import {
 } from "../utils/getDataFromXls.js";
 import { iFile } from "entities/products.js";
 
+/* import path from "path";
+import os from "os";
+import fs from "fs";
+ */
 import BadRequestError from "../errors/BadRequestError.js";
 
 // const tmpPath = os.tmpdir();
@@ -45,40 +50,71 @@ export const createProductsAndCodRedToDBHandle = (
       .catch(error => console.log("error", error));
 };
 
-export const updateProductsAndCodRedToDBHandle = (
+export const updateProductsAndCodRedToDBHandle = async (
   req: Request,
   res: Response,
   next: NextFunction,
 ) => {
   console.log("Inicio del update:... ", new Date(Date.now()).toString());
+  const bb = busboy({ headers: req.headers });
+  /*  const uploads: {} = {}; */
 
-  const { buffer } = req.file || {
-    originalname: undefined,
-    mimetype: undefined,
-    buffer: undefined,
-  };
+  try {
+    bb.on("file", (name, file, info) => {
+      const { mimeType, filename, encoding } = info;
+      console.log(
+        `File: ${file}, filename: ${name}, encoding: ${encoding}, mimetipe: ${mimeType}`,
+      );
 
-  buffer &&
-    obtainDataFromXlsx(buffer)
-      .then(flatdata => {
-        updateProductstoDB(flatdata)
-          .then(msg => {
-            console.log(msg);
-            res.status(200).json({ message: msg });
-          })
-          .catch((err: Error) => {
-            console.log("err  ", err);
+      file
+        .on("data", (chunk: Buffer<ArrayBufferLike>) => {
+          console.log(`File ${filename} has ${chunk.length} bytes`);
+          console.log("chunk", chunk);
 
-            const obtainDataError = new BadRequestError(err.message);
-            return next(obtainDataError);
-          });
-      })
-      .catch(error => {
-        console.log("error", error);
+          /* const filepath = path.join(os.tmpdir(), fieldname);
+          uploads[fieldname] = { file: filepath };
+          console.log(`Saving '${fieldname}' to ${filepath}`);
+          file.pipe(fs.createWriteStream(filepath)); */
 
-        const obtainDataError = new BadRequestError(error.message);
-        return next(obtainDataError);
-      });
+          obtainDataFromXlsx(chunk)
+            .then(flatdata => {
+              updateProductstoDB(flatdata)
+                .then(msg => {
+                  console.log(msg);
+                  return res.json({ msg: "Updated with success!!" });
+                })
+                .catch((err: Error) => {
+                  console.log("err  ", err);
+
+                  const obtainDataError = new BadRequestError(err.message);
+                  return next(obtainDataError);
+                });
+            })
+            .catch(error => {
+              console.log("error", error);
+
+              const obtainDataError = new BadRequestError(error.message);
+              return next(obtainDataError);
+            });
+        })
+        .on("close", () => {
+          console.log(`File [${filename}] done`);
+        });
+    });
+
+    bb.on("close", () => {
+      console.log("upload Done!");
+    });
+    bb.on("finish", () => {
+      console.log("Finish upload Done!");
+    });
+
+    bb.end(req.body);
+    req.pipe(bb);
+    console.log("req.body", req.body, req.file);
+  } catch (error) {
+    console.log("error", error);
+  }
 };
 
 export const getAllProductsHandle = (req: Request, res: Response) => {

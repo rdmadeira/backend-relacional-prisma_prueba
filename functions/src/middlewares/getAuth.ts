@@ -69,11 +69,12 @@ export const authenticator = async (
       return next(notAuthorized);
     }
     return next();
-  } catch (error) {
+  } catch (err) {
     const notAuthorized = new NotAuthorizedError(
       "Token expired. Please SignIn!",
     );
+    console.log("err", err);
 
-    return error && next(notAuthorized);
+    return next(notAuthorized);
   }
 };

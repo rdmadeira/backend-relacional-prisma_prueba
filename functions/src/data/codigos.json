@@ -1,0 +1,6034 @@
+[
+  { "codigo": "F1250502006", "rubro": "Bafles", "modelo": "ACTION-512A" },
+  { "codigo": "F1250502007", "rubro": "Bafles", "modelo": "ACTION-515A" },
+  {
+    "codigo": "F1250502037",
+    "rubro": "Monitor de encenario",
+    "modelo": "EVENT-M210A-230"
+  },
+  {
+    "codigo": "F1250502008",
+    "rubro": "Monitor de encenario",
+    "modelo": "ACTION-M512A"
+  },
+  { "codigo": "F1250502026", "rubro": "Subwoofer", "modelo": "ACTION-S18A" },
+  { "codigo": "F1250502027", "rubro": "Bafles", "modelo": "ACTION-S218A-230" },
+  { "codigo": "F1250502003", "rubro": "Bafles", "modelo": "ALTEA-408A" },
+  { "codigo": "F1250502001", "rubro": "Bafles", "modelo": "ALTEA-412A" },
+  { "codigo": "F1250502002", "rubro": "Bafles", "modelo": "ALTEA-415A" },
+  { "codigo": "F1250502004", "rubro": "Bafles", "modelo": "ALTEA-712A" },
+  { "codigo": "F1250502005", "rubro": "Bafles", "modelo": "ALTEA-715A" },
+  {
+    "codigo": "F1250502013",
+    "rubro": "Sistema Portatil",
+    "modelo": "ALTEA-DUO-10A"
+  },
+  {
+    "codigo": "F1250502015",
+    "rubro": "Sistema Portatil",
+    "modelo": "ALTEA-DUO-20A"
+  },
+  { "codigo": "F1250502024", "rubro": "Subwoofer", "modelo": "ALTEA-S15A" },
+  { "codigo": "F1250502030", "rubro": "Subwoofer", "modelo": "VANTEC-118A" },
+  { "codigo": "F1250502009", "rubro": "Bafles", "modelo": "VANTEC-12A" },
+  { "codigo": "F1250502010", "rubro": "Bafles", "modelo": "VANTEC-15A" },
+  { "codigo": "F1250502028", "rubro": "Subwoofer", "modelo": "VANTEC-18A" },
+  { "codigo": "F1250502011", "rubro": "Line Array", "modelo": "VANTEC-20A" },
+  { "codigo": "F1250502012", "rubro": "Line Array", "modelo": "EVENT-26A" },
+  { "codigo": "F1250502017", "rubro": "Line Array", "modelo": "EVENT-28A" },
+  { "codigo": "F1250502038", "rubro": "Line Array", "modelo": "EVENT-210A" },
+  { "codigo": "F1250502018", "rubro": "Line Array", "modelo": "EVENT-212A" },
+  { "codigo": "F1250502031", "rubro": "Subwoofer", "modelo": "EVENT-115A" },
+  { "codigo": "F1250502032", "rubro": "Subwoofer", "modelo": "EVENT-118A" },
+  { "codigo": "F1250502033", "rubro": "Subwoofer", "modelo": "EVENT-218A" },
+  { "codigo": "F1250117003", "rubro": "Accesorios", "modelo": "AXS-EV26" },
+  { "codigo": "F1250117010", "rubro": "Accesorios", "modelo": "AXS-EV28" },
+  { "codigo": "F1250117009", "rubro": "Accesorios", "modelo": "AX-EV28" },
+  { "codigo": "F1250117002", "rubro": "Accesorios", "modelo": "AX-EV26" },
+  { "codigo": "F1250117037", "rubro": "Accesorios", "modelo": "AX-EV210" },
+  { "codigo": "F1250117016", "rubro": "Accesorios", "modelo": "AX-EV212" },
+  { "codigo": "F1250117031", "rubro": "Accesorios", "modelo": "AXC-ZT" },
+  { "codigo": "F1250117004", "rubro": "Accesorios", "modelo": "JP-EV26" },
+  { "codigo": "F1250117011", "rubro": "Accesorios", "modelo": "JP-EV28" },
+  { "codigo": "F1250117005", "rubro": "Accesorios", "modelo": "PL-EV26S" },
+  { "codigo": "F1250117012", "rubro": "Accesorios", "modelo": "PL-EV28S" },
+  { "codigo": "D1052302001", "rubro": "Monitores activos", "modelo": "T5V" },
+  { "codigo": "D1052302002", "rubro": "Monitores activos", "modelo": "T7V" },
+  { "codigo": "D1052302003", "rubro": "Monitores activos", "modelo": "T8V" },
+  { "codigo": "D1052302004", "rubro": "Monitores activos", "modelo": "T10S" },
+  {
+    "codigo": "T1002135006",
+    "rubro": "Monitores activos",
+    "modelo": "Reveal 802"
+  },
+  {
+    "codigo": "T1002135007",
+    "rubro": "Monitores activos",
+    "modelo": "Reveal 502"
+  },
+  {
+    "codigo": "T1002135008",
+    "rubro": "Monitores activos",
+    "modelo": "Reveal 402"
+  },
+  { "codigo": "F1002135001", "rubro": "Monitores activos", "modelo": "Gold 5" },
+  { "codigo": "F1002135002", "rubro": "Monitores activos", "modelo": "Gold 7" },
+  { "codigo": "T1002135004", "rubro": "Monitores activos", "modelo": "Gold 8" },
+  {
+    "codigo": "F1002135003",
+    "rubro": "Auriculares",
+    "modelo": "Life Buds Tws"
+  },
+  {
+    "codigo": "F1002135005",
+    "rubro": "Parlante portatil",
+    "modelo": "Live Mini"
+  },
+  { "codigo": "T0492027001", "rubro": "Consolas", "modelo": "M32" },
+  { "codigo": "T0492027002", "rubro": "Consolas", "modelo": "M32R" },
+  { "codigo": "F0492027014", "rubro": "Consolas", "modelo": "M32C" },
+  { "codigo": "T0492027012", "rubro": "Consolas", "modelo": "MR18" },
+  { "codigo": "T0492027011", "rubro": "Consolas", "modelo": "MR12" },
+  { "codigo": "T0492007003", "rubro": "Consolas", "modelo": "DM12" },
+  { "codigo": "T0492007004", "rubro": "Consolas", "modelo": "DM16" },
+  { "codigo": "T0490150002", "rubro": "Procesadores", "modelo": "DL16" },
+  { "codigo": "T0490150005", "rubro": "Procesadores", "modelo": "DL32" },
+  { "codigo": "T0491585005", "rubro": "Interfaz", "modelo": "DN4816-I" },
+  { "codigo": "T0491585006", "rubro": "Interfaz", "modelo": "DN4888" },
+  { "codigo": "F0371585004", "rubro": "Procesadores", "modelo": "DN9650" },
+  { "codigo": "T0371585011", "rubro": "Interfaz", "modelo": "DN32-WSG" },
+  {
+    "codigo": "T0371801001",
+    "rubro": "Preamplificadores",
+    "modelo": "Mic Booster CT-1"
+  },
+  { "codigo": "F0370116002", "rubro": "Caja directa", "modelo": "DI 10P" },
+  { "codigo": "F0371585010", "rubro": "Procesadores", "modelo": "DN9630" },
+  { "codigo": "F0490116001", "rubro": "Caja directa", "modelo": "DN100" },
+  { "codigo": "T0490116002", "rubro": "Caja directa", "modelo": "DN200" },
+  {
+    "codigo": "F1090175000",
+    "rubro": "Soporte de trompeta",
+    "modelo": "DS410B"
+  },
+  {
+    "codigo": "F1090175001",
+    "rubro": "Soporte de trombon",
+    "modelo": "DS420B"
+  },
+  { "codigo": "F1090175002", "rubro": "Soporte de saxo", "modelo": "DS431B" },
+  { "codigo": "F1090175003", "rubro": "Soporte de saxo", "modelo": "DS432B" },
+  { "codigo": "F1090175050", "rubro": "Soporte de saxo", "modelo": "DS561B" },
+  {
+    "codigo": "F1090175004",
+    "rubro": "Soporte de Clarinete",
+    "modelo": "DS440B"
+  },
+  {
+    "codigo": "F1090175005",
+    "rubro": "Soporte de flauta Traversa",
+    "modelo": "DS460B"
+  },
+  {
+    "codigo": "F1090175006",
+    "rubro": "Soporte de trompeta",
+    "modelo": "DS510BB"
+  },
+  { "codigo": "F1090175007", "rubro": "Soporte de Saxo", "modelo": "DS530BB" },
+  { "codigo": "F1090175008", "rubro": "Soporte de saxo", "modelo": "DS531BB" },
+  { "codigo": "F1090175009", "rubro": "Soporte de Saxo", "modelo": "DS532BB" },
+  { "codigo": "F1090175010", "rubro": "Soporte de Saxo", "modelo": "DS533BB" },
+  { "codigo": "F1090175011", "rubro": "Soporte de Saxo", "modelo": "DS535B" },
+  { "codigo": "F1090175012", "rubro": "Soporte de Corno", "modelo": "DS550BB" },
+  {
+    "codigo": "F1090175013",
+    "rubro": "Soporte para tuba",
+    "modelo": " DS552B"
+  },
+  { "codigo": "F1090175014", "rubro": "Soporte para tuba", "modelo": "DS553B" },
+  {
+    "codigo": "F1090175015",
+    "rubro": "Soporte para clarinete",
+    "modelo": "DS561BB"
+  },
+  {
+    "codigo": "F1090175016",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GSP38WBK PLUS"
+  },
+  {
+    "codigo": "F1090175052",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GSP38WBLT"
+  },
+  {
+    "codigo": "F1090175053",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GSP39WBLT"
+  },
+  { "codigo": "F1090175063", "rubro": "Accsesorio", "modelo": "HA205" },
+  {
+    "codigo": "F1090175017",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS301B"
+  },
+  {
+    "codigo": "F1090175018",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS302B"
+  },
+  {
+    "codigo": "F1090175019",
+    "rubro": "Soporte para guitarra",
+    "modelo": " GS401BB"
+  },
+  {
+    "codigo": "F1090175020",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS402BB"
+  },
+  {
+    "codigo": "F1090175021",
+    "rubro": "Soporte para guitarra",
+    "modelo": " GS414B"
+  },
+  {
+    "codigo": "F1090175051",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS414BLT"
+  },
+  {
+    "codigo": "F1090175055",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS412B PLUS"
+  },
+  {
+    "codigo": "F1090175062",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS523B"
+  },
+  {
+    "codigo": "F1090175057",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GS525B"
+  },
+  {
+    "codigo": "F1090175022",
+    "rubro": "Soporte para teclado",
+    "modelo": "KS100B"
+  },
+  {
+    "codigo": "F1090175023",
+    "rubro": "Soporte para teclado",
+    "modelo": "KS118B"
+  },
+  {
+    "codigo": "F1090175024",
+    "rubro": "Soporte para teclado",
+    "modelo": "KS120B"
+  },
+  {
+    "codigo": "F1090175025",
+    "rubro": "Soporte para teclado",
+    "modelo": " KS210B"
+  },
+  {
+    "codigo": "F1090175026",
+    "rubro": "Soporte para teclado",
+    "modelo": " KS400B"
+  },
+  {
+    "codigo": "F1090175027",
+    "rubro": "Soporte para teclado",
+    "modelo": "KS410B Z"
+  },
+  { "codigo": "F1090185001", "rubro": "Banqueta", "modelo": "KB200B" },
+  {
+    "codigo": "F1090175066",
+    "rubro": "Pie para microfono",
+    "modelo": "MS100B"
+  },
+  {
+    "codigo": "F1090175028",
+    "rubro": "Pie para microfono",
+    "modelo": "MS100B H"
+  },
+  {
+    "codigo": "F1090175067",
+    "rubro": "Pie para microfono",
+    "modelo": "MS300B"
+  },
+  {
+    "codigo": "F1090175029",
+    "rubro": "Pie para microfono",
+    "modelo": "MS401B"
+  },
+  {
+    "codigo": "F1090175030",
+    "rubro": "Pie para microfono",
+    "modelo": "MS432B"
+  },
+  {
+    "codigo": "F1090175070",
+    "rubro": "Pie para microfono",
+    "modelo": "MS434B"
+  },
+  {
+    "codigo": "F1090175031",
+    "rubro": "Pie para microfono",
+    "modelo": "MS533B"
+  },
+  {
+    "codigo": "F1090175032",
+    "rubro": "Pie para microfono",
+    "modelo": "MS540B"
+  },
+  {
+    "codigo": "F1090175060",
+    "rubro": "Pie para microfono",
+    "modelo": "MS300B"
+  },
+  {
+    "codigo": "F1090175059",
+    "rubro": "Pie para microfono",
+    "modelo": "MS202B"
+  },
+  {
+    "codigo": "F1090175058",
+    "rubro": "Pie para microfono",
+    "modelo": "MS201B PLUS"
+  },
+  {
+    "codigo": "F1090175061",
+    "rubro": "Pie para microfono",
+    "modelo": "MS120B"
+  },
+  {
+    "codigo": "F1090175054",
+    "rubro": "soporte microfono escritorio",
+    "modelo": "DG107B"
+  },
+  {
+    "codigo": "F1090175071",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG137B"
+  },
+  {
+    "codigo": "F1090175045",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG207B"
+  },
+  {
+    "codigo": "F1090175033",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG300B"
+  },
+  {
+    "codigo": "F1090175044",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG307B"
+  },
+  {
+    "codigo": "F1090175034",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG305B"
+  },
+  {
+    "codigo": "F1090175035",
+    "rubro": "Soportes accesorios",
+    "modelo": "DG400BB"
+  },
+  {
+    "codigo": "F1090175046",
+    "rubro": "Soportes accesorios",
+    "modelo": "MH200B"
+  },
+  {
+    "codigo": "F1090175069",
+    "rubro": "Atril de partitura",
+    "modelo": "BS010BB"
+  },
+  {
+    "codigo": "F1090175065",
+    "rubro": "Atril de partitura",
+    "modelo": "BS020BB"
+  },
+  {
+    "codigo": "F1090175047",
+    "rubro": "Atril de partitura",
+    "modelo": "BS030B"
+  },
+  {
+    "codigo": "F1090175036",
+    "rubro": "Atril de partitura",
+    "modelo": "BS050B"
+  },
+  {
+    "codigo": "F1090175037",
+    "rubro": "Atril de partitura",
+    "modelo": "BS100B"
+  },
+  {
+    "codigo": "F1090175038",
+    "rubro": "Atril de partitura",
+    "modelo": "BS118BB"
+  },
+  {
+    "codigo": "F1090175039",
+    "rubro": "Atril de partitura",
+    "modelo": "BS311B"
+  },
+  {
+    "codigo": "F1090175040",
+    "rubro": "Soporte para bafle",
+    "modelo": "SS200BB"
+  },
+  {
+    "codigo": "F1090175068",
+    "rubro": "Soporte para bafle",
+    "modelo": "SS350B"
+  },
+  {
+    "codigo": "F1090175056",
+    "rubro": "Soporte para luces",
+    "modelo": "LS700B"
+  },
+  {
+    "codigo": "F1090175041",
+    "rubro": "Soporte para bafle",
+    "modelo": "SS400B"
+  },
+  {
+    "codigo": "F1090175042",
+    "rubro": "Soporte para bafle",
+    "modelo": "SS410B"
+  },
+  {
+    "codigo": "F1090175043",
+    "rubro": "Soporte de Violin",
+    "modelo": "DS571BB"
+  },
+  { "codigo": "D0060129001", "rubro": "Cable Tester", "modelo": "DB-4U" },
+  { "codigo": "T0371585003", "rubro": "Procesadores", "modelo": "DN9610" },
+  { "codigo": "D0500153004", "rubro": "Motores", "modelo": "M1 - 8" },
+  { "codigo": "D0500153006", "rubro": "Motores", "modelo": "M1 - 12" },
+  {
+    "codigo": "D0500153001",
+    "rubro": "Motores",
+    "modelo": "V6 Smart Trifasico"
+  },
+  {
+    "codigo": "D0500153002",
+    "rubro": "Motores",
+    "modelo": "V6R Simple Trifasico"
+  },
+  { "codigo": "D0500153007", "rubro": "Motores", "modelo": "611 X" },
+  {
+    "codigo": "D0501053004",
+    "rubro": "Motores",
+    "modelo": "4-GROUP V6R/611X FC"
+  },
+  {
+    "codigo": "D0501053005",
+    "rubro": "Motores",
+    "modelo": "8-GROUP V6R/611X "
+  },
+  { "codigo": "D0500153003", "rubro": "Motores", "modelo": "M5-W" },
+  { "codigo": "D0501053001", "rubro": "Motores", "modelo": "4 Group M5-W" },
+  {
+    "codigo": "D0501053002",
+    "rubro": "Motores",
+    "modelo": "8 Group V6 Trifasico"
+  },
+  {
+    "codigo": "D0501053003",
+    "rubro": "Motores",
+    "modelo": "8 Group V6 Simple"
+  },
+  { "codigo": "F0060285016", "rubro": "Amplificadores", "modelo": "P-6000" },
+  { "codigo": "D0060207012", "rubro": "Amplificadores", "modelo": "H-4" },
+  { "codigo": "D0060207013", "rubro": "Amplificadores", "modelo": "H-8" },
+  { "codigo": "D0060207007", "rubro": "Amplificadores", "modelo": "H-12" },
+  { "codigo": "D0060207008", "rubro": "Amplificadores", "modelo": "H-18" },
+  { "codigo": "D0060207009", "rubro": "Amplificadores", "modelo": "H-20" },
+  { "codigo": "D0060207010", "rubro": "Amplificadores", "modelo": "H-24" },
+  { "codigo": "D0060207011", "rubro": "Amplificadores", "modelo": "H-36" },
+  { "codigo": "D0060207020", "rubro": "Amplificadores", "modelo": "H-50" },
+  { "codigo": "D0060207021", "rubro": "Amplificadores", "modelo": "H-66" },
+  { "codigo": "D0060207022", "rubro": "Amplificadores", "modelo": "H-80" },
+  { "codigo": "D0060207023", "rubro": "Amplificadores", "modelo": "T36" },
+  { "codigo": "D0062830001", "rubro": "Reproductor", "modelo": "PRE1" },
+  { "codigo": "D0060207015", "rubro": "Amplificadores", "modelo": "W-2" },
+  { "codigo": "D0060207014", "rubro": "Amplificadores", "modelo": "W-3,6" },
+  { "codigo": "D0060207016", "rubro": "Amplificadores", "modelo": "W-6" },
+  { "codigo": "D0060207017", "rubro": "Amplificadores", "modelo": "W-8" },
+  { "codigo": "D0060207001", "rubro": "Amplificadores", "modelo": "D-800" },
+  { "codigo": "D0060230001", "rubro": "Amplificadores", "modelo": "D-800 DSP" },
+  { "codigo": "D0060285001", "rubro": "Amplificadores", "modelo": "D-1000" },
+  { "codigo": "D0060285003", "rubro": "Amplificadores", "modelo": "D-4000" },
+  { "codigo": "D0060207018", "rubro": "Amplificadores", "modelo": "QX2" },
+  { "codigo": "D0060207019", "rubro": "Amplificadores", "modelo": "QX4" },
+  { "codigo": "D0062730003", "rubro": "Procesadores", "modelo": "DSP-24" },
+  { "codigo": "D0062730006", "rubro": "Procesadores", "modelo": "DSP-46" },
+  { "codigo": "D0062730007", "rubro": "Procesadores", "modelo": "DSP-8000" },
+  {
+    "codigo": "D0062731003",
+    "rubro": "Procesadores",
+    "modelo": "Apogee EQ-215 Equalizador"
+  },
+  {
+    "codigo": "D0062731004",
+    "rubro": "Procesadores",
+    "modelo": "EQ-231 Equalizador"
+  },
+  {
+    "codigo": "D0062722001",
+    "rubro": "Procesadores",
+    "modelo": "234XL Crossover"
+  },
+  {
+    "codigo": "D0062730002",
+    "rubro": "Procesadores",
+    "modelo": "EX3000 Exciter"
+  },
+  {
+    "codigo": "D0062730004",
+    "rubro": "Procesadores",
+    "modelo": "PA-Manager Audio Processor"
+  },
+  {
+    "codigo": "D0062730005",
+    "rubro": "Procesadores",
+    "modelo": "PA-260 Audio Processor"
+  },
+  { "codigo": "D0062007007", "rubro": "Consolas", "modelo": "Alive 4" },
+  { "codigo": "D0062007008", "rubro": "Consolas", "modelo": "Alive 6" },
+  { "codigo": "D0062007009", "rubro": "Consolas", "modelo": "Alive 8" },
+  { "codigo": "D0062068001", "rubro": "Consolas", "modelo": "PC-10" },
+  { "codigo": "D0062007001", "rubro": "Consolas", "modelo": "F4 Audio Mixer" },
+  { "codigo": "D0062007002", "rubro": "Consolas", "modelo": "F7 Audio Mixer" },
+  { "codigo": "D0062007004", "rubro": "Consolas", "modelo": "F8 Audio Mixer" },
+  { "codigo": "D0062007005", "rubro": "Consolas", "modelo": "F12 Audio Mixer" },
+  { "codigo": "D0062007006", "rubro": "Consolas", "modelo": "F16 Audio Mixer" },
+  {
+    "codigo": "D0061085001",
+    "rubro": "Controladores USB",
+    "modelo": "Digitrack PRO3"
+  },
+  {
+    "codigo": "D0061085005",
+    "rubro": "Controladores USB",
+    "modelo": "Digitrack PRO5"
+  },
+  {
+    "codigo": "D0061085006",
+    "rubro": "Controladores USB",
+    "modelo": "Digitrack PRO6"
+  },
+  { "codigo": "D0062841004", "rubro": "Bandeja tocadiscos", "modelo": "D1200" },
+  { "codigo": "F0200560004", "rubro": "Bafle instalacion", "modelo": "AMB6-B" },
+  {
+    "codigo": "F0200560005",
+    "rubro": "Bafle instalacion",
+    "modelo": "AMB6T-B"
+  },
+  { "codigo": "F0200560006", "rubro": "Bafle instalacion", "modelo": "AMB6-W" },
+  {
+    "codigo": "F0200560007",
+    "rubro": "Bafle instalacion",
+    "modelo": "AMB6T-W"
+  },
+  { "codigo": "D0200115001", "rubro": "Cubre cable", "modelo": "CC21" },
+  { "codigo": "D0200115002", "rubro": "Cubre cable", "modelo": "CC51" },
+  { "codigo": "D0200115003", "rubro": "Cubre cable", "modelo": "CC245" },
+  { "codigo": "D0200115004", "rubro": "Cubre cable", "modelo": " CC5225" },
+  {
+    "codigo": "F0200502001",
+    "rubro": "Line array",
+    "modelo": "Line One Activo"
+  },
+  { "codigo": "F0200560002", "rubro": "Accesorios", "modelo": "DFX Bumper" },
+  {
+    "codigo": "D0200502006",
+    "rubro": "Line array",
+    "modelo": "Line Two Activo"
+  },
+  {
+    "codigo": "D0200117002",
+    "rubro": "Line array",
+    "modelo": "Line Two Flybar"
+  },
+  { "codigo": "D0200502007", "rubro": "Subwoofer", "modelo": "Line Sub 18" },
+  { "codigo": "D0200117005", "rubro": "Subwoofer", "modelo": "Line Sub Cover" },
+  { "codigo": "F0200117004", "rubro": "Accesorios", "modelo": "Line Sub Car" },
+  {
+    "codigo": "F0200117010",
+    "rubro": "Line array",
+    "modelo": "LINE FOUR FLYBAR"
+  },
+  { "codigo": "F0200502012", "rubro": "Line array", "modelo": "LINE FOUR" },
+  {
+    "codigo": "F0200117008",
+    "rubro": "Line array",
+    "modelo": "LINE THREE FLYBAR"
+  },
+  { "codigo": "F0200502010", "rubro": "Line array", "modelo": "LINE THREE" },
+  { "codigo": "F0200502011", "rubro": "Subwoofer", "modelo": "LINE THREE SUB" },
+  {
+    "codigo": "F0200117006",
+    "rubro": "Line array",
+    "modelo": "LINE ZERO FLYBAR"
+  },
+  { "codigo": "F0200502008", "rubro": "Line array", "modelo": "LINE ZERO" },
+  { "codigo": "F0200502009", "rubro": "Subwoofer", "modelo": "LINE ZERO SUB" },
+  { "codigo": "F0200560003", "rubro": "Subwoofer", "modelo": "DFX Vulcano" },
+  {
+    "codigo": "F0200502013",
+    "rubro": "Monitor de encenario",
+    "modelo": "MONITOR 12"
+  },
+  { "codigo": "D0200502003", "rubro": "Bafles", "modelo": "Neo 15" },
+  { "codigo": "D0200502004", "rubro": "Bafles", "modelo": "Nox 15" },
+  { "codigo": "D0200502005", "rubro": "Bafles", "modelo": "Nox 12" },
+  {
+    "codigo": "F0200502002",
+    "rubro": "Monitor de encenario",
+    "modelo": "DFX Monitor"
+  },
+  { "codigo": "D0064002008", "rubro": "Bafles", "modelo": "BT 115 activo" },
+  { "codigo": "D0064002019", "rubro": "Bafles", "modelo": "BT-115 V2.0" },
+  { "codigo": "F0060560010", "rubro": "Bafles", "modelo": "APG 15" },
+  { "codigo": "D0064002004", "rubro": "Bafles", "modelo": "BT 210 activo" },
+  { "codigo": "D0064002005", "rubro": "Bafles", "modelo": "BT 215 activo" },
+  { "codigo": "D0064002006", "rubro": "Bafles", "modelo": "BT 515 activo" },
+  { "codigo": "D0064002007", "rubro": "Subwoofer", "modelo": "BT 518 activo" },
+  { "codigo": "F0060502006", "rubro": "Bafles", "modelo": "A15 Activo" },
+  { "codigo": "F0060502009", "rubro": "Bafles", "modelo": "A15 Activo MDP" },
+  { "codigo": "F0060560005", "rubro": "Bafles", "modelo": "A15" },
+  { "codigo": "F0060560011", "rubro": "Bafles", "modelo": "A15 MDP" },
+  { "codigo": "F0060560001", "rubro": "Bafles", "modelo": "A215" },
+  { "codigo": "F0060560012", "rubro": "Bafles", "modelo": "A215 MDP" },
+  { "codigo": "F0060560006", "rubro": "Bafles", "modelo": "A18" },
+  { "codigo": "F0060560013", "rubro": "Subwoofer", "modelo": "A18 MDP" },
+  { "codigo": "F0060502004", "rubro": "Subwoofer", "modelo": "A18 ACTIVO" },
+  { "codigo": "F0060502010", "rubro": "Subwoofer", "modelo": "A18 ACTIVO MDP" },
+  { "codigo": "F0060502005", "rubro": "Subwoofer", "modelo": "A21 ACTIVO" },
+  { "codigo": "F0060502011", "rubro": "Subwoofer", "modelo": "A21 ACTIVO MDP" },
+  {
+    "codigo": "F0200560001",
+    "rubro": "Sistema Portatil",
+    "modelo": "DFX Array"
+  },
+  {
+    "codigo": "F0200502015",
+    "rubro": "Subwoofer",
+    "modelo": "DFX Array Sub 15"
+  },
+  {
+    "codigo": "F0200502014",
+    "rubro": "Subwoofer",
+    "modelo": "DFX Array Sub 18"
+  },
+  {
+    "codigo": "D0060117014",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "172U"
+  },
+  {
+    "codigo": "D0060117008",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "173U"
+  },
+  {
+    "codigo": "D0060117009",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "174U"
+  },
+  {
+    "codigo": "D0060117010",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "176U"
+  },
+  {
+    "codigo": "D0060117011",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "178U"
+  },
+  {
+    "codigo": "D0060117006",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "1710U"
+  },
+  {
+    "codigo": "D0060117007",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "1712U"
+  },
+  {
+    "codigo": "D0060117021",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "82U"
+  },
+  {
+    "codigo": "D0060117022",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "83U"
+  },
+  {
+    "codigo": "D0060117023",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "84U"
+  },
+  {
+    "codigo": "D0060117024",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "86U"
+  },
+  {
+    "codigo": "D0060117025",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "88U"
+  },
+  {
+    "codigo": "D0060117020",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "810U"
+  },
+  {
+    "codigo": "D0060117030",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "MIX12U"
+  },
+  {
+    "codigo": "D0060117028",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "MIC-9"
+  },
+  {
+    "codigo": "D0060117026",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "MIC-12"
+  },
+  {
+    "codigo": "D0060117027",
+    "rubro": "Fight cases y rackeras",
+    "modelo": "MIC-12H"
+  },
+  {
+    "codigo": "D0060164001",
+    "rubro": "Soporte para bafle",
+    "modelo": "Kit 2XP"
+  },
+  { "codigo": "D0060164002", "rubro": "Soporte para bafle", "modelo": "XP" },
+  { "codigo": "D0060175001", "rubro": "Soportes", "modelo": "Kit 2XM" },
+  { "codigo": "D0062369006", "rubro": "Drivers", "modelo": "C44T" },
+  { "codigo": "D0062369003", "rubro": "Drivers", "modelo": "PA34E" },
+  { "codigo": "D0062369001", "rubro": "Parlantes PA", "modelo": "AP10" },
+  { "codigo": "D0062369002", "rubro": "Parlantes PA", "modelo": "AP12" },
+  { "codigo": "D0062369004", "rubro": "Parlantes PA", "modelo": "AP15" },
+  { "codigo": "F0062369012", "rubro": "Parlantes PA", "modelo": "Animale 15" },
+  { "codigo": "D0062369005", "rubro": "Parlantes PA", "modelo": "AP18" },
+  { "codigo": "D0062369015", "rubro": "Parlantes PA", "modelo": "AP21" },
+  { "codigo": "D0990344001", "rubro": "Auriculares", "modelo": "K-140BT" },
+  { "codigo": "D0990305001", "rubro": "Auriculares", "modelo": "K-250S" },
+  { "codigo": "D0990344002", "rubro": "Auriculares", "modelo": " K-340BT" },
+  { "codigo": "D0990344003", "rubro": "Auriculares", "modelo": "K-740NC" },
+  { "codigo": "D0990344004", "rubro": "Auriculares", "modelo": "TWS-K1" },
+  { "codigo": "D0992302002", "rubro": "Monitores activos", "modelo": "MK-3" },
+  { "codigo": "D0992302003", "rubro": "Monitores activos", "modelo": "MK-4" },
+  { "codigo": "D0992302004", "rubro": "Monitores activos", "modelo": "MK-5" },
+  {
+    "codigo": "D0064002012",
+    "rubro": "Monitores activos",
+    "modelo": "Studio 4"
+  },
+  {
+    "codigo": "D0064002013",
+    "rubro": "Monitores activos",
+    "modelo": "Studio 5"
+  },
+  {
+    "codigo": "D0064002014",
+    "rubro": "Monitores activos",
+    "modelo": "Studio 6"
+  },
+  { "codigo": "D0064002016", "rubro": "Monitores activos", "modelo": "Sono 5" },
+  { "codigo": "D0064002017", "rubro": "Monitores activos", "modelo": "Sono 7" },
+  {
+    "codigo": "D0064002018",
+    "rubro": "Monitores activos",
+    "modelo": "Sono 10"
+  },
+  {
+    "codigo": "D0064002015",
+    "rubro": "Monitores activos",
+    "modelo": "Towerstick 12"
+  },
+  { "codigo": "D0061585002", "rubro": "Placas usb", "modelo": "iM2" },
+  { "codigo": "D0061585003", "rubro": "Placas usb", "modelo": "iM22" },
+  { "codigo": "D0061585005", "rubro": "Placas usb", "modelo": "iM32" },
+  { "codigo": "D0061585006", "rubro": "Placas usb", "modelo": "iM44" },
+  {
+    "codigo": "D0062044001",
+    "rubro": "Controladores USB",
+    "modelo": "Intermix DJ"
+  },
+  { "codigo": "D0062007010", "rubro": "Micro Mixer", "modelo": "MM-4" },
+  {
+    "codigo": "D0061805001",
+    "rubro": "Micrófonos dinámicos",
+    "modelo": "U-57"
+  },
+  {
+    "codigo": "D0061805002",
+    "rubro": "Micrófonos dinámicos",
+    "modelo": "U-BETA"
+  },
+  {
+    "codigo": "D0061805003",
+    "rubro": "Micrófonos dinámicos",
+    "modelo": "U-58 KIT"
+  },
+  {
+    "codigo": "D0060175002",
+    "rubro": "Micrófonos dinámicos",
+    "modelo": "U-KIT"
+  },
+  {
+    "codigo": "D0061807002",
+    "rubro": "Micrófonos condenser",
+    "modelo": "C-06"
+  },
+  {
+    "codigo": "D0061807003",
+    "rubro": "Micrófonos condenser",
+    "modelo": "C-06 KIT"
+  },
+  {
+    "codigo": "D0061807005",
+    "rubro": "Micrófonos condenser",
+    "modelo": "C05 USB KIT"
+  },
+  {
+    "codigo": "D0061807006",
+    "rubro": "Micrófonos condenser",
+    "modelo": "C08 USB KIT"
+  },
+  {
+    "codigo": "D0061807007",
+    "rubro": "Micrófonos condenser",
+    "modelo": "PH USB"
+  },
+  { "codigo": "D0060129005", "rubro": "Antena", "modelo": " U-ANT RB" },
+  { "codigo": "D0060129004", "rubro": "Antena", "modelo": "U-ANT 1" },
+  {
+    "codigo": "D0060129003",
+    "rubro": "Distribuidor de Antenas",
+    "modelo": "U-DISTRIBUTOR"
+  },
+  {
+    "codigo": "D0061844019",
+    "rubro": "Receptor inalámbrico",
+    "modelo": "U-R4"
+  },
+  {
+    "codigo": "D0061844018",
+    "rubro": "Receptor inalámbrico",
+    "modelo": "U-R8"
+  },
+  {
+    "codigo": "D0061844024",
+    "rubro": "Receptor inalámbrico",
+    "modelo": "U-MBP"
+  },
+  {
+    "codigo": "D0061844021",
+    "rubro": "Transmisor inalámbrico",
+    "modelo": "Apogee U-RB"
+  },
+  {
+    "codigo": "D0061844020",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U-RH"
+  },
+  {
+    "codigo": "D0061844022",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": " U-RD"
+  },
+  {
+    "codigo": "D0061844023",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": " U-RL"
+  },
+  {
+    "codigo": "D0061844012",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U11 H"
+  },
+  {
+    "codigo": "D0061844013",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U11 V"
+  },
+  {
+    "codigo": "D0061844014",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U12 H"
+  },
+  {
+    "codigo": "D0061844015",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U22 H"
+  },
+  {
+    "codigo": "D0061844017",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U42 HTD"
+  },
+  {
+    "codigo": "D0061844016",
+    "rubro": "Micrófonos inalambricos UHF",
+    "modelo": "U32 H"
+  },
+  {
+    "codigo": "D0061844011",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "Apogee U-Monitor / IN EAR"
+  },
+  {
+    "codigo": "D0061844001",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "U-Camera"
+  },
+  {
+    "codigo": "D0061844010",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "U-Skin"
+  },
+  {
+    "codigo": "D0060209003",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "PSC-800"
+  },
+  {
+    "codigo": "D0060209001",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "HA-120"
+  },
+  { "codigo": "D0060115001", "rubro": "Cables", "modelo": "XLR 1" },
+  { "codigo": "D0060115002", "rubro": "Cables", "modelo": "XLR 6" },
+  { "codigo": "D0060115003", "rubro": "Cables", "modelo": "XLR 10" },
+  { "codigo": "D0060115004", "rubro": "Cables", "modelo": "PLUG-6" },
+  {
+    "codigo": "D0991979001",
+    "rubro": "Controladores midi",
+    "modelo": "Kontrol Key 25"
+  },
+  {
+    "codigo": "D0991979002",
+    "rubro": "Controladores midi",
+    "modelo": "Kontrol Key 49"
+  },
+  {
+    "codigo": "D0991979003",
+    "rubro": "Controladores midi",
+    "modelo": "Kontrol Key 61"
+  },
+  {
+    "codigo": "D0991979005",
+    "rubro": "Controladores midi",
+    "modelo": "Kontrol Key 61 Pro"
+  },
+  {
+    "codigo": "D0991979006",
+    "rubro": "Controladores midi",
+    "modelo": "Kontrol Key 88 Pro"
+  },
+  {
+    "codigo": "D0541085003",
+    "rubro": "Controladores midi",
+    "modelo": "Impulse 25"
+  },
+  {
+    "codigo": "D0541085004",
+    "rubro": "Controladores midi",
+    "modelo": "Impulse 49"
+  },
+  {
+    "codigo": "D0541085005",
+    "rubro": "Controladores midi",
+    "modelo": "Impulse 61"
+  },
+  {
+    "codigo": "D0541085051",
+    "rubro": "Controladores midi",
+    "modelo": "FLkey Mini"
+  },
+  {
+    "codigo": "D0541085052",
+    "rubro": "Controladores midi",
+    "modelo": "FLkey 37"
+  },
+  {
+    "codigo": "D0541085057",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey Mini 25 MK4"
+  },
+  {
+    "codigo": "D0541085058",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey Mini 37 MK4"
+  },
+  {
+    "codigo": "D0541085043",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey Mini MK3"
+  },
+  {
+    "codigo": "D0541085059",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 25 MK4"
+  },
+  {
+    "codigo": "D0541085044",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 25 MK3"
+  },
+  {
+    "codigo": "D0541085060",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 37 MK4"
+  },
+  {
+    "codigo": "D0541085047",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 37 MK3"
+  },
+  {
+    "codigo": "D0541085061",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 49 MK4"
+  },
+  {
+    "codigo": "D0541085045",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 49 MK3"
+  },
+  {
+    "codigo": "D0541085062",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 61 MK4"
+  },
+  {
+    "codigo": "D0541085046",
+    "rubro": "Controladores midi",
+    "modelo": "Launchkey 61 MK3"
+  },
+  {
+    "codigo": "D0541085037",
+    "rubro": "Controladores midi",
+    "modelo": "49SL MK3"
+  },
+  {
+    "codigo": "D0541085038",
+    "rubro": "Controladores midi",
+    "modelo": "61SL MK3"
+  },
+  {
+    "codigo": "D0541085021",
+    "rubro": "Controladores USB",
+    "modelo": "Launch Control XL"
+  },
+  {
+    "codigo": "D0541085024",
+    "rubro": "Controladores USB",
+    "modelo": "Launchpad Mini MKII"
+  },
+  {
+    "codigo": "D0541085042",
+    "rubro": "Controladores USB",
+    "modelo": "Launchpad Mini MK3"
+  },
+  {
+    "codigo": "D0541085016",
+    "rubro": "Controladores USB",
+    "modelo": "Launchpad X"
+  },
+  {
+    "codigo": "D0541085014",
+    "rubro": "Controladores USB",
+    "modelo": "Launchpad PRO"
+  },
+  {
+    "codigo": "D0541085018",
+    "rubro": "Sintetizador",
+    "modelo": "BASS STATION II"
+  },
+  { "codigo": "D0540185001", "rubro": "Sintetizador", "modelo": "MININOVA" },
+  { "codigo": "D0541085002", "rubro": "Sintetizador", "modelo": "Circuit" },
+  {
+    "codigo": "D0541085050",
+    "rubro": "Sintetizador",
+    "modelo": "Circuit Tracks"
+  },
+  {
+    "codigo": "D0541085041",
+    "rubro": "Sintetizador",
+    "modelo": "Circuit Mono Station"
+  },
+  {
+    "codigo": "D0541085053",
+    "rubro": "Sintetizador",
+    "modelo": "Circuit Rhythm"
+  },
+  { "codigo": "D0261585087", "rubro": "Interfaz", "modelo": "Vocaster One" },
+  {
+    "codigo": "D0261585088",
+    "rubro": "Interfaz",
+    "modelo": "Vocaster One Studio"
+  },
+  { "codigo": "D0261585089", "rubro": "Interfaz", "modelo": "Vocaster Two" },
+  {
+    "codigo": "D0261585090",
+    "rubro": "Interfaz",
+    "modelo": "Vocaster Two Studio"
+  },
+  {
+    "codigo": "D0261585091",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett Solo (4ta Generación)"
+  },
+  {
+    "codigo": "D0261585093",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett                                Solo Studio (4ta Generación)"
+  },
+  {
+    "codigo": "D0261585064",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett Solo Studio (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585092",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 2i2 (4ta Generación)"
+  },
+  {
+    "codigo": "F0261585065",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 2i2 (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585094",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett                                    2i2 Studio (4ta Generación)"
+  },
+  {
+    "codigo": "D0261585066",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 2i2 Studio (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585067",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 4i4 (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585068",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 8i6 (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585069",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 18i8 (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585070",
+    "rubro": "Placas usb",
+    "modelo": "Scarlett 18i20 (3ra Generación)"
+  },
+  {
+    "codigo": "D0261585001",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett 8 Pre Thunderbolt"
+  },
+  {
+    "codigo": "D0261585014",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett 8 PreX Thunderbolt"
+  },
+  {
+    "codigo": "D0261585082",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett 2 Pre USB+"
+  },
+  {
+    "codigo": "D0261585083",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett 4 Pre USB+"
+  },
+  {
+    "codigo": "D0261585084",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett 8 Pre USB+"
+  },
+  {
+    "codigo": "D0261585086",
+    "rubro": "Preamplificadores",
+    "modelo": "Clarett OctoPre +"
+  },
+  {
+    "codigo": "D0261585032",
+    "rubro": "Preamplificadores",
+    "modelo": "Scarlett OctoPre"
+  },
+  {
+    "codigo": "D0261585053",
+    "rubro": "Preamplificadores",
+    "modelo": "Scarlett OctoPre Dynamic"
+  },
+  {
+    "codigo": "D0261585016",
+    "rubro": "Preamplificadores",
+    "modelo": "ISA 430 MKII"
+  },
+  {
+    "codigo": "D0262706001",
+    "rubro": "Preamplificadores",
+    "modelo": "ISA 828"
+  },
+  {
+    "codigo": "D0262706002",
+    "rubro": "Preamplificadores",
+    "modelo": "ISA One Analog\r\nVER VIDEO"
+  },
+  {
+    "codigo": "D0262706003",
+    "rubro": "Preamplificadores",
+    "modelo": "ISA TWO"
+  },
+  {
+    "codigo": "D0261585020",
+    "rubro": "Preamplificadores",
+    "modelo": "Liquid Channel"
+  },
+  {
+    "codigo": "D0142369029",
+    "rubro": "Parlantes para bajo",
+    "modelo": "Pulse 10"
+  },
+  {
+    "codigo": "D0142369030",
+    "rubro": "Parlantes para bajo",
+    "modelo": "Pulse 12"
+  },
+  {
+    "codigo": "D0142369031",
+    "rubro": "Parlantes para bajo",
+    "modelo": "Pulse 15"
+  },
+  {
+    "codigo": "D0142346010",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12T-75"
+  },
+  {
+    "codigo": "D0142346011",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Rocket-50"
+  },
+  {
+    "codigo": "D0142346012",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Seventy-80"
+  },
+  {
+    "codigo": "D0142346013",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Super 65"
+  },
+  {
+    "codigo": "D0142346014",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Vintage 30"
+  },
+  {
+    "codigo": "D0142346015",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Vintage 30 16 Ohms"
+  },
+  {
+    "codigo": "D0142346003",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "Classic Lead 80"
+  },
+  {
+    "codigo": "D0142346006",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12H 70Th"
+  },
+  {
+    "codigo": "D0142346005",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12H 70Th"
+  },
+  {
+    "codigo": "D0142346007",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12M Creamback"
+  },
+  {
+    "codigo": "D0142346009",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12M Greenback"
+  },
+  {
+    "codigo": "D0142346008",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G12M Greenback 16 Ohm"
+  },
+  {
+    "codigo": "D0142346004",
+    "rubro": "Parlantes para guitarra",
+    "modelo": "G-12 V-Type"
+  },
+  { "codigo": "D0592284012", "rubro": "Bar Led", "modelo": "PLS-108W" },
+  { "codigo": "D0590177026", "rubro": "Bar Led", "modelo": "PLS-54W" },
+  { "codigo": "D0590177027", "rubro": "Bar Led", "modelo": "PLS YLL-012-3W" },
+  { "codigo": "D0590177029", "rubro": "Bar Led", "modelo": "PLS IPB-1" },
+  { "codigo": "D0590177030", "rubro": "Bar Led", "modelo": "IPB-2 " },
+  {
+    "codigo": "D0592211005",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 60 KIT (10R BWS)"
+  },
+  {
+    "codigo": "D0592214001",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 59 KIT (8R Beam)"
+  },
+  {
+    "codigo": "D0592211010",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 62 KIT (17R BWS )"
+  },
+  {
+    "codigo": "D0592214004",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 62 BWS"
+  },
+  {
+    "codigo": "D0592284017",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS-360W Zoom"
+  },
+  { "codigo": "D0592284019", "rubro": "Cabezales moviles", "modelo": "MW-1R" },
+  {
+    "codigo": "D0592284013",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS-324W"
+  },
+  {
+    "codigo": "D0592284018",
+    "rubro": "Cabezales moviles",
+    "modelo": "IPM-1940"
+  },
+  {
+    "codigo": "D0592211015",
+    "rubro": "Cabezales moviles",
+    "modelo": "IPM-380"
+  },
+  {
+    "codigo": "D0592211016",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 12R"
+  },
+  {
+    "codigo": "D0592211014",
+    "rubro": "Cabezales moviles",
+    "modelo": "BEAM 200 (7R)"
+  },
+  {
+    "codigo": "D0591785041",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 7R MINI"
+  },
+  {
+    "codigo": "D0592214003",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 54 (7R BWS)"
+  },
+  {
+    "codigo": "D0592284009",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 54 BWS"
+  },
+  {
+    "codigo": "D0592211011",
+    "rubro": "Cabezales moviles",
+    "modelo": "7R KIT (Beam)"
+  },
+  {
+    "codigo": "D0592211008",
+    "rubro": "Cabezales moviles",
+    "modelo": "Sunburst 5R"
+  },
+  {
+    "codigo": "D0593149002",
+    "rubro": "Cabezales moviles",
+    "modelo": "IPW-400"
+  },
+  { "codigo": "D0593149001", "rubro": "Cabezales moviles", "modelo": "PLS 61" },
+  {
+    "codigo": "D0591785032",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 57 KIT"
+  },
+  { "codigo": "D0592284005", "rubro": "Cabezales moviles", "modelo": "PLS 50" },
+  { "codigo": "D0592284006", "rubro": "Cabezales moviles", "modelo": "PLS 64" },
+  {
+    "codigo": "D0592284011",
+    "rubro": "Cabezales moviles",
+    "modelo": "Diamond 18"
+  },
+  {
+    "codigo": "D0592284004",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 360 ZOOM"
+  },
+  { "codigo": "D0592284002", "rubro": "Cabezales moviles", "modelo": "PLS 30" },
+  {
+    "codigo": "D0592277007",
+    "rubro": "Cabezales moviles",
+    "modelo": "PLS 30S"
+  },
+  {
+    "codigo": "D0592284008",
+    "rubro": "Cabezales moviles",
+    "modelo": "Kamaleon (YLL-017)"
+  },
+  { "codigo": "D0590175001", "rubro": "Clamps", "modelo": "ROP01" },
+  { "codigo": "D0590175002", "rubro": "Clamps", "modelo": "LH02 C-CLAMP" },
+  { "codigo": "D0590175003", "rubro": "Clamps", "modelo": "LH02 C-CLAMP" },
+  { "codigo": "D0590128008", "rubro": "Cables DMX", "modelo": "DMX 004" },
+  { "codigo": "D0590128003", "rubro": "Cables DMX", "modelo": "DMX 004 3m" },
+  { "codigo": "D0590128002", "rubro": "Cables DMX", "modelo": "DMX 004 6m" },
+  { "codigo": "D0590128001", "rubro": "Cables DMX", "modelo": "DMX 15mts" },
+  {
+    "codigo": "D0591185002",
+    "rubro": "Controladoras dmx",
+    "modelo": "DMX 1612"
+  },
+  { "codigo": "D0591185006", "rubro": "Controladoras dmx", "modelo": "DMX 32" },
+  {
+    "codigo": "D0591185005",
+    "rubro": "Controladoras dmx",
+    "modelo": "X512 CONTROLLER"
+  },
+  {
+    "codigo": "D0591185007",
+    "rubro": "Controladoras dmx",
+    "modelo": "LiteCraft Mini"
+  },
+  {
+    "codigo": "D0591185008",
+    "rubro": "Controladoras dmx",
+    "modelo": "LiteCraft 192"
+  },
+  {
+    "codigo": "D0591185009",
+    "rubro": "Controladoras dmx",
+    "modelo": "LiteCraft 384"
+  },
+  {
+    "codigo": "D0591185010",
+    "rubro": "Controladoras dmx",
+    "modelo": "LiteCraft 512"
+  },
+  {
+    "codigo": "D0591185011",
+    "rubro": "Controladoras dmx",
+    "modelo": "LiteCraft 1024"
+  },
+  { "codigo": "D0591185012", "rubro": "Splitter", "modelo": "DD-4U" },
+  { "codigo": "D0591185013", "rubro": "Splitter", "modelo": "DD-8U" },
+  { "codigo": "D0591485001", "rubro": "Maquinas de humo", "modelo": "F-500" },
+  { "codigo": "D0591485003", "rubro": "Maquinas de humo", "modelo": "F-1000" },
+  { "codigo": "D0591485004", "rubro": "Maquinas de humo", "modelo": "F-1500" },
+  { "codigo": "D0591485005", "rubro": "Maquinas de humo", "modelo": "F-2000" },
+  {
+    "codigo": "D0591485006",
+    "rubro": "Maquinas de humo",
+    "modelo": "F-900 Hazer"
+  },
+  { "codigo": "D0591485002", "rubro": "Maquinas de humo", "modelo": "CF-2000" },
+  { "codigo": "D0591485007", "rubro": "Maquinas de humo", "modelo": "FL-1500" },
+  { "codigo": "D0591485008", "rubro": "Maquinas de humo", "modelo": "FL-2000" },
+  { "codigo": "D0591485009", "rubro": "Maquinas de humo", "modelo": "BF-1200" },
+  { "codigo": "D0591485010", "rubro": "Maquinas de humo", "modelo": "B-100" },
+  {
+    "codigo": "D0591485011",
+    "rubro": "Maquinas de humo",
+    "modelo": "PLM-300 FAZER"
+  },
+  {
+    "codigo": "D0591485012",
+    "rubro": "Maquinas de humo",
+    "modelo": "I-180 FAZER"
+  },
+  { "codigo": "D0590177001", "rubro": "Cob Led", "modelo": "PLS 51" },
+  { "codigo": "D0593249014", "rubro": "Strobos", "modelo": " MF-960" },
+  { "codigo": "D0593249013", "rubro": "Strobos", "modelo": "IPF-960" },
+  { "codigo": "D0593249006", "rubro": "Strobos", "modelo": "Strobo BF 1500" },
+  {
+    "codigo": "D0593249007",
+    "rubro": "Strobos",
+    "modelo": "Strobo BF 1500 DMX"
+  },
+  { "codigo": "D0593249011", "rubro": "Strobos", "modelo": "PLS 58 STROBO" },
+  {
+    "codigo": "D0593249012",
+    "rubro": "Strobos",
+    "modelo": "PLS YHLL-001Z0288"
+  },
+  { "codigo": "D0590177025", "rubro": "Par Led", "modelo": "PLS-360W" },
+  { "codigo": "D0590177002", "rubro": "Par Led", "modelo": "PLS 55 FLAT" },
+  { "codigo": "D0590177024", "rubro": "Par Led", "modelo": "PLS 59 FLAT" },
+  { "codigo": "D0590177028", "rubro": "Par Led", "modelo": "PLS IPL-18" },
+  {
+    "codigo": "D0591785009",
+    "rubro": "Par Led",
+    "modelo": "Par 543 (2nd Gen)\r\nVER VIDEO"
+  },
+  { "codigo": "D0591785050", "rubro": "Par Led", "modelo": "PLS-PAR 546 FLAT" },
+  { "codigo": "D0591785052", "rubro": "Par Led", "modelo": "PLS-PAR 544" },
+  { "codigo": "D0591785046", "rubro": "Par Led", "modelo": "PLS 56 FLAT" },
+  { "codigo": "D0591785047", "rubro": "Par Led", "modelo": "PLS 52" },
+  { "codigo": "D0591785048", "rubro": "Par Led", "modelo": "PLS 270W" },
+  { "codigo": "D0591785044", "rubro": "Par Led", "modelo": "180W" },
+  { "codigo": "D0591785003", "rubro": "Par Led", "modelo": "PLS 206" },
+  {
+    "codigo": "D0591785008",
+    "rubro": "Par Led",
+    "modelo": "Par 363\r\nVER VIDEO"
+  },
+  { "codigo": "D0591785007", "rubro": "Par Led", "modelo": "Par 361 RGB" },
+  { "codigo": "D0591785002", "rubro": "Par Led", "modelo": "PLS 14" },
+  { "codigo": "D0591785001", "rubro": "Par Led", "modelo": "PLS 13" },
+  { "codigo": "D0591785005", "rubro": "Par Led", "modelo": "PAR 181" },
+  {
+    "codigo": "T0810602009",
+    "rubro": "Cajas activas",
+    "modelo": "TFX 122M-AN"
+  },
+  {
+    "codigo": "T0810602008",
+    "rubro": "Cajas activas",
+    "modelo": "TFX 152M-AN"
+  },
+  { "codigo": "T0810602011", "rubro": "Cajas activas", "modelo": "iQ 8" },
+  { "codigo": "T0810602017", "rubro": "Cajas activas", "modelo": "iQ 10" },
+  { "codigo": "T0810602006", "rubro": "Cajas activas", "modelo": "iQ 12" },
+  { "codigo": "T0810602015", "rubro": "Cajas activas", "modelo": "iQ 15" },
+  { "codigo": "T0810602016", "rubro": "Cajas activas", "modelo": "iQ 18B" },
+  { "codigo": "T0810602013", "rubro": "Cajas activas", "modelo": "NuQ 82-AN" },
+  { "codigo": "T0810602010", "rubro": "Cajas activas", "modelo": "NuQ 102-AN" },
+  { "codigo": "T0810602012", "rubro": "Cajas activas", "modelo": "NuQ 122-AN" },
+  { "codigo": "T0810602014", "rubro": "Cajas activas", "modelo": "NuQ 152-AN" },
+  { "codigo": "T0810602002", "rubro": "Cajas activas", "modelo": "Milan M10" },
+  { "codigo": "T0810602003", "rubro": "Cajas activas", "modelo": "Milan M12" },
+  { "codigo": "T0810602004", "rubro": "Cajas activas", "modelo": "Milan M15" },
+  { "codigo": "T0810602005", "rubro": "Cajas activas", "modelo": "Milan M18B" },
+  { "codigo": "T0814002008", "rubro": "Cajas activas", "modelo": "IP 500" },
+  { "codigo": "T0814002006", "rubro": "Cajas activas", "modelo": "IP 1000" },
+  { "codigo": "T0814002007", "rubro": "Cajas activas", "modelo": "IP 2000" },
+  { "codigo": "T0814002009", "rubro": "Cajas activas", "modelo": "IP 3000" },
+  { "codigo": "T0092027016", "rubro": "Consola Digital", "modelo": "Wing" },
+  {
+    "codigo": "F0090185011",
+    "rubro": "Tarjeta digital",
+    "modelo": "Wing-Dante"
+  },
+  { "codigo": "T0092027010", "rubro": "Consola Digital", "modelo": "XR12" },
+  { "codigo": "T0092027011", "rubro": "Consola Digital", "modelo": "XR16" },
+  { "codigo": "T0092027012", "rubro": "Consola Digital", "modelo": "XR18" },
+  { "codigo": "T0092027021", "rubro": "Consola Digital", "modelo": "Flow 8" },
+  { "codigo": "T0092027006", "rubro": "Consola Digital", "modelo": "X-32" },
+  {
+    "codigo": "T0092027005",
+    "rubro": "Consola Digital",
+    "modelo": "X-32 Compact"
+  },
+  {
+    "codigo": "F0092027014",
+    "rubro": "Consola Digital",
+    "modelo": "X-32 Compact TP"
+  },
+  {
+    "codigo": "T0092027002",
+    "rubro": "Consola Digital",
+    "modelo": "X-32 Producer"
+  },
+  {
+    "codigo": "F0092027007",
+    "rubro": "Consola Digital",
+    "modelo": "X-32 Producer TP"
+  },
+  {
+    "codigo": "T0092027008",
+    "rubro": "Consola Digital",
+    "modelo": "X-32 Rack"
+  },
+  { "codigo": "T0090150003", "rubro": "Manguera digital", "modelo": "S32" },
+  { "codigo": "T0090150002", "rubro": "Manguera digital", "modelo": "S16" },
+  { "codigo": "T0090150004", "rubro": "Manguera digital", "modelo": "SD8" },
+  { "codigo": "T0090185008", "rubro": "Tarjeta digital", "modelo": "X-Live" },
+  { "codigo": "T0090185009", "rubro": "Tarjeta digital", "modelo": "X-Dante" },
+  { "codigo": "T0090185006", "rubro": "Tarjeta digital", "modelo": "X-USB" },
+  {
+    "codigo": "T0092730010",
+    "rubro": "Procesadores de efectos",
+    "modelo": "Powerplay 16 P16-I"
+  },
+  {
+    "codigo": "T0092027001",
+    "rubro": "Procesadores de efectos",
+    "modelo": "Powerplay 16 P16-M"
+  },
+  {
+    "codigo": "T0092730009",
+    "rubro": "Procesadores de efectos",
+    "modelo": "Powerplay 16 P16-D"
+  },
+  { "codigo": "T0092007022", "rubro": "Consola", "modelo": "Xenyx 302USB" },
+  { "codigo": "F0092007023", "rubro": "Consola", "modelo": "Xenyx 502" },
+  { "codigo": "T0092007058", "rubro": "Consola", "modelo": "Xenyx 502 S" },
+  { "codigo": "F0092007028", "rubro": "Consola", "modelo": "Xenyx Q502USB" },
+  { "codigo": "T0092007057", "rubro": "Consola", "modelo": "Xenyx QX602mp3" },
+  { "codigo": "F0092007024", "rubro": "Consola", "modelo": "Xenyx 802" },
+  { "codigo": "T0092007059", "rubro": "Consola", "modelo": "Xenyx 802 S" },
+  { "codigo": "F0092007029", "rubro": "Consola", "modelo": "Xenyx Q802USB" },
+  { "codigo": "T0092007016", "rubro": "Consola", "modelo": "Xenyx 1002" },
+  { "codigo": "T0092007017", "rubro": "Consola", "modelo": "Xenyx 1002B" },
+  { "codigo": "T0092007060", "rubro": "Consola", "modelo": "Xenyx 1002SFX " },
+  { "codigo": "F0092007018", "rubro": "Consola", "modelo": "Xenyx 1002FX" },
+  { "codigo": "F0092007025", "rubro": "Consola", "modelo": "Xenyx Q1002USB" },
+  { "codigo": "F0092007030", "rubro": "Consola", "modelo": "Xenyx QX1002USB" },
+  { "codigo": "T0092007061", "rubro": "Consola", "modelo": "Xenyx 1003B" },
+  { "codigo": "F0092007019", "rubro": "Consola", "modelo": "Xenyx 1202" },
+  { "codigo": "T0092007020", "rubro": "Consola", "modelo": "Xenyx 1202FX" },
+  { "codigo": "T0092007062", "rubro": "Consola", "modelo": "Xenyx 1202SFX" },
+  { "codigo": "F0092007026", "rubro": "Consola", "modelo": "Xenyx Q1202USB" },
+  { "codigo": "F0092007031", "rubro": "Consola", "modelo": "Xenyx QX1202USB" },
+  { "codigo": "T0092007021", "rubro": "Consola", "modelo": "Xenyx 1204USB" },
+  { "codigo": "T0092007040", "rubro": "Consola", "modelo": "Xenyx X1204 USB" },
+  { "codigo": "T0092007027", "rubro": "Consola", "modelo": "Xenyx Q1204 USB" },
+  { "codigo": "T0092007032", "rubro": "Consola", "modelo": "Xenyx QX1204 USB" },
+  { "codigo": "F0092007041", "rubro": "Consola", "modelo": "Xenyx X1222USB" },
+  { "codigo": "T0092007033", "rubro": "Consola", "modelo": "Xenyx QX1222USB" },
+  { "codigo": "F0092007056", "rubro": "Consola", "modelo": "RX1602" },
+  {
+    "codigo": "T0092730015",
+    "rubro": "Mezclador de zonas",
+    "modelo": "ZMX8210"
+  },
+  { "codigo": "T0092007042", "rubro": "Consola", "modelo": "Xenyx X1622USB" },
+  { "codigo": "T0092007034", "rubro": "Consola", "modelo": "Xenyx QX1622USB" },
+  { "codigo": "T0092007043", "rubro": "Consola", "modelo": "Xenyx X1832 USB" },
+  { "codigo": "T0092007035", "rubro": "Consola", "modelo": "Xenyx QX1832USB" },
+  { "codigo": "T0092007044", "rubro": "Consola", "modelo": "Xenyx X2222USB" },
+  { "codigo": "T0092007036", "rubro": "Consola", "modelo": "Xenyx QX2222USB" },
+  { "codigo": "T0092007045", "rubro": "Consola", "modelo": "Xenyx X2442USB" },
+  { "codigo": "T0092007037", "rubro": "Consola", "modelo": "Xenyx QX2442USB" },
+  {
+    "codigo": "F0092007012",
+    "rubro": "Consola",
+    "modelo": "Eurodesk SX3242FX"
+  },
+  {
+    "codigo": "F0092007013",
+    "rubro": "Consola",
+    "modelo": "Eurodesk SX3242FX"
+  },
+  {
+    "codigo": "T0092068008",
+    "rubro": "Cabezal amplificado",
+    "modelo": "PMP550M"
+  },
+  {
+    "codigo": "F0092068009",
+    "rubro": "Cabezal amplificado",
+    "modelo": "PMP580S"
+  },
+  {
+    "codigo": "T0092068006",
+    "rubro": "Cabezal amplificado",
+    "modelo": "PMP500"
+  },
+  {
+    "codigo": "T0092068013",
+    "rubro": "Cabezal amplificado",
+    "modelo": "PMP2000D"
+  },
+  {
+    "codigo": "T0092068005",
+    "rubro": "Mixer Amplificado",
+    "modelo": "PMP4000"
+  },
+  {
+    "codigo": "T0092068010",
+    "rubro": "Mixer Amplificado",
+    "modelo": "PMP6000"
+  },
+  {
+    "codigo": "F0090602013",
+    "rubro": "Sistemas Portables",
+    "modelo": "MPA40BT"
+  },
+  {
+    "codigo": "T0090660016",
+    "rubro": "Sistemas Portables",
+    "modelo": "PPA200"
+  },
+  { "codigo": "T0090660022", "rubro": "Cajas activas", "modelo": "PK115A" },
+  {
+    "codigo": "F0090602001",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B115 MP3"
+  },
+  {
+    "codigo": "F0090602011",
+    "rubro": "Monitores Activos",
+    "modelo": "Eurolive F1320D"
+  },
+  {
+    "codigo": "F0094002015",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B215D"
+  },
+  {
+    "codigo": "F0090660003",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B112 MP3"
+  },
+  {
+    "codigo": "F0090660007",
+    "rubro": "Cajas Pasivas",
+    "modelo": "Eurolive B212XL"
+  },
+  {
+    "codigo": "T0090602005",
+    "rubro": "Monitores Activos",
+    "modelo": "Eurolive B205D"
+  },
+  { "codigo": "F0092135013", "rubro": "Monitores Activos", "modelo": "K10S" },
+  { "codigo": "F0092135009", "rubro": "Monitores Activos", "modelo": "K8" },
+  { "codigo": "T0092135008", "rubro": "Monitores Activos", "modelo": "K5" },
+  {
+    "codigo": "T0092135011",
+    "rubro": "Monitores Activos",
+    "modelo": "Studio 50 USB"
+  },
+  {
+    "codigo": "F0092135014",
+    "rubro": "Monitores Activos",
+    "modelo": "Media 40 USB"
+  },
+  { "codigo": "F0092135003", "rubro": "Monitores Activos", "modelo": "B1030A" },
+  { "codigo": "F0092135010", "rubro": "Monitores Activos", "modelo": "MS16" },
+  {
+    "codigo": "F0092135002",
+    "rubro": "Monitores Pasivos",
+    "modelo": "1C Negro"
+  },
+  {
+    "codigo": "F0090660014",
+    "rubro": "Cajas Pasivas",
+    "modelo": "Eurolive VS1220"
+  },
+  {
+    "codigo": "F0090660011",
+    "rubro": "Cajas Pasivas",
+    "modelo": "Eurolive VP2520"
+  },
+  {
+    "codigo": "F0090660009",
+    "rubro": "Cajas Pasivas",
+    "modelo": "Eurolive VP1220"
+  },
+  {
+    "codigo": "F0090660020",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B12X"
+  },
+  {
+    "codigo": "T0090660004",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B112W"
+  },
+  {
+    "codigo": "F0090660021",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B15X"
+  },
+  {
+    "codigo": "T0090660005",
+    "rubro": "Cajas activas",
+    "modelo": "Eurolive B115W"
+  },
+  { "codigo": "T0090305025", "rubro": "Auriculares", "modelo": "SD 251-CL" },
+  { "codigo": "T0090305026", "rubro": "Auriculares", "modelo": "SD251-CK" },
+  { "codigo": "T0090344002", "rubro": "Auriculares", "modelo": "SD251-BT" },
+  { "codigo": "T0090305027", "rubro": "Auriculares", "modelo": "ALPHA" },
+  { "codigo": "T0090305028", "rubro": "Auriculares", "modelo": "OMEGA" },
+  { "codigo": "T0090305016", "rubro": "Auriculares", "modelo": "HPM1000 BK" },
+  { "codigo": "T0090305024", "rubro": "Auriculares", "modelo": "HPM1100" },
+  { "codigo": "T0090305023", "rubro": "Auriculares", "modelo": "HPM1100 BK" },
+  { "codigo": "T0090305022", "rubro": "Auriculares", "modelo": "HPM1100 U" },
+  { "codigo": "T0090305014", "rubro": "Auriculares", "modelo": "HPX2000" },
+  { "codigo": "F0090305017", "rubro": "Auriculares", "modelo": "HC2000 B" },
+  { "codigo": "T0091805026", "rubro": "Auriculares", "modelo": "HC2000 BNC" },
+  { "codigo": "T0090305021", "rubro": "Auriculares", "modelo": "BDJ1000" },
+  { "codigo": "T0090305020", "rubro": "Auriculares", "modelo": "HC200" },
+  { "codigo": "F0090305012", "rubro": "Auriculares", "modelo": "HPS3000" },
+  { "codigo": "T0090305015", "rubro": "Auriculares", "modelo": "HPX4000" },
+  { "codigo": "F0090305013", "rubro": "Auriculares", "modelo": "HPS5000" },
+  {
+    "codigo": "T0090305009",
+    "rubro": "Auriculares",
+    "modelo": "HPX6000 DJ Headphones "
+  },
+  { "codigo": "F0091805025", "rubro": "Auriculares", "modelo": "BB560 M" },
+  { "codigo": "F0091805027", "rubro": "Auriculares", "modelo": "HLC660 M" },
+  { "codigo": "T0090305029", "rubro": "Auriculares", "modelo": "BH470-BK" },
+  { "codigo": "T0090305018", "rubro": "Auriculares", "modelo": "BH470" },
+  { "codigo": "F0090305019", "rubro": "Auriculares", "modelo": "BH770" },
+  {
+    "codigo": "T0090209001",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "AMP800 Miniamp "
+  },
+  {
+    "codigo": "T0090209007",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "MA400"
+  },
+  {
+    "codigo": "T0090209005",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "Powerplay P1"
+  },
+  {
+    "codigo": "T0090209006",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "Powerplay P2"
+  },
+  {
+    "codigo": "T0092730011",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "Powerplay PM1"
+  },
+  {
+    "codigo": "F0090209002",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "HA400"
+  },
+  {
+    "codigo": "F0090209004",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "HA8000"
+  },
+  {
+    "codigo": "T0091844002",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "ULM 202USB"
+  },
+  {
+    "codigo": "T0091844003",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "ULM 300USB"
+  },
+  {
+    "codigo": "T0091844004",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "ULM 300MIC"
+  },
+  {
+    "codigo": "T0091844005",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "ULM 302MIC"
+  },
+  {
+    "codigo": "F0091805031",
+    "rubro": "Micrófono Condensador",
+    "modelo": "BX2020"
+  },
+  { "codigo": "T0091805006", "rubro": "Micrófono Condensador", "modelo": "C2" },
+  { "codigo": "T0091805003", "rubro": "Micrófono Condensador", "modelo": "B5" },
+  {
+    "codigo": "F0091805030",
+    "rubro": "Micrófono Condensador",
+    "modelo": "TM1"
+  },
+  { "codigo": "F0091805001", "rubro": "Micrófono Condensador", "modelo": "B1" },
+  {
+    "codigo": "F0091805005",
+    "rubro": "Micrófono Condensador",
+    "modelo": "C1U"
+  },
+  { "codigo": "T0091805007", "rubro": "Micrófono Condensador", "modelo": "C3" },
+  { "codigo": "F0091805004", "rubro": "Micrófono Condensador", "modelo": "C1" },
+  {
+    "codigo": "F0091805002",
+    "rubro": "Micrófono Condensador",
+    "modelo": "B2 PRO"
+  },
+  { "codigo": "F0091805008", "rubro": "Micrófono Condensador", "modelo": "C4" },
+  {
+    "codigo": "T0091805010",
+    "rubro": "Micrófono Condensador",
+    "modelo": "ECM8000"
+  },
+  {
+    "codigo": "T0091805023",
+    "rubro": "Micrófono Condensador",
+    "modelo": "CB 100"
+  },
+  {
+    "codigo": "T0091805022",
+    "rubro": "Micrófono Condensador",
+    "modelo": "BA 19A"
+  },
+  { "codigo": "T0091805024", "rubro": "Micrófono Dinámico", "modelo": "B 906" },
+  {
+    "codigo": "F0091805009",
+    "rubro": "Micrófono Condensador",
+    "modelo": "SB 78A"
+  },
+  {
+    "codigo": "T0091805021",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "SL 84C"
+  },
+  {
+    "codigo": "T0091805012",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "SL 85S"
+  },
+  {
+    "codigo": "T0091805029",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "SL 75C"
+  },
+  {
+    "codigo": "T0091805011",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "BA 85A"
+  },
+  {
+    "codigo": "T0091805019",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "XM8500A"
+  },
+  {
+    "codigo": "F0091805018",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "XM1800S"
+  },
+  { "codigo": "T0090129001", "rubro": "Cable tester", "modelo": "CT100" },
+  { "codigo": "T0090129003", "rubro": "Cable tester", "modelo": "CT200" },
+  { "codigo": "F0090116006", "rubro": "Caja directa", "modelo": "DI800" },
+  { "codigo": "T0090116005", "rubro": "Caja directa", "modelo": "DI600P" },
+  { "codigo": "T0090116002", "rubro": "Caja directa", "modelo": "DI20" },
+  { "codigo": "T0090116003", "rubro": "Caja directa", "modelo": "DI4000" },
+  { "codigo": "T0094185031", "rubro": "Caja directa", "modelo": "GI100" },
+  { "codigo": "T0090116004", "rubro": "Caja directa", "modelo": "DI400P" },
+  { "codigo": "T0090116001", "rubro": "Caja directa", "modelo": "DI100" },
+  { "codigo": "T0091585003", "rubro": "Convertidor", "modelo": "ADA8200" },
+  { "codigo": "T0092730001", "rubro": "Crossover", "modelo": "DCX2496" },
+  { "codigo": "T0092730002", "rubro": "Crossover", "modelo": "DCX2496LE" },
+  { "codigo": "T0091525001", "rubro": "Crossover", "modelo": "CX2310" },
+  { "codigo": "T0092725002", "rubro": "Crossover", "modelo": "CX3400" },
+  {
+    "codigo": "T0092731003",
+    "rubro": "Supresor de acoples",
+    "modelo": "FBQ100"
+  },
+  {
+    "codigo": "F0092731007",
+    "rubro": "Supresor de acoples",
+    "modelo": "FBQ2496"
+  },
+  { "codigo": "T0092731006", "rubro": "Ecualizadores", "modelo": "FBQ1502HD" },
+  { "codigo": "T0092731009", "rubro": "Ecualizadores", "modelo": "FBQ3102HD" },
+  { "codigo": "F0092731004", "rubro": "Ecualizadores", "modelo": "FBQ1000" },
+  { "codigo": "T0092731011", "rubro": "Ecualizadores", "modelo": "FBQ6200 HD" },
+  { "codigo": "T0092731001", "rubro": "Ecualizadores", "modelo": "DEQ2496" },
+  { "codigo": "T0092730012", "rubro": "Exiter", "modelo": "SX3040" },
+  { "codigo": "T0092007011", "rubro": "Micro mixer", "modelo": "MX400" },
+  {
+    "codigo": "T0090150001",
+    "rubro": "Panel de conexionado",
+    "modelo": "PX3000"
+  },
+  { "codigo": "F0092706001", "rubro": "Pre de microfonos", "modelo": "MIC100" },
+  { "codigo": "T0092706005", "rubro": "Pre de microfonos", "modelo": "MIC300" },
+  {
+    "codigo": "T0092706006",
+    "rubro": "Pre de microfonos",
+    "modelo": "MIC500USB"
+  },
+  {
+    "codigo": "F0092706003",
+    "rubro": "Pre de microfonos",
+    "modelo": "MIC2200"
+  },
+  {
+    "codigo": "T0092751004",
+    "rubro": "Procesadores de efectos",
+    "modelo": "FX2000"
+  },
+  {
+    "codigo": "F0092722002",
+    "rubro": "Procesadores Dinamicos",
+    "modelo": "MDX4600"
+  },
+  {
+    "codigo": "F0092722001",
+    "rubro": "Procesadores Dinamicos",
+    "modelo": "MDX2600"
+  },
+  { "codigo": "T0092730008", "rubro": "Splitter", "modelo": "MX882" },
+  { "codigo": "F0091085039", "rubro": "Controladores", "modelo": "Swing" },
+  {
+    "codigo": "T0090733001",
+    "rubro": "Baterias electronicas",
+    "modelo": "XD8 USB"
+  },
+  {
+    "codigo": "T0090733002",
+    "rubro": "Baterias electronicas",
+    "modelo": "XD80 USB"
+  },
+  {
+    "codigo": "T0090279002",
+    "rubro": "Amplificadores para teclado",
+    "modelo": "Ultratone K900FX"
+  },
+  {
+    "codigo": "T0094185036",
+    "rubro": "Pedal de efectos",
+    "modelo": " Dual-Phase"
+  },
+  { "codigo": "F0092751005", "rubro": "Pedal de efectos", "modelo": "BLE400" },
+  { "codigo": "T0094185034", "rubro": "Pedal de efectos", "modelo": "SF300" },
+  { "codigo": "F0094185033", "rubro": "Pedal de efectos", "modelo": "VD400" },
+  { "codigo": "T0090161055", "rubro": "Pedal de efectos", "modelo": "HM300" },
+  { "codigo": "T0092485014", "rubro": "Pedal de efectos", "modelo": "FX600" },
+  { "codigo": "T0092485003", "rubro": "Pedal de efectos", "modelo": "BDI21" },
+  { "codigo": "T0092485021", "rubro": "Pedal de efectos", "modelo": "UC200" },
+  { "codigo": "T0092485010", "rubro": "Pedal de efectos", "modelo": "EQ700" },
+  { "codigo": "F0092485029", "rubro": "Pedal de efectos", "modelo": "VP1" },
+  { "codigo": "T0092485006", "rubro": "Pedal de efectos", "modelo": "CS400" },
+  { "codigo": "F0092485008", "rubro": "Pedal de efectos", "modelo": "DR400" },
+  { "codigo": "T0092485025", "rubro": "Pedal de efectos", "modelo": "UT300" },
+  { "codigo": "T0092485001", "rubro": "Pedal de efectos", "modelo": "ADI21" },
+  { "codigo": "F0092485020", "rubro": "Pedal de efectos", "modelo": "TU300" },
+  { "codigo": "F0092485015", "rubro": "Pedal de efectos", "modelo": "GDI 21" },
+  { "codigo": "T0092485004", "rubro": "Pedal de efectos", "modelo": "BEQ700" },
+  { "codigo": "T0092485024", "rubro": "Pedal de efectos", "modelo": "UO300" },
+  { "codigo": "T0092485042", "rubro": "Pedal de efectos", "modelo": "FC600" },
+  { "codigo": "T0092485012", "rubro": "Pedal de efectos", "modelo": "FCV100" },
+  { "codigo": "T0092485018", "rubro": "Pedal de efectos", "modelo": "CL9" },
+  { "codigo": "T0092485009", "rubro": "Pedal de efectos", "modelo": "DR600" },
+  { "codigo": "T0092485035", "rubro": "Pedal de efectos", "modelo": "BOD400" },
+  { "codigo": "T0094185032", "rubro": "Pedal de efectos", "modelo": "OD300" },
+  { "codigo": "F0092485016", "rubro": "Pedal de efectos", "modelo": "HB01" },
+  { "codigo": "T0092485023", "rubro": "Pedal de efectos", "modelo": "UM300" },
+  { "codigo": "T0092085005", "rubro": "Controladores", "modelo": "CMD DV-1" },
+  { "codigo": "T0092085004", "rubro": "Controladores", "modelo": "CMD DC-1" },
+  {
+    "codigo": "T0090207011",
+    "rubro": "Unidades de potencia",
+    "modelo": "EPQ304"
+  },
+  {
+    "codigo": "T0090207001",
+    "rubro": "Unidades de potencia",
+    "modelo": "EP2000"
+  },
+  {
+    "codigo": "F0090207002",
+    "rubro": "Unidades de potencia",
+    "modelo": "EP4000"
+  },
+  {
+    "codigo": "F0090230005",
+    "rubro": "Unidades de potencia",
+    "modelo": "Behringer NU3000DSP"
+  },
+  {
+    "codigo": "F0090230006",
+    "rubro": "Unidades de potencia",
+    "modelo": "Behringer NU6000DSP"
+  },
+  {
+    "codigo": "T0090230007",
+    "rubro": "Unidades de potencia",
+    "modelo": "NX3000D"
+  },
+  {
+    "codigo": "T0090230008",
+    "rubro": "Unidades de potencia",
+    "modelo": "NX6000"
+  },
+  {
+    "codigo": "T0090230009",
+    "rubro": "Unidades de potencia",
+    "modelo": "NX3000"
+  },
+  {
+    "codigo": "T0090230010",
+    "rubro": "Unidades de potencia",
+    "modelo": "NX1000"
+  },
+  {
+    "codigo": "T0092007053",
+    "rubro": "Controladores",
+    "modelo": "CONTROL2USB"
+  },
+  { "codigo": "T0092027022", "rubro": "Controladores", "modelo": "Monitor 1" },
+  { "codigo": "T0092007055", "rubro": "Controladores", "modelo": "Studio M" },
+  {
+    "codigo": "F0092027017",
+    "rubro": "Controladores",
+    "modelo": "X-Touch One"
+  },
+  {
+    "codigo": "F0092027015",
+    "rubro": "Controladores",
+    "modelo": "X-Touch Compact"
+  },
+  { "codigo": "T0092027013", "rubro": "Controladores", "modelo": "X-Touch" },
+  { "codigo": "F0091585028", "rubro": "Interfaces USB", "modelo": "Uca 202" },
+  { "codigo": "F0091585029", "rubro": "Interfaces USB", "modelo": "Uca 222" },
+  {
+    "codigo": "F0091805020",
+    "rubro": "Interfaces USB",
+    "modelo": "Voice Studio"
+  },
+  { "codigo": "F0091805028", "rubro": "Interfaces USB", "modelo": "BIGFOOT" },
+  {
+    "codigo": "F0091585040",
+    "rubro": "Interfaces USB",
+    "modelo": "U-Phoria Studio"
+  },
+  {
+    "codigo": "F0091585041",
+    "rubro": "Interfaces USB",
+    "modelo": "U-Phoria Studio PRO"
+  },
+  { "codigo": "T0091585030", "rubro": "Interfaces USB", "modelo": "UM2" },
+  { "codigo": "T0091585035", "rubro": "Interfaces USB", "modelo": "UMC22" },
+  { "codigo": "T0091585031", "rubro": "InFerfaces USB", "modelo": "UMC202 HD" },
+  { "codigo": "F0091585033", "rubro": "Interfaces USB", "modelo": "UMC204 HD" },
+  { "codigo": "F0091585039", "rubro": "Interfaces USB", "modelo": "UMC404 HD" },
+  { "codigo": "T0091585038", "rubro": "Interfaces USB", "modelo": "UMC1820" },
+  { "codigo": "T0760161045", "rubro": "Afinadores", "modelo": "POLYTUNE 3" },
+  {
+    "codigo": "F0760161060",
+    "rubro": "Afinadores",
+    "modelo": "POLYTUNE 3 MINI"
+  },
+  { "codigo": "F0760161031", "rubro": "Afinadores", "modelo": "POLYTUNE CLIP" },
+  { "codigo": "T0760161056", "rubro": "Afinadores", "modelo": "UNITUNE CLIP" },
+  {
+    "codigo": "T0760161092",
+    "rubro": "Pedal de efectos",
+    "modelo": "PLETHORA X1 TonePrint"
+  },
+  {
+    "codigo": "T0760161067",
+    "rubro": "Pedal de efectos",
+    "modelo": "FORCEFIELD COMPRESSOR"
+  },
+  {
+    "codigo": "T0760161052",
+    "rubro": "Pedal de efectos",
+    "modelo": "HYPERGRAVITY MINI COMPRESSOR"
+  },
+  {
+    "codigo": "F0760161089",
+    "rubro": "Pedal de efectos",
+    "modelo": "HYPERGRAVITY COMPRESSOR"
+  },
+  {
+    "codigo": "T0760161087",
+    "rubro": "Pedal de efectos",
+    "modelo": "SPECTRACOMP BASS COMPRESSOR"
+  },
+  {
+    "codigo": "T0760161053",
+    "rubro": "Pedal de efectos",
+    "modelo": "IRON CURTAIN NOISE GATE"
+  },
+  {
+    "codigo": "F0760161064",
+    "rubro": "Pedal de efectos",
+    "modelo": "BRAINWAVES PITCH SHIFTER"
+  },
+  {
+    "codigo": "F0760161065",
+    "rubro": "Pedal de efectos",
+    "modelo": "DRIP SPRING REVERB"
+  },
+  {
+    "codigo": "T0760161066",
+    "rubro": "Pedal de efectos",
+    "modelo": "FLUORESCENCE SHIMMER REVERB"
+  },
+  {
+    "codigo": "F0760161016",
+    "rubro": "Pedal de efectos",
+    "modelo": "HALL OF FAME REVERB"
+  },
+  {
+    "codigo": "F0760161049",
+    "rubro": "Pedal de efectos",
+    "modelo": "HALL OF FAME 2 REVERB"
+  },
+  {
+    "codigo": "T0760161050",
+    "rubro": "Pedal de efectos",
+    "modelo": "HALL OF FAME 2 MINI REVERB"
+  },
+  {
+    "codigo": "T0760161015",
+    "rubro": "Pedal de efectos",
+    "modelo": " HALL OF FAME MINI REVERB Ultracompacto"
+  },
+  {
+    "codigo": "F0760161085",
+    "rubro": "Pedal de efectos",
+    "modelo": "THE DREAMSCAPE"
+  },
+  {
+    "codigo": "F0760161044",
+    "rubro": "Pedal de efectos",
+    "modelo": "FLASHBACK 2 DELAY"
+  },
+  {
+    "codigo": "F0760161008",
+    "rubro": "Pedal de efectos",
+    "modelo": "FLASHBACK DELAY LOOPER"
+  },
+  {
+    "codigo": "F0760161010",
+    "rubro": "Pedal de efectos",
+    "modelo": "FLASHBACK X4"
+  },
+  {
+    "codigo": "T0760161009",
+    "rubro": "Pedal de efectos",
+    "modelo": "FLASHBACK MINI DELAY"
+  },
+  {
+    "codigo": "F0760161081",
+    "rubro": "Pedal de efectos",
+    "modelo": "GAUSS TAPE HECHO"
+  },
+  {
+    "codigo": "F0760161007",
+    "rubro": "Pedal de efectos",
+    "modelo": "ECHOBRAIN ANALOG DELAY"
+  },
+  {
+    "codigo": "F0760161037",
+    "rubro": "Pedal de efectos",
+    "modelo": "ALTER EGO 2"
+  },
+  {
+    "codigo": "T0760161027",
+    "rubro": "Pedal de efectos",
+    "modelo": "THE PROPHET DIGITAL DELAY"
+  },
+  {
+    "codigo": "T0760161004",
+    "rubro": "Pedal de efectos",
+    "modelo": "DITTO LOOPER"
+  },
+  {
+    "codigo": "T0760161043",
+    "rubro": "Pedal de efectos",
+    "modelo": "DITTO LOOPER STEREO"
+  },
+  {
+    "codigo": "F0760161005",
+    "rubro": "Pedal de efectos",
+    "modelo": "DITTO LOOPER X2"
+  },
+  {
+    "codigo": "T0760161057",
+    "rubro": "Pedal de efectos",
+    "modelo": "CRESCENDO AUTO SWELL"
+  },
+  {
+    "codigo": "T0760161070",
+    "rubro": "Pedal de efectos",
+    "modelo": "SUB´N´UP OCTAVER"
+  },
+  {
+    "codigo": "F0760161058",
+    "rubro": "Pedal de efectos",
+    "modelo": "NETHER OCTAVER"
+  },
+  {
+    "codigo": "T0760161069",
+    "rubro": "Pedal de efectos",
+    "modelo": "JUNE-60 CHORUS"
+  },
+  {
+    "codigo": "T0760161001",
+    "rubro": "Pedal de efectos",
+    "modelo": "CORONA CHORUS"
+  },
+  {
+    "codigo": "F0760161002",
+    "rubro": "Pedal de efectos",
+    "modelo": "CORONA MINI CHORUS"
+  },
+  {
+    "codigo": "T0760161088",
+    "rubro": "Pedal de efectos",
+    "modelo": "3RD DIMENSION CHORUS"
+  },
+  {
+    "codigo": "T0760161019",
+    "rubro": "Pedal de efectos",
+    "modelo": "AFTERGLOW CHORUS"
+  },
+  {
+    "codigo": "F0760161033",
+    "rubro": "Pedal de efectos",
+    "modelo": "SPARK MINI BOOSTER"
+  },
+  {
+    "codigo": "F0760161086",
+    "rubro": "Pedal de efectos",
+    "modelo": "SPARK BOOSTER"
+  },
+  {
+    "codigo": "T0760161029",
+    "rubro": "Pedal de efectos",
+    "modelo": "RUSH BOOSTER"
+  },
+  {
+    "codigo": "T0760161048",
+    "rubro": "Pedal de efectos",
+    "modelo": "BONAFIDE BUFFER"
+  },
+  {
+    "codigo": "T0760161071",
+    "rubro": "Pedal de efectos",
+    "modelo": "VIBRACLONE ROTARY"
+  },
+  {
+    "codigo": "T0760161034",
+    "rubro": "Pedal de efectos",
+    "modelo": "VICOUS VIBE"
+  },
+  {
+    "codigo": "F0760161061",
+    "rubro": "Pedal de efectos",
+    "modelo": "SHAKER VIBRATO"
+  },
+  {
+    "codigo": "F0760161026",
+    "rubro": "Pedal de efectos",
+    "modelo": "TAILSPIN VIBRATO"
+  },
+  {
+    "codigo": "F0760161047",
+    "rubro": "Pedal de efectos",
+    "modelo": "CHOKA TREMOLO"
+  },
+  {
+    "codigo": "T0760161059",
+    "rubro": "Pedal de efectos",
+    "modelo": "PIPELINE TAP TREMOLO"
+  },
+  {
+    "codigo": "T0760161017",
+    "rubro": "Pedal de efectos",
+    "modelo": "MOJOMOJO OVERDRIVE"
+  },
+  {
+    "codigo": "T0760161021",
+    "rubro": "Pedal de efectos",
+    "modelo": "CINDERS OVERDRIVE"
+  },
+  {
+    "codigo": "F0760161003",
+    "rubro": "Pedal de efectos",
+    "modelo": "DARK MATTER DISTORTION"
+  },
+  {
+    "codigo": "T0760161042",
+    "rubro": "Pedal de efectos",
+    "modelo": "TUBE PILOT OVERDRIVE"
+  },
+  {
+    "codigo": "F0760161083",
+    "rubro": "Pedal de efectos",
+    "modelo": "EYEMASTER METAL DISTORTION"
+  },
+  {
+    "codigo": "T0760161022",
+    "rubro": "Pedal de efectos",
+    "modelo": "FANGS METAL DISTORTION"
+  },
+  {
+    "codigo": "T0760161023",
+    "rubro": "Pedal de efectos",
+    "modelo": "GRAND MAGNUS DISTORTION"
+  },
+  {
+    "codigo": "T0760161068",
+    "rubro": "Pedal de efectos",
+    "modelo": "HONNEY POT FUZZ"
+  },
+  {
+    "codigo": "T0760161024",
+    "rubro": "Pedal de efectos",
+    "modelo": "RUSTY FUZZ"
+  },
+  {
+    "codigo": "F0760161039",
+    "rubro": "Pedal de efectos",
+    "modelo": "MIMIQ DOUBLER"
+  },
+  {
+    "codigo": "F0760161028",
+    "rubro": "Pedal de efectos",
+    "modelo": "THUNDERSTORM FLANGER"
+  },
+  {
+    "codigo": "F0760161051",
+    "rubro": "Pedal de efectos",
+    "modelo": "HELIX PHASER"
+  },
+  {
+    "codigo": "F0760161020",
+    "rubro": "Pedal de efectos",
+    "modelo": "BLOOD MOON PHASER"
+  },
+  {
+    "codigo": "T0760161054",
+    "rubro": "Pedal de efectos",
+    "modelo": "PLETHORA X5"
+  },
+  {
+    "codigo": "F0770161005",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "BLENDER"
+  },
+  {
+    "codigo": "F0770161020",
+    "rubro": "Interfaces USB",
+    "modelo": "Go XLR Mini"
+  },
+  {
+    "codigo": "T0770161011",
+    "rubro": "Procesadores de Voz",
+    "modelo": "HARMONY SINGER 2"
+  },
+  {
+    "codigo": "T0770161013",
+    "rubro": "Procesadores de Voz",
+    "modelo": "MIC MECHANIC 2"
+  },
+  {
+    "codigo": "F0770161014",
+    "rubro": "Procesadores de Voz",
+    "modelo": "TALKBOX SYNTH"
+  },
+  {
+    "codigo": "T0770161015",
+    "rubro": "Procesadores de Voz",
+    "modelo": "DUPLICATOR"
+  },
+  {
+    "codigo": "F0760161091",
+    "rubro": "Procesadores de Voz",
+    "modelo": "CRITICAL MASS"
+  },
+  {
+    "codigo": "F0770161019",
+    "rubro": "Procesadores de Voz",
+    "modelo": "VOICETONE X1"
+  },
+  {
+    "codigo": "F0770161006",
+    "rubro": "Interfaces USB",
+    "modelo": "GO GUITAR "
+  },
+  {
+    "codigo": "T0770161007",
+    "rubro": "Interfaces USB",
+    "modelo": "GO GUITAR PRO"
+  },
+  { "codigo": "F0770161008", "rubro": "Interfaces USB", "modelo": "GO SOLO" },
+  { "codigo": "F0770161009", "rubro": "Interfaces USB", "modelo": "GO TWIN" },
+  { "codigo": "T0770161010", "rubro": "Interfaces USB", "modelo": "GO VOCAL" },
+  {
+    "codigo": "T0103572003",
+    "rubro": "Instrumentos de Viento",
+    "modelo": "SAXO TENOR FT6435L"
+  },
+  {
+    "codigo": "T0103572002",
+    "rubro": "Instrumentos de Viento",
+    "modelo": "SAXO SOPRANO FT6433L"
+  },
+  { "codigo": "F1013333001", "rubro": "Teclados", "modelo": "MC37A" },
+  { "codigo": "F1013333004", "rubro": "Teclados", "modelo": "M311" },
+  { "codigo": "F1013333002", "rubro": "Teclados", "modelo": "M331" },
+  { "codigo": "F1013333005", "rubro": "Teclados", "modelo": "M361" },
+  { "codigo": "F1013333006", "rubro": "Teclados", "modelo": "A100" },
+  { "codigo": "F1013333007", "rubro": "Teclados", "modelo": "A300" },
+  { "codigo": "F1013333010", "rubro": "Teclados", "modelo": "MK61" },
+  { "codigo": "F1013333003", "rubro": "Teclados", "modelo": "MK100" },
+  { "codigo": "F1013333008", "rubro": "Teclados", "modelo": "MK200" },
+  { "codigo": "F1013333009", "rubro": "Teclados", "modelo": "MK300" },
+  { "codigo": "F1013362001", "rubro": "Pianos", "modelo": "DP250RB" },
+  { "codigo": "F1013362006", "rubro": "Pianos", "modelo": "SP-C120" },
+  { "codigo": "F1013362003", "rubro": "Pianos", "modelo": "SP201 PLUS" },
+  {
+    "codigo": "F1010733010",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD221"
+  },
+  {
+    "codigo": "F1010733011",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD225"
+  },
+  {
+    "codigo": "F1010733003",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD401"
+  },
+  {
+    "codigo": "F1010733004",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD610S"
+  },
+  {
+    "codigo": "F1010733006",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD630S"
+  },
+  {
+    "codigo": "F1010733012",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD635"
+  },
+  {
+    "codigo": "F1010733007",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD635S"
+  },
+  {
+    "codigo": "F1010733008",
+    "rubro": "Baterias electronicas",
+    "modelo": "DD638DX"
+  },
+  {
+    "codigo": "F1010733009",
+    "rubro": "Baterias electronicas",
+    "modelo": "YODRUM"
+  },
+  {
+    "codigo": "F1010233001",
+    "rubro": "Baterias electronicas",
+    "modelo": "AP30B"
+  },
+  { "codigo": "T0410907004", "rubro": "Consola", "modelo": "Vivo 3" },
+  { "codigo": "T0410907005", "rubro": "Consola", "modelo": "Vivo 4" },
+  { "codigo": "T0410907001", "rubro": "Consola", "modelo": "Vivo 7" },
+  { "codigo": "T0410907002", "rubro": "Consola", "modelo": "Vivo 9" },
+  { "codigo": "T0410907003", "rubro": "Consola", "modelo": "Vivo 11" },
+  { "codigo": "T0412085006", "rubro": "Podcast", "modelo": "Pod 6" },
+  { "codigo": "T0412085007", "rubro": "Podcast", "modelo": "Pod 8" },
+  { "codigo": "T0411585001", "rubro": "Interfaces USB", "modelo": "Lex 22" },
+  {
+    "codigo": "T0411805007",
+    "rubro": "Micrófono Condensador",
+    "modelo": "Lex 10 USB"
+  },
+  {
+    "codigo": "T0411805006",
+    "rubro": "Micrófono Condensador",
+    "modelo": "Lex 87"
+  },
+  { "codigo": "T0410175002", "rubro": "Soporte para bafle", "modelo": "SP 23" },
+  {
+    "codigo": "T0410164001",
+    "rubro": "Pie para microfono",
+    "modelo": "MS 105A"
+  },
+  {
+    "codigo": "T0410185001",
+    "rubro": "Pie para microfono",
+    "modelo": "Filtro Antipop AP-20"
+  },
+  { "codigo": "T0410115004", "rubro": "Cables", "modelo": "XLJ-6f" },
+  { "codigo": "T0410115006", "rubro": "Cables", "modelo": "XLR-6mt" },
+  { "codigo": "T0410115005", "rubro": "Cables", "modelo": "XLR-10mt" },
+  { "codigo": "T0410115001", "rubro": "Cables", "modelo": "MMC-3" },
+  { "codigo": "T0410115002", "rubro": "Cables", "modelo": "MMC-6" },
+  { "codigo": "T0410115003", "rubro": "Cables", "modelo": "EMC-6" },
+  {
+    "codigo": "T0411805016",
+    "rubro": "Micrófono Dinámico",
+    "modelo": "NDM155"
+  },
+  { "codigo": "T0411805004", "rubro": "Micrófono Dinámico", "modelo": "NDM80" },
+  { "codigo": "T0411805005", "rubro": "Micrófono Dinámico", "modelo": "NDM82" },
+  { "codigo": "T0411805002", "rubro": "Micrófono Dinámico", "modelo": "LEX58" },
+  {
+    "codigo": "T0411844016",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2 in 2"
+  },
+  {
+    "codigo": "T0411844017",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2 in 2 XL"
+  },
+  {
+    "codigo": "T0411844018",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2H2"
+  },
+  {
+    "codigo": "T0411844020",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2H300"
+  },
+  {
+    "codigo": "T0411844019",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2B2"
+  },
+  {
+    "codigo": "T0411844021",
+    "rubro": "Microfonos inalambricos",
+    "modelo": "2B300"
+  },
+  {
+    "codigo": "T0410344001",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "Monitor-1"
+  },
+  {
+    "codigo": "T0410344002",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "Monitor-1 BP"
+  },
+  {
+    "codigo": "T1210305001",
+    "rubro": "Monitor inalámbrico",
+    "modelo": "KZ EDX"
+  },
+  {
+    "codigo": "T0411805001",
+    "rubro": "Microfonos de instalacion",
+    "modelo": "LEM270 Led"
+  },
+  {
+    "codigo": "T0412854001",
+    "rubro": "Reproduccion de Audio",
+    "modelo": "UDJ200"
+  },
+  { "codigo": "T0410116001", "rubro": "Caja directa", "modelo": "DBP21" },
+  { "codigo": "T0410625001", "rubro": "Crossover", "modelo": "CR223" },
+  { "codigo": "T0412731002", "rubro": "Ecualizadores", "modelo": "EQ215" },
+  { "codigo": "T0412731001", "rubro": "Ecualizadores", "modelo": "EQ131" },
+  {
+    "codigo": "T0410209001",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "PSC800"
+  },
+  { "codigo": "T0410150004", "rubro": "Manguera de sonido", "modelo": "12x4" },
+  { "codigo": "T0410150001", "rubro": "Manguera de sonido", "modelo": "16x4" },
+  { "codigo": "T0410150002", "rubro": "Manguera de sonido", "modelo": "24x8" },
+  { "codigo": "T0410150003", "rubro": "Manguera de sonido", "modelo": "32x8" },
+  {
+    "codigo": "T0410207008",
+    "rubro": "Unidades de potencia",
+    "modelo": "LXA600"
+  },
+  {
+    "codigo": "T0410207010",
+    "rubro": "Unidades de potencia",
+    "modelo": "LXA900"
+  },
+  {
+    "codigo": "T0410207003",
+    "rubro": "Unidades de potencia",
+    "modelo": "LXA1200"
+  },
+  { "codigo": "T0414002001", "rubro": "Monitores Activos", "modelo": "M4" },
+  { "codigo": "T0414002002", "rubro": "Monitores Activos", "modelo": "M5" },
+  { "codigo": "T0414002003", "rubro": "Monitores Activos", "modelo": "M6" },
+  {
+    "codigo": "T0414002007",
+    "rubro": "Monitores Activos",
+    "modelo": "M-Sub10"
+  },
+  { "codigo": "F0410660016", "rubro": "Cajas Pasivas", "modelo": "QTZ 15" },
+  { "codigo": "F0410602009", "rubro": "Cajas Activas", "modelo": "QTZ 15 A" },
+  { "codigo": "F0410660017", "rubro": "Cajas Pasivas", "modelo": "QTZ 215" },
+  { "codigo": "F0410602008", "rubro": "Cajas Activas", "modelo": "QTZ 215 A" },
+  {
+    "codigo": "F0410602010",
+    "rubro": "Cajas Activas",
+    "modelo": "QTZ 215 A Limited Edition"
+  },
+  { "codigo": "F0410660003", "rubro": "Cajas pasivas", "modelo": "LP8" },
+  { "codigo": "F0410660001", "rubro": "Cajas pasivas", "modelo": "LP12" },
+  { "codigo": "F0410660002", "rubro": "Cajas Pasivas", "modelo": "LP15" },
+  { "codigo": "F0410602001", "rubro": "Cajas activas", "modelo": "LP15 A" },
+  {
+    "codigo": "F0410602002",
+    "rubro": "Sistema de Audio PA",
+    "modelo": "Kit PX 1505"
+  },
+  { "codigo": "T0410602011", "rubro": "Cajas activas", "modelo": "X5" },
+  { "codigo": "T0410602012", "rubro": "Cajas activas", "modelo": "K8" },
+  { "codigo": "T0410502001", "rubro": "Cajas activas", "modelo": "K15" },
+  { "codigo": "F0340560001", "rubro": "Cajas Pasivas", "modelo": "J-1525" },
+  { "codigo": "F0340560008", "rubro": "Cajas Pasivas", "modelo": "J-1525 MDP" },
+  { "codigo": "F0340560003", "rubro": "Cajas Pasivas", "modelo": "J-1525M" },
+  {
+    "codigo": "F0340560007",
+    "rubro": "Cajas Pasivas",
+    "modelo": "J-1525M MDP"
+  },
+  { "codigo": "F0340560004", "rubro": "Cajas Pasivas", "modelo": "J-1860" },
+  { "codigo": "F0340560010", "rubro": "Cajas Pasivas", "modelo": "J-1860 MDP" },
+  { "codigo": "F0340560006", "rubro": "Cajas Pasivas", "modelo": "J-2155" },
+  { "codigo": "F0340560009", "rubro": "Cajas Pasivas", "modelo": "J-2155 MDP" },
+  { "codigo": "F0340502002", "rubro": "Cajas activas", "modelo": "J-1525A" },
+  {
+    "codigo": "F0340502003",
+    "rubro": "Cajas activas",
+    "modelo": "J-1525A MDP"
+  },
+  { "codigo": "F0340502005", "rubro": "Cajas activas", "modelo": "J-1860A" },
+  {
+    "codigo": "F0340502004",
+    "rubro": "Cajas activas",
+    "modelo": "J-1860A MDP"
+  },
+  {
+    "codigo": "F0941333045",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock Red Wood"
+  },
+  {
+    "codigo": "F0941333046",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock Blue Wood"
+  },
+  {
+    "codigo": "F0941333047",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock Black"
+  },
+  {
+    "codigo": "F0941333048",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock Natural Wood"
+  },
+  {
+    "codigo": "F0941333049",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock White"
+  },
+  {
+    "codigo": "F0941333050",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Rock Dark Wood"
+  },
+  {
+    "codigo": "F0941333054",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC Rock Black"
+  },
+  {
+    "codigo": "F0941333001",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST Red Wood"
+  },
+  {
+    "codigo": "F0941333002",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST Blue Wood"
+  },
+  {
+    "codigo": "F0941333003",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST Black"
+  },
+  {
+    "codigo": "F0941333004",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST Natural Wood"
+  },
+  {
+    "codigo": "F0941333005",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST White"
+  },
+  {
+    "codigo": "F0941333006",
+    "rubro": "Guitarra Electrica",
+    "modelo": "ST Dark Wood"
+  },
+  {
+    "codigo": "F0941333035",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC ST Red Wood"
+  },
+  {
+    "codigo": "F0941333036",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC ST Blue Wood"
+  },
+  {
+    "codigo": "F0941333037",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC ST Black"
+  },
+  {
+    "codigo": "F0941333028",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC ST White"
+  },
+  {
+    "codigo": "F0941333029",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC ST Dark Wood"
+  },
+  {
+    "codigo": "F0931333014",
+    "rubro": "Guitarra Electrica",
+    "modelo": "Ghost Natural Wood"
+  },
+  {
+    "codigo": "F0941333008",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL Blue Wood"
+  },
+  {
+    "codigo": "F0941333009",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL Red Wood"
+  },
+  {
+    "codigo": "F0941333010",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL Black"
+  },
+  {
+    "codigo": "F0941333011",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL Natural Wood"
+  },
+  {
+    "codigo": "F0941333012",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL White"
+  },
+  {
+    "codigo": "F0941333013",
+    "rubro": "Guitarra Electrica",
+    "modelo": "TL Dark Wood"
+  },
+  {
+    "codigo": "F0941333026",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC TL Black"
+  },
+  {
+    "codigo": "F0941333030",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC TL Blue Wood"
+  },
+  {
+    "codigo": "F0941333031",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC TL Red Wood"
+  },
+  {
+    "codigo": "F0941333033",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC TL White"
+  },
+  {
+    "codigo": "F0941333034",
+    "rubro": "Guitarra Electrica",
+    "modelo": "RELIC TL Dark Wood"
+  },
+  {
+    "codigo": "F0940433001",
+    "rubro": "Bajo Electrico",
+    "modelo": "JB Red Wood"
+  },
+  {
+    "codigo": "F0940433002",
+    "rubro": "Bajo Electrico",
+    "modelo": "JB Natural Wood"
+  },
+  {
+    "codigo": "F0940433003",
+    "rubro": "Bajo Electrico",
+    "modelo": "JB Dark Wood"
+  },
+  { "codigo": "F0940433004", "rubro": "Bajo Electrico", "modelo": "JB Black" },
+  { "codigo": "F0940433010", "rubro": "Bajo Electrico", "modelo": "JB Cedrum" },
+  {
+    "codigo": "F0940433013",
+    "rubro": "Bajo Electrico",
+    "modelo": "JB Blue Wood"
+  },
+  { "codigo": "F0940433015", "rubro": "Bajo Electrico", "modelo": "JB White" },
+  {
+    "codigo": "F0940433005",
+    "rubro": "Bajo Electrico",
+    "modelo": "PR Red Wood"
+  },
+  {
+    "codigo": "F0940433006",
+    "rubro": "Bajo Electrico",
+    "modelo": "PR Natural Wood"
+  },
+  {
+    "codigo": "F0940433007",
+    "rubro": "Bajo Electrico",
+    "modelo": "PR Dark Wood"
+  },
+  {
+    "codigo": "F0940433008",
+    "rubro": "Bajo Electrico",
+    "modelo": "PR Bass Black"
+  },
+  { "codigo": "F0940433011", "rubro": "Bajo Electrico", "modelo": "PR Cedrum" },
+  {
+    "codigo": "F0940433012",
+    "rubro": "Bajo Electrico",
+    "modelo": "PR Blue Wood"
+  },
+  { "codigo": "F0940433014", "rubro": "Bajo Electrico", "modelo": "PR White" },
+  {
+    "codigo": "F1020703153",
+    "rubro": "Baterias acusticas",
+    "modelo": "CM5294FTCDK"
+  },
+  {
+    "codigo": "F1020703154",
+    "rubro": "Baterias acusticas",
+    "modelo": "CM5294FTCIB"
+  },
+  {
+    "codigo": "F1020703146",
+    "rubro": "Baterias acusticas",
+    "modelo": "CM5294FTCIR"
+  },
+  {
+    "codigo": "F1020703110",
+    "rubro": "Baterias acusticas",
+    "modelo": "VE5294FTVC"
+  },
+  {
+    "codigo": "F1020703121",
+    "rubro": "Baterias acusticas",
+    "modelo": "VE5294FTVM"
+  },
+  {
+    "codigo": "F1020703111",
+    "rubro": "Baterias acusticas",
+    "modelo": "VE5294FTVH"
+  },
+  {
+    "codigo": "F1020703112",
+    "rubro": "Baterias acusticas",
+    "modelo": "VE5294FTVJ"
+  },
+  {
+    "codigo": "F1020703140",
+    "rubro": "Baterias acusticas",
+    "modelo": "LTMA529SFBZW"
+  },
+  {
+    "codigo": "F1020703125",
+    "rubro": "Baterias acusticas",
+    "modelo": "MM628SFUNW"
+  },
+  {
+    "codigo": "F1020703126",
+    "rubro": "Baterias acusticas",
+    "modelo": "MM628SFUKD"
+  },
+  {
+    "codigo": "F1020703127",
+    "rubro": "Baterias acusticas",
+    "modelo": " MM628SFUOG"
+  },
+  {
+    "codigo": "F1020703128",
+    "rubro": "Baterias acusticas",
+    "modelo": " MM529SFNW"
+  },
+  {
+    "codigo": "F1020703129",
+    "rubro": "Baterias acusticas",
+    "modelo": "MM529SFKD"
+  },
+  {
+    "codigo": "F1020703130",
+    "rubro": "Baterias acusticas",
+    "modelo": "MM529SFOG"
+  },
+  {
+    "codigo": "F1020703007",
+    "rubro": "Baterias acusticas",
+    "modelo": "MA-529SFAW"
+  },
+  {
+    "codigo": "F1020703008",
+    "rubro": "Baterias acusticas",
+    "modelo": "MA-529SF GW "
+  },
+  {
+    "codigo": "F1020703009",
+    "rubro": "Baterias acusticas",
+    "modelo": "MA-529SFIW"
+  },
+  {
+    "codigo": "F1020703012",
+    "rubro": "Baterias acusticas",
+    "modelo": "MA-529SFZW"
+  },
+  {
+    "codigo": "F1020703139",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCQS"
+  },
+  {
+    "codigo": "F1020703013",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5245TDR"
+  },
+  {
+    "codigo": "F1020703014",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5245TFD"
+  },
+  {
+    "codigo": "F1020703015",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5245TFI"
+  },
+  {
+    "codigo": "F1020703016",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5245TFJ"
+  },
+  {
+    "codigo": "F1020703017",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5245TYB"
+  },
+  {
+    "codigo": "F1020703096",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCDK"
+  },
+  {
+    "codigo": "F1020703097",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCDR"
+  },
+  {
+    "codigo": "F1020703098",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCFI"
+  },
+  {
+    "codigo": "F1020703099",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCFJ"
+  },
+  {
+    "codigo": "F1020703100",
+    "rubro": "Baterias acusticas",
+    "modelo": "PDG5254TCYB"
+  },
+  { "codigo": "F1020703141", "rubro": "Redoblantes", "modelo": "MPNMP4550CNL" },
+  { "codigo": "F1020703142", "rubro": "Redoblantes", "modelo": "MPML3600CNL" },
+  { "codigo": "F1020703144", "rubro": "Redoblantes", "modelo": "MPNST4651CN" },
+  { "codigo": "F1020703069", "rubro": "Redoblantes", "modelo": "MPBC4550BMB" },
+  { "codigo": "F1020703070", "rubro": "Redoblantes", "modelo": "MPBC4550CXN" },
+  { "codigo": "F1020703071", "rubro": "Redoblantes", "modelo": "MPML3600CNL" },
+  { "codigo": "F1020703072", "rubro": "Redoblantes", "modelo": "MPML4550BMB" },
+  { "codigo": "F1020703073", "rubro": "Redoblantes", "modelo": "MPML4550CNL" },
+  { "codigo": "F1020703091", "rubro": "Redoblantes", "modelo": "MPML4700CNL" },
+  { "codigo": "F1020703092", "rubro": "Redoblantes", "modelo": "MPML4800BMB" },
+  { "codigo": "F1020703093", "rubro": "Redoblantes", "modelo": "MPML4800CNL" },
+  { "codigo": "F1020703074", "rubro": "Redoblantes", "modelo": "MPST3354" },
+  { "codigo": "F1020703075", "rubro": "Redoblantes", "modelo": "MPST4351" },
+  { "codigo": "F1020703076", "rubro": "Redoblantes", "modelo": "MPST4558H" },
+  { "codigo": "F1020703077", "rubro": "Redoblantes", "modelo": "MPST4658H" },
+  {
+    "codigo": "F1020703031",
+    "rubro": "Accesorios para baterias",
+    "modelo": "BF-1000"
+  },
+  {
+    "codigo": "F1020703149",
+    "rubro": "Accesorios para baterias",
+    "modelo": "B-250"
+  },
+  {
+    "codigo": "F1020703024",
+    "rubro": "Accesorios para baterias",
+    "modelo": "B-200"
+  },
+  {
+    "codigo": "F1020703040",
+    "rubro": "Accesorios para baterias",
+    "modelo": "B-400"
+  },
+  {
+    "codigo": "F1020703035",
+    "rubro": "Accesorios para baterias",
+    "modelo": "B-600"
+  },
+  {
+    "codigo": "F1020703059",
+    "rubro": "Accesorios para baterias",
+    "modelo": "B-800"
+  },
+  {
+    "codigo": "F1020703032",
+    "rubro": "Accesorios para baterias",
+    "modelo": "HF1000"
+  },
+  {
+    "codigo": "F1020703148",
+    "rubro": "Accesorios para baterias",
+    "modelo": "HP-2505"
+  },
+  {
+    "codigo": "F1020703026",
+    "rubro": "Accesorios para baterias",
+    "modelo": "HP2005"
+  },
+  {
+    "codigo": "F1020703120",
+    "rubro": "Accesorios para baterias",
+    "modelo": "HP4005"
+  },
+  {
+    "codigo": "F1020703150",
+    "rubro": "Accesorios para baterias",
+    "modelo": "H-250"
+  },
+  {
+    "codigo": "F1020703025",
+    "rubro": "Accesorios para baterias",
+    "modelo": "H-200"
+  },
+  {
+    "codigo": "F1020703118",
+    "rubro": "Accesorios para baterias",
+    "modelo": "H-410"
+  },
+  {
+    "codigo": "F1020703036",
+    "rubro": "Accesorios para baterias",
+    "modelo": "H-600"
+  },
+  {
+    "codigo": "F1020703027",
+    "rubro": "Accesorios para baterias",
+    "modelo": "H-800"
+  },
+  {
+    "codigo": "F1020703033",
+    "rubro": "Accesorios para baterias",
+    "modelo": "PF-1000"
+  },
+  {
+    "codigo": "F1020703151",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-250"
+  },
+  {
+    "codigo": "F1020703053",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-200"
+  },
+  {
+    "codigo": "F1020703124",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P410"
+  },
+  {
+    "codigo": "F1020703123",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-410TW"
+  },
+  {
+    "codigo": "F1020703037",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-600"
+  },
+  {
+    "codigo": "F1020703038",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-600TW"
+  },
+  {
+    "codigo": "F1020703028",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-800"
+  },
+  {
+    "codigo": "F1020703119",
+    "rubro": "Accesorios para baterias",
+    "modelo": "P-810TW"
+  },
+  {
+    "codigo": "F1020703047",
+    "rubro": "Accesorios para baterias",
+    "modelo": "PPA08-MPN"
+  },
+  {
+    "codigo": "F1020703152",
+    "rubro": "Accesorios para baterias",
+    "modelo": "S-250"
+  },
+  {
+    "codigo": "F1020703054",
+    "rubro": "Accesorios para baterias",
+    "modelo": "S-200."
+  },
+  {
+    "codigo": "F1020703044",
+    "rubro": "Accesorios para baterias",
+    "modelo": "S-400"
+  },
+  {
+    "codigo": "F1020703039",
+    "rubro": "Accesorios para baterias",
+    "modelo": "S-600"
+  },
+  {
+    "codigo": "F1020703030",
+    "rubro": "Accesorios para baterias",
+    "modelo": "S-800"
+  },
+  {
+    "codigo": "F1020703034",
+    "rubro": "Accesorios para baterias",
+    "modelo": "SF-1000"
+  },
+  {
+    "codigo": "F1020703046",
+    "rubro": "Accesorios para baterias",
+    "modelo": "TH-800"
+  },
+  {
+    "codigo": "F1020703086",
+    "rubro": "Accesorios para baterias",
+    "modelo": "MBL909 "
+  },
+  {
+    "codigo": "F1020703087",
+    "rubro": "Accesorios para baterias",
+    "modelo": "MC902"
+  },
+  {
+    "codigo": "F1020703088",
+    "rubro": "Accesorios para baterias",
+    "modelo": "MC903"
+  },
+  {
+    "codigo": "F1020703089",
+    "rubro": "Accesorios para baterias",
+    "modelo": "MC910"
+  },
+  {
+    "codigo": "F1020703090",
+    "rubro": "Accesorios para baterias",
+    "modelo": "MTH908"
+  },
+  {
+    "codigo": "F1020703101",
+    "rubro": "Accesorios para baterias",
+    "modelo": "2670-346A"
+  },
+  {
+    "codigo": "F1020703131",
+    "rubro": "Accesorios para baterias",
+    "modelo": "2680-346A"
+  },
+  {
+    "codigo": "F1020703102",
+    "rubro": "Accesorios para baterias",
+    "modelo": "KZWA059A"
+  },
+  {
+    "codigo": "F1020703103",
+    "rubro": "Accesorios para baterias",
+    "modelo": " ACF-BPK"
+  },
+  {
+    "codigo": "F1020703104",
+    "rubro": "Accesorios para baterias",
+    "modelo": "4680-515A"
+  },
+  {
+    "codigo": "F1020703085",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T200"
+  },
+  {
+    "codigo": "F1020703055",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-270A"
+  },
+  {
+    "codigo": "F1020703045",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-400"
+  },
+  {
+    "codigo": "F1020703056",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-670A"
+  },
+  {
+    "codigo": "F1020703057",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-750A"
+  },
+  {
+    "codigo": "F1020703058",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-765A"
+  },
+  {
+    "codigo": "F1020703113",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-850"
+  },
+  {
+    "codigo": "F1020703114",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-855"
+  },
+  {
+    "codigo": "F1020703115",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-875"
+  },
+  {
+    "codigo": "F1020703116",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-670"
+  },
+  {
+    "codigo": "F1020703117",
+    "rubro": "Accesorios para baterias",
+    "modelo": "T-865"
+  },
+  {
+    "codigo": "F0400703033",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Black Ash 20\""
+  },
+  {
+    "codigo": "F0400703031",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Black Ash 22\""
+  },
+  {
+    "codigo": "F0400703028",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Mahogany 20\""
+  },
+  {
+    "codigo": "F0400703030",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Mahogany 22\""
+  },
+  {
+    "codigo": "F0400703048",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Cobalt 20\""
+  },
+  {
+    "codigo": "F0400703049",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Cobalt 22\""
+  },
+  {
+    "codigo": "F0400703050",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Vintage grey 20\""
+  },
+  {
+    "codigo": "F0400703051",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Vintage grey 22\""
+  },
+  {
+    "codigo": "F0400703052",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Twin 20\""
+  },
+  {
+    "codigo": "F0400703053",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Twin 22\""
+  },
+  {
+    "codigo": "F0400703035",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Walnut 20\""
+  },
+  {
+    "codigo": "F0400703032",
+    "rubro": "Baterias acusticas",
+    "modelo": "SENIOR SERIE 2 Walnut 22\""
+  },
+  {
+    "codigo": "F0400703004",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Black Ash"
+  },
+  {
+    "codigo": "F0400703006",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Mahogany"
+  },
+  {
+    "codigo": "F0400703041",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Cobalt"
+  },
+  {
+    "codigo": "F0400703042",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Vintage grey"
+  },
+  {
+    "codigo": "F0400703043",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Twin"
+  },
+  {
+    "codigo": "F0400703054",
+    "rubro": "Baterias acusticas",
+    "modelo": "CLASSIC SERIE 2 Walnut"
+  },
+  {
+    "codigo": "F0400703019",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Walnut"
+  },
+  {
+    "codigo": "F0400703017",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Mahogany"
+  },
+  {
+    "codigo": "F0400703018",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Vintage Grey"
+  },
+  {
+    "codigo": "F0400703036",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Twin"
+  },
+  {
+    "codigo": "F0400703037",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Cobalt"
+  },
+  {
+    "codigo": "F0400703038",
+    "rubro": "Baterias acusticas",
+    "modelo": "ONE Black Ash"
+  },
+  {
+    "codigo": "F0400703057",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Walnut"
+  },
+  {
+    "codigo": "F0400703058",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Mahogany"
+  },
+  {
+    "codigo": "F0400703059",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Black Ash"
+  },
+  {
+    "codigo": "F0400703060",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Cobalt"
+  },
+  {
+    "codigo": "F0400703061",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Vintage Grey"
+  },
+  {
+    "codigo": "F0400703062",
+    "rubro": "Baterias acusticas",
+    "modelo": "Traveler Twin"
+  },
+  {
+    "codigo": "F0400161001",
+    "rubro": "Accesorios para baterias",
+    "modelo": "Pedal de Bombo"
+  },
+  {
+    "codigo": "F0400159011",
+    "rubro": "Parches para baterias",
+    "modelo": "20\" negro"
+  },
+  {
+    "codigo": "F0562648001",
+    "rubro": "Platillos",
+    "modelo": "Twister TWP10SP"
+  },
+  {
+    "codigo": "F0562648007",
+    "rubro": "Platillos",
+    "modelo": "Twister TWP12SP"
+  },
+  {
+    "codigo": "F0562648002",
+    "rubro": "Platillos",
+    "modelo": "Twister TWP14HH"
+  },
+  { "codigo": "F0562648003", "rubro": "Platillos", "modelo": "Twister TWP16C" },
+  { "codigo": "F0562648004", "rubro": "Platillos", "modelo": "Twister TWP18C" },
+  {
+    "codigo": "F0562648005",
+    "rubro": "Platillos",
+    "modelo": "Twister TWP20RD"
+  },
+  {
+    "codigo": "F0562613006",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP10SP"
+  },
+  {
+    "codigo": "F0562613007",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP12SP"
+  },
+  {
+    "codigo": "F0562613008",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP14HH"
+  },
+  {
+    "codigo": "F0562613009",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP16C"
+  },
+  {
+    "codigo": "F0562613010",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP18C"
+  },
+  {
+    "codigo": "F0562613011",
+    "rubro": "Platillos",
+    "modelo": "Solo Pro PRP20RD"
+  },
+  {
+    "codigo": "T0562613015",
+    "rubro": "Platillos",
+    "modelo": "Revolution Pro RP12SP"
+  },
+  {
+    "codigo": "T0562613047",
+    "rubro": "Platillos",
+    "modelo": "Revolution 10 RX12SP"
+  },
+  {
+    "codigo": "T0562613053",
+    "rubro": "Platillos",
+    "modelo": "Revolution 10 RX20RD"
+  },
+  { "codigo": "T0440242033", "rubro": "Cajas para guitarra", "modelo": 2536 },
+  { "codigo": "T0440242014", "rubro": "Cajas para guitarra", "modelo": 1936 },
+  {
+    "codigo": "T0440242099",
+    "rubro": "Cajas para guitarra",
+    "modelo": "2551 AV"
+  },
+  {
+    "codigo": "T0440242100",
+    "rubro": "Cajas para guitarra",
+    "modelo": "2551 BV"
+  },
+  {
+    "codigo": "T0440242019",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 AHW"
+  },
+  {
+    "codigo": "T0440242020",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 AX"
+  },
+  {
+    "codigo": "T0440242017",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 A"
+  },
+  {
+    "codigo": "T0440242021",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 B"
+  },
+  {
+    "codigo": "T0440242023",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 BHW"
+  },
+  {
+    "codigo": "T0440242024",
+    "rubro": "Cajas para guitarra",
+    "modelo": "1960 BV"
+  },
+  {
+    "codigo": "T0440242073",
+    "rubro": "Cajas para guitarra",
+    "modelo": "MG 412 ACF Carbon Fibre Series"
+  },
+  {
+    "codigo": "T0440242082",
+    "rubro": "Cajas para guitarra",
+    "modelo": "MG 412 ACF Gold Series"
+  },
+  {
+    "codigo": "T0440242077",
+    "rubro": "Cajas para guitarra",
+    "modelo": "MX 212"
+  },
+  {
+    "codigo": "T0440242078",
+    "rubro": "Cajas para guitarra",
+    "modelo": "MX 412 A"
+  },
+  {
+    "codigo": "T0440242079",
+    "rubro": "Cajas para guitarra",
+    "modelo": "MX 412 B"
+  },
+  {
+    "codigo": "T0440246015",
+    "rubro": "Cajas para guitarra",
+    "modelo": "CODE 412"
+  },
+  {
+    "codigo": "T0440242067",
+    "rubro": "Cajas para guitarra",
+    "modelo": "JVM C 212"
+  },
+  {
+    "codigo": "T0440242112",
+    "rubro": "Cajas para guitarra",
+    "modelo": " ST112"
+  },
+  {
+    "codigo": "T0440242113",
+    "rubro": "Cajas para guitarra",
+    "modelo": "ST212"
+  },
+  {
+    "codigo": "T0440242015",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "1958 X Handwired"
+  },
+  {
+    "codigo": "T0440242025",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "1962 Bluesbreaker Vintage"
+  },
+  {
+    "codigo": "T0440242026",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "1974 X Tremolo Handwired"
+  },
+  { "codigo": "T0440242111", "rubro": "Amplificadores", "modelo": "ST20C" },
+  {
+    "codigo": "T0440242110",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ST20H  Studio JTM "
+  },
+  {
+    "codigo": "T0440242016",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "1959 SLP Vintage"
+  },
+  {
+    "codigo": "T0440242027",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "1987 X Vintage"
+  },
+  {
+    "codigo": "T0440242028",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JCM 800 Vintage 2203"
+  },
+  {
+    "codigo": "T0440242029",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JCM 800 Burgundy Snakeskin 2203D"
+  },
+  {
+    "codigo": "T0440242030",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "2245 (JTM 45 Vintage)"
+  },
+  {
+    "codigo": "T0440242083",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JVM 205 C"
+  },
+  {
+    "codigo": "T0440242063",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JVM 210 H"
+  },
+  {
+    "codigo": "T0440242064",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JVM 215 C"
+  },
+  {
+    "codigo": "T0440242065",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JVM 410 C"
+  },
+  {
+    "codigo": "T0440242066",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "JVM 410 H"
+  },
+  {
+    "codigo": "T0440242031",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "2525C Studio Mini Jubilee Combo"
+  },
+  {
+    "codigo": "T0440242032",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "2525H Studio Mini Jubilee Head"
+  },
+  {
+    "codigo": "T0440242098",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "2555 X"
+  },
+  {
+    "codigo": "T0440242103",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "SC 20 H"
+  },
+  {
+    "codigo": "T0440242104",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "SC 20 C"
+  },
+  {
+    "codigo": "T0440242101",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "SV 20 H"
+  },
+  {
+    "codigo": "T0440242102",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "SV 20 C"
+  },
+  {
+    "codigo": "T0440242054",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL100 H (JCM2000) "
+  },
+  {
+    "codigo": "T0440242097",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 1CR"
+  },
+  {
+    "codigo": "T0440242057",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 5 CR"
+  },
+  {
+    "codigo": "T0440242055",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 15 H"
+  },
+  {
+    "codigo": "T0440242085",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 20 H"
+  },
+  {
+    "codigo": "T0440246005",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 15 C"
+  },
+  {
+    "codigo": "T0440242090",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 20 CR"
+  },
+  {
+    "codigo": "T0440242086",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "DSL 40 CR"
+  },
+  {
+    "codigo": "T0440242087",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ORI 5 C"
+  },
+  {
+    "codigo": "F0440242088",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ORI 20 C"
+  },
+  {
+    "codigo": "T0440242089",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ORI 50 C"
+  },
+  {
+    "codigo": "T0440242105",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ORI 20 H"
+  },
+  {
+    "codigo": "T0440242106",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "ORI 50 H"
+  },
+  {
+    "codigo": "T0440242107",
+    "rubro": "Cajas para guitarra",
+    "modelo": "ORI 212 A"
+  },
+  {
+    "codigo": "T0440242108",
+    "rubro": "Cajas para guitarra",
+    "modelo": "ORI 212"
+  },
+  {
+    "codigo": "T0440246003",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "CODE 25"
+  },
+  {
+    "codigo": "T0440246004",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "CODE 50"
+  },
+  {
+    "codigo": "T0440246014",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "CODE 100"
+  },
+  {
+    "codigo": "T0440246016",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "CODE 100H"
+  },
+  {
+    "codigo": "T0440242068",
+    "rubro": "Amplificadores para bajo",
+    "modelo": "MB 15"
+  },
+  {
+    "codigo": "T0440246008",
+    "rubro": "Amplificadores para bajo",
+    "modelo": "MB 30"
+  },
+  {
+    "codigo": "F0440246009",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 10 CF Gold"
+  },
+  {
+    "codigo": "T0440246017",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 15 G"
+  },
+  {
+    "codigo": "T0440246011",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 15 GR"
+  },
+  {
+    "codigo": "T0440242109",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 30GFX"
+  },
+  {
+    "codigo": "T0440242072",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 15 CFX Carbon Fibre"
+  },
+  {
+    "codigo": "T0440242074",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 50 CFX Carbon Fibre"
+  },
+  {
+    "codigo": "T0440242069",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 100 HCFX"
+  },
+  {
+    "codigo": "T0440246010",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG 101 CFX"
+  },
+  {
+    "codigo": "T0440242070",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MG102 CFX"
+  },
+  {
+    "codigo": "T0440242039",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "AS 50 D"
+  },
+  {
+    "codigo": "T0440246002",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "AS 100 D"
+  },
+  {
+    "codigo": "T0440242075",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MS-2C"
+  },
+  {
+    "codigo": "T0440246013",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MS-2"
+  },
+  {
+    "codigo": "T0440246001",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MS-2R"
+  },
+  {
+    "codigo": "T0440242076",
+    "rubro": "Amplificadores para guitarra",
+    "modelo": "MS-4"
+  },
+  {
+    "codigo": "T0440161017",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00100 BLUESBREAKER"
+  },
+  {
+    "codigo": "T0440161018",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00101 THE GUV'NOR"
+  },
+  {
+    "codigo": "T0440161019",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00102 SHREDMASTER"
+  },
+  {
+    "codigo": "T0440161020",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00103 DRIVEMASTER"
+  },
+  {
+    "codigo": "T0440161010",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-90008"
+  },
+  {
+    "codigo": "T0440161012",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-91009"
+  },
+  {
+    "codigo": "T0440161015",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-90016"
+  },
+  {
+    "codigo": "T0440161014",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-91010 CODE 2 WAY"
+  },
+  {
+    "codigo": "T0440161008",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00001"
+  },
+  {
+    "codigo": "T0440161009",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-00003"
+  },
+  {
+    "codigo": "T0440161011",
+    "rubro": "Pedal de efectos",
+    "modelo": "PEDL-90010"
+  },
+  {
+    "codigo": "F0280140024",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GT-ACOUSTIC-GRY"
+  },
+  {
+    "codigo": "F0280140025",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GT-BASS-GRY"
+  },
+  {
+    "codigo": "F0280140026",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GT-ELECTRIC-GRY"
+  },
+  {
+    "codigo": "T0280140027",
+    "rubro": "Estuche para pedales",
+    "modelo": "Transit Series GT-1610-GRY"
+  },
+  {
+    "codigo": "T0280140028",
+    "rubro": "Estuche para pedales",
+    "modelo": "Transit Series GT-2412-GRY"
+  },
+  {
+    "codigo": "T0280140029",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GTR-BASS-GRY"
+  },
+  {
+    "codigo": "T0280140030",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GTR-ELECTRIC-GRY"
+  },
+  {
+    "codigo": "T0280140037",
+    "rubro": "Estuche para guitarra",
+    "modelo": "Transit Series GTR-DREAD12-TAN"
+  },
+  {
+    "codigo": "F0280117022",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-CLASSIC"
+  },
+  {
+    "codigo": "T0280140054",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-DREAD-12-2Pk. "
+  },
+  {
+    "codigo": "F0280140055",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-DREAD-12-S  1Pk. "
+  },
+  {
+    "codigo": "F0280117023",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-DREAD"
+  },
+  {
+    "codigo": "T0280140056",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-ELECTRIC"
+  },
+  {
+    "codigo": "F0280140057",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-GSMINI "
+  },
+  {
+    "codigo": "T0280140058",
+    "rubro": "Estuche para guitarra",
+    "modelo": " GL-JUMBO"
+  },
+  {
+    "codigo": "T0280140059",
+    "rubro": "Estuche para guitarra",
+    "modelo": " GL-JUMBO-S"
+  },
+  {
+    "codigo": "T0280117024",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-LPS"
+  },
+  {
+    "codigo": "T0280140007",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GL-SG"
+  },
+  {
+    "codigo": "T0280140114",
+    "rubro": "Funda para Bajo",
+    "modelo": "GL-BASS-S"
+  },
+  {
+    "codigo": "F0280117062",
+    "rubro": "Estuche para clarinete",
+    "modelo": " GL-CLARINET-23"
+  },
+  {
+    "codigo": "F0280117063",
+    "rubro": "Estuche para Trompeta",
+    "modelo": "GL-TRUMPET-S23"
+  },
+  { "codigo": "T0280140087", "rubro": "Estuche", "modelo": "GL-ALTOSAX-MPC  " },
+  { "codigo": "T0280140088", "rubro": "Estuche", "modelo": " GL-CLARINETE-A" },
+  { "codigo": "T0280140089", "rubro": "Estuche", "modelo": "GL-FLUTE-A " },
+  { "codigo": "T0280140090", "rubro": "Estuche", "modelo": " GL-TENOR-SAX-A " },
+  { "codigo": "F0280140091", "rubro": "Estuche", "modelo": " GL-TRUMPET-A " },
+  {
+    "codigo": "F0280117059",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GBPB-ALTOSAX"
+  },
+  {
+    "codigo": "F0280117060",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GBPB-TENSAX"
+  },
+  {
+    "codigo": "F0280117061",
+    "rubro": "Estuche para Trompeta",
+    "modelo": "GBPB-TRUMPET"
+  },
+  {
+    "codigo": "T0280117085",
+    "rubro": "Estuche para Bajo",
+    "modelo": "GC-BASS-4PK"
+  },
+  {
+    "codigo": "T0280117087",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-Dread 12 4PK"
+  },
+  {
+    "codigo": "F0280117064",
+    "rubro": "Estuche para Saxo",
+    "modelo": " GC-ALTOSAX-23"
+  },
+  {
+    "codigo": "F0280117065",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GC-TENORSAX-23"
+  },
+  {
+    "codigo": "F0280117066",
+    "rubro": "Estuche para Saxo",
+    "modelo": " GL-ALTOSAX-S23"
+  },
+  {
+    "codigo": "F0280117067",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GL-TENORSAX-S23"
+  },
+  {
+    "codigo": "T0280117084",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GC-ALTO SAX"
+  },
+  {
+    "codigo": "T0280117093",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GC-TENOR-SAX"
+  },
+  {
+    "codigo": "T0280117094",
+    "rubro": "Estuche para Saxo",
+    "modelo": "GC-TRUMPET"
+  },
+  { "codigo": "F0280140083", "rubro": "Estuche", "modelo": " GC-CLARINETE " },
+  { "codigo": "F0280140084", "rubro": "Estuche", "modelo": " GC-FLUTE-B/C " },
+  { "codigo": "F0280140085", "rubro": "Estuche", "modelo": "GC-TROMBONE " },
+  {
+    "codigo": "T0280117089",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-ELECTRIC-A"
+  },
+  {
+    "codigo": "T0280117088",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-Electric XL "
+  },
+  {
+    "codigo": "F0280117092",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-SG"
+  },
+  {
+    "codigo": "T0280117083",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-335"
+  },
+  {
+    "codigo": "T0280117086",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-Classic"
+  },
+  {
+    "codigo": "F0280117090",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-Jumbo "
+  },
+  {
+    "codigo": "T0280117091",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GC-LPS"
+  },
+  {
+    "codigo": "T0280117095",
+    "rubro": "Estuche para violín",
+    "modelo": "GC-Violin 4/4"
+  },
+  {
+    "codigo": "T0280117019",
+    "rubro": "Estuche para teclado",
+    "modelo": "GKPE-61-TSA"
+  },
+  {
+    "codigo": "T0280117050",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GWE-CLASSIC"
+  },
+  {
+    "codigo": "T0280117049",
+    "rubro": "Estuche para bajo",
+    "modelo": "GWE-BASS"
+  },
+  {
+    "codigo": "T0280117051",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GWE-DREAD"
+  },
+  {
+    "codigo": "T0280117046",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GWE-Electric "
+  },
+  {
+    "codigo": "T0280117058",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GWE-335"
+  },
+  {
+    "codigo": "T0280117047",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GWE LPS BLK"
+  },
+  {
+    "codigo": "T0280117054",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GW LPS Brown"
+  },
+  {
+    "codigo": "T0280117052",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GW SG-Brown"
+  },
+  {
+    "codigo": "T0280117039",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GPE-Bass-TSA"
+  },
+  {
+    "codigo": "T0280117040",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GPE-Classic TSA"
+  },
+  {
+    "codigo": "T0280117041",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GPE-Dread TSA"
+  },
+  {
+    "codigo": "T0280117037",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GPE Electric TSA"
+  },
+  {
+    "codigo": "T0280117038",
+    "rubro": "Estuche para guitarra",
+    "modelo": "GPE LPS TSA"
+  },
+  {
+    "codigo": "T0280140103",
+    "rubro": "Funda para Bajo",
+    "modelo": " GBE-BASS "
+  },
+  {
+    "codigo": "T0280140104",
+    "rubro": "Funda para Guitarra",
+    "modelo": " GBE-CLASSIC "
+  },
+  {
+    "codigo": "T0280140105",
+    "rubro": "Funda para Guitarra",
+    "modelo": "GBE-DREAD "
+  },
+  {
+    "codigo": "T0280140106",
+    "rubro": "Funda para Guitarra",
+    "modelo": " GBE-ELECT "
+  },
+  {
+    "codigo": "T0280140107",
+    "rubro": "Funda para Ukelele",
+    "modelo": " GBE-UKE-SOP "
+  },
+  {
+    "codigo": "F0280140041",
+    "rubro": "Funda para Guitarra",
+    "modelo": " GT-ACOUSTIC-BLK "
+  },
+  {
+    "codigo": "T0280140001",
+    "rubro": "Pedal de efectos",
+    "modelo": "G-GIG-BOX TSA"
+  },
+  {
+    "codigo": "F0280117017",
+    "rubro": "Soporte para guitarra",
+    "modelo": "G-GIG-BOX JR"
+  },
+  {
+    "codigo": "F0280140043",
+    "rubro": "Estuche para Saxo",
+    "modelo": " G-PG-TENORSAX "
+  },
+  {
+    "codigo": "F0280140044",
+    "rubro": "Funda para bajo",
+    "modelo": "GT-BASS-TAN "
+  },
+  {
+    "codigo": "F0280140045",
+    "rubro": "Funda para guitarra",
+    "modelo": " GPX-ACOUSTIC "
+  },
+  {
+    "codigo": "F0280140046",
+    "rubro": "Funda para guitarra",
+    "modelo": " G-PG ACOUSTIC "
+  },
+  {
+    "codigo": "F0280140047",
+    "rubro": "Funda para guitarra",
+    "modelo": " G-PG CLASSIC "
+  },
+  {
+    "codigo": "T0280140117",
+    "rubro": "Funda para Teclados",
+    "modelo": "GK-88 SLIM"
+  },
+  {
+    "codigo": "T0280140118",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKB-88"
+  },
+  {
+    "codigo": "F0280140048",
+    "rubro": "Funda para Teclados",
+    "modelo": " G-PG-61SLIM "
+  },
+  {
+    "codigo": "F0280140049",
+    "rubro": "Funda para Teclados",
+    "modelo": " G-PG-76 "
+  },
+  {
+    "codigo": "F0280140050",
+    "rubro": "Funda para Teclados",
+    "modelo": "G-PG-88 "
+  },
+  {
+    "codigo": "F0280140068",
+    "rubro": "Funda para Teclados",
+    "modelo": "GK-1610 "
+  },
+  {
+    "codigo": "T0280140069",
+    "rubro": "Funda para Teclados",
+    "modelo": " GK-2110"
+  },
+  {
+    "codigo": "T0280140070",
+    "rubro": "Funda para Teclados",
+    "modelo": "GK-76 "
+  },
+  {
+    "codigo": "T0280117018",
+    "rubro": "Funda para Teclados",
+    "modelo": "GK-61"
+  },
+  {
+    "codigo": "F0280140002",
+    "rubro": "Funda para Teclados",
+    "modelo": "GK-88"
+  },
+  {
+    "codigo": "T0280140072",
+    "rubro": "Funda para Teclados",
+    "modelo": " GKBE-49 "
+  },
+  {
+    "codigo": "T0280140073",
+    "rubro": "Funda para Teclados",
+    "modelo": " GKBE-61 "
+  },
+  {
+    "codigo": "T0280140074",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKBE-76 "
+  },
+  {
+    "codigo": "T0280140075",
+    "rubro": "Funda para Teclados",
+    "modelo": " GKBE-88 "
+  },
+  {
+    "codigo": "T0280140020",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKB-PSR10"
+  },
+  {
+    "codigo": "T0280140021",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKB-PSR20"
+  },
+  {
+    "codigo": "T0280140003",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKC-1540"
+  },
+  {
+    "codigo": "F0280140003",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKC-1540"
+  },
+  {
+    "codigo": "T0280140004",
+    "rubro": "Funda para Teclados",
+    "modelo": "GKC-1648"
+  },
+  { "codigo": "T0280117056", "rubro": "Fundas", "modelo": "GM-12B" },
+  { "codigo": "T0280117074", "rubro": "Fundas", "modelo": "MIXERBAG 1306" },
+  { "codigo": "T0280140022", "rubro": "Fundas", "modelo": "CVR 12" },
+  { "codigo": "T0280140119", "rubro": "Fundas", "modelo": "GR-RACKBAG-4UW" },
+  { "codigo": "T0280140120", "rubro": "Fundas", "modelo": "GPA-TOTE10" },
+  { "codigo": "T0280140116", "rubro": "Fundas", "modelo": "GPA-TOTE12" },
+  { "codigo": "T0280140023", "rubro": "Fundas", "modelo": "TOTE 15" },
+  {
+    "codigo": "F0280140042",
+    "rubro": "Funda de batería",
+    "modelo": " G-PG-SNRBAKPAK "
+  },
+  {
+    "codigo": "F0280140092",
+    "rubro": "Funda de batería",
+    "modelo": "GP-0808 "
+  },
+  { "codigo": "T0280140031", "rubro": "Funda de batería", "modelo": "GP-1008" },
+  { "codigo": "F0280140032", "rubro": "Funda de batería", "modelo": "GP-1209" },
+  {
+    "codigo": "T0280140094",
+    "rubro": "Funda de batería",
+    "modelo": "GP-1210 "
+  },
+  {
+    "codigo": "T0280117053",
+    "rubro": "Funda de batería",
+    "modelo": "GP-ART-1310"
+  },
+  { "codigo": "T0280140033", "rubro": "Funda de batería", "modelo": "GP-1311" },
+  {
+    "codigo": "T0280140019",
+    "rubro": "Estuche para batería",
+    "modelo": "GP-1405,5 SD"
+  },
+  {
+    "codigo": "F0280140008",
+    "rubro": "Funda de batería",
+    "modelo": "GP-1406,5 SD"
+  },
+  { "codigo": "F0280140034", "rubro": "Funda de batería", "modelo": "GP-1414" },
+  { "codigo": "F0280140035", "rubro": "Funda de batería", "modelo": "GP-1616" },
+  {
+    "codigo": "F0280140097",
+    "rubro": "Funda de batería",
+    "modelo": " GP-1816 "
+  },
+  {
+    "codigo": "F0280140036",
+    "rubro": "Funda de batería",
+    "modelo": "GP-2218BD"
+  },
+  {
+    "codigo": "F0280140098",
+    "rubro": "Funda de batería",
+    "modelo": " GP-2018BD "
+  },
+  {
+    "codigo": "T0280140014",
+    "rubro": "Funda de batería",
+    "modelo": "GP-FUSION 100"
+  },
+  {
+    "codigo": "T0280117042",
+    "rubro": "Estuche para Bateria",
+    "modelo": "GPR FUSION 14T"
+  },
+  {
+    "codigo": "F0280140015",
+    "rubro": "Funda de batería",
+    "modelo": "GP-STANDARD 100"
+  },
+  { "codigo": "T0280140016", "rubro": "Fundas", "modelo": "GP-1814-PC" },
+  {
+    "codigo": "T0280140013",
+    "rubro": "Funda de batería",
+    "modelo": "GP-Conga w"
+  },
+  {
+    "codigo": "T0280117034",
+    "rubro": "Estuche para batería",
+    "modelo": "GP-20PE"
+  },
+  {
+    "codigo": "F0280117035",
+    "rubro": "Estuche para batería",
+    "modelo": "GP-22PE"
+  },
+  {
+    "codigo": "T0280140115",
+    "rubro": "Funda de batería",
+    "modelo": "GP-HDWE-1436-PE"
+  },
+  {
+    "codigo": "T0280117036",
+    "rubro": "Funda de batería",
+    "modelo": "GP-DRUMCART"
+  },
+  {
+    "codigo": "T0280117003",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-2L"
+  },
+  {
+    "codigo": "T0280117004",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-4L"
+  },
+  {
+    "codigo": "T0280117005",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-6L"
+  },
+  {
+    "codigo": "T0280117006",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-8L"
+  },
+  {
+    "codigo": "T0280117001",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-10L"
+  },
+  {
+    "codigo": "T0280117002",
+    "rubro": "Fight cases y racks",
+    "modelo": "GR-12L"
+  },
+  {
+    "codigo": "T0280117007",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-10X4"
+  },
+  {
+    "codigo": "T0280117008",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-10X6"
+  },
+  {
+    "codigo": "T0280117009",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-10x8"
+  },
+  {
+    "codigo": "T0280117010",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-12x10PU"
+  },
+  {
+    "codigo": "T0280117011",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-BASE-10"
+  },
+  {
+    "codigo": "T0280117012",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRC-BASE-14"
+  },
+  {
+    "codigo": "T0280117013",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRR-4L"
+  },
+  {
+    "codigo": "T0280117014",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRR-6L"
+  },
+  {
+    "codigo": "T0280117015",
+    "rubro": "Fight cases y racks",
+    "modelo": "GRR-8L"
+  },
+  {
+    "codigo": "T0280117077",
+    "rubro": "Fight cases y racks",
+    "modelo": "PROJECT"
+  },
+  {
+    "codigo": "T0280117031",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-12PU-TSA"
+  },
+  {
+    "codigo": "T0280117070",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-1921-6-TSA"
+  },
+  {
+    "codigo": "T0280117071",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-1921-8-TSA"
+  },
+  {
+    "codigo": "T0280117072",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-2030"
+  },
+  {
+    "codigo": "T0280117073",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-2225-8-TSA"
+  },
+  {
+    "codigo": "T0280117033",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-3828-8-TSA"
+  },
+  {
+    "codigo": "T0280117030",
+    "rubro": "Fight cases y racks",
+    "modelo": "G-MIX 17 x 18"
+  },
+  {
+    "codigo": "T0280117032",
+    "rubro": "Fight cases y racks",
+    "modelo": "GMIX-1818-6-TSA"
+  },
+  {
+    "codigo": "T0280117025",
+    "rubro": "Fight cases y racks",
+    "modelo": "GM-15-TSA"
+  },
+  {
+    "codigo": "T0280117026",
+    "rubro": "Fight cases y racks",
+    "modelo": "GM-30-TSA"
+  },
+  {
+    "codigo": "T0280117027",
+    "rubro": "Fight cases y racks",
+    "modelo": "GM-6-PE"
+  },
+  { "codigo": "T0280117055", "rubro": "Fundas", "modelo": "GM-5W" },
+  {
+    "codigo": "T0280117028",
+    "rubro": "Fight cases y racks",
+    "modelo": "GM-7W-TSA"
+  },
+  { "codigo": "T0280140082", "rubro": "Estuche", "modelo": " GTSA-MIC15 " },
+  {
+    "codigo": "F0280175020",
+    "rubro": "Soporte para guitarra",
+    "modelo": "ROK IT RI-GTR-RACK3"
+  },
+  {
+    "codigo": "F0280175023",
+    "rubro": "Soporte para teclado",
+    "modelo": "ROK IT RI-KEYXW-1"
+  },
+  {
+    "codigo": "F0280175032",
+    "rubro": "Soportes accesorios",
+    "modelo": "Filtro Antipop ROK-IT RI-POPFILTER"
+  },
+  {
+    "codigo": "F0280175067",
+    "rubro": "Atril de partitura",
+    "modelo": "RI-MUSICSTD1"
+  },
+  {
+    "codigo": "F0280175033",
+    "rubro": "Soporte para guitarra",
+    "modelo": "RI-GTRAA"
+  },
+  {
+    "codigo": "F0280175022",
+    "rubro": "Soporte para guitarra",
+    "modelo": "RI-GTRSTD-1"
+  },
+  {
+    "codigo": "F0280175031",
+    "rubro": "Soporte para guitarra",
+    "modelo": "RI-GTR-RACK5"
+  },
+  {
+    "codigo": "F0280175024",
+    "rubro": "Pie para microfono",
+    "modelo": "RI-MICTP-TBM"
+  },
+  {
+    "codigo": "T0280175026",
+    "rubro": "Soporte para bafle",
+    "modelo": "RI-SPKRSTD SET"
+  },
+  {
+    "codigo": "T0280175025",
+    "rubro": "Soporte para bafle",
+    "modelo": "RI-SPKRSTD"
+  },
+  {
+    "codigo": "T0280175018",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW ID MIC"
+  },
+  {
+    "codigo": "F0280175006",
+    "rubro": "Soporte para bafle",
+    "modelo": "GFW-ID-SPKR-SP"
+  },
+  {
+    "codigo": "F0280175019",
+    "rubro": "Pie para microfono",
+    "modelo": "MICTP-FBM"
+  },
+  {
+    "codigo": "F0280175007",
+    "rubro": "Soporte para teclado",
+    "modelo": "GFW-KEY-2000X "
+  },
+  {
+    "codigo": "F0280175044",
+    "rubro": "Soporte para teclado",
+    "modelo": "GFW-KEY-5100X"
+  },
+  {
+    "codigo": "F0280175043",
+    "rubro": "Soporte para teclado",
+    "modelo": "GFW-KEYZ 0500"
+  },
+  {
+    "codigo": "F0280175003",
+    "rubro": "Banqueta para teclado",
+    "modelo": "GFW-BNCH-1"
+  },
+  {
+    "codigo": "F0280175045",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-HP-HANGERDESK"
+  },
+  {
+    "codigo": "F0280175068",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-SM4248"
+  },
+  {
+    "codigo": "F0280175069",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-SM5560"
+  },
+  {
+    "codigo": "F0280175060",
+    "rubro": "Soporte para bafle",
+    "modelo": "GFW-SPK-STMNDSKCMP"
+  },
+  {
+    "codigo": "F0280175070",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-BCBM1000"
+  },
+  {
+    "codigo": "F0280175008",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-0250"
+  },
+  {
+    "codigo": "F0280175009",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-0251"
+  },
+  {
+    "codigo": "F0280175010",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-0821"
+  },
+  {
+    "codigo": "T0280175016",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-QRTOP"
+  },
+  {
+    "codigo": "F0280175004",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GFW-GTR-HNGRBLK"
+  },
+  {
+    "codigo": "F0280175005",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GFW-GTR-HNGRMHG"
+  },
+  {
+    "codigo": "T0280175011",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-1200"
+  },
+  {
+    "codigo": "F0280175012",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-2020"
+  },
+  {
+    "codigo": "F0280175061",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-0600"
+  },
+  {
+    "codigo": "F0280175063",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-2100"
+  },
+  {
+    "codigo": "F0280175013",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-2120"
+  },
+  {
+    "codigo": "F0280175034",
+    "rubro": "Soporte para bafle",
+    "modelo": "GFW-SPK-SM50"
+  },
+  {
+    "codigo": "F0280175064",
+    "rubro": "Soporte para bafle",
+    "modelo": "GFW-SPK-SP"
+  },
+  {
+    "codigo": "F0280175065",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-TABLET 1000"
+  },
+  {
+    "codigo": "F0280175014",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-CLIP "
+  },
+  {
+    "codigo": "F0280175015",
+    "rubro": "Pie para microfono",
+    "modelo": "GFW-MIC-CLIPW"
+  },
+  {
+    "codigo": "T0280117069",
+    "rubro": "Soporte para bafle",
+    "modelo": "GFW-SPK-3000"
+  },
+  {
+    "codigo": "T0280175017",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-UTILITY-TBL"
+  },
+  { "codigo": "F0280175035", "rubro": "Fundas", "modelo": "GFW-6XMICSTANDBAG" },
+  {
+    "codigo": "F0280175036",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-GTR-PICKCLIP"
+  },
+  {
+    "codigo": "F0280175037",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-SHELF1115"
+  },
+  {
+    "codigo": "F0280175046",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-UTL-TBLTCLMP"
+  },
+  {
+    "codigo": "F0280175048",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFWLAPTOP2000"
+  },
+  {
+    "codigo": "F0280175049",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFWLAPTOP2500"
+  },
+  {
+    "codigo": "F0280175001",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-MICACC TRAY"
+  },
+  {
+    "codigo": "F0280175050",
+    "rubro": "Soporte para saxo",
+    "modelo": "GFW-BNO-SAXTALL"
+  },
+  {
+    "codigo": "F0280175051",
+    "rubro": "Soportes accesorios",
+    "modelo": " GFWMICBCBM0500"
+  },
+  {
+    "codigo": "F0280175052",
+    "rubro": "Soporte para bafle",
+    "modelo": " GFW-SPK-2000 "
+  },
+  {
+    "codigo": "T0280175029",
+    "rubro": "Atril de partitura",
+    "modelo": "GFW-UTL-MEDIATRAY1"
+  },
+  {
+    "codigo": "T0280175030",
+    "rubro": "Atril de partitura",
+    "modelo": "GFW-UTL-MEDIATRAY2"
+  },
+  {
+    "codigo": "F0280175066",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-MUSLEDR"
+  },
+  {
+    "codigo": "F0280175038",
+    "rubro": "Atril de partitura",
+    "modelo": "GFW-MUS-2000"
+  },
+  {
+    "codigo": "F0280175039",
+    "rubro": "Soportes accesorios",
+    "modelo": "GFW-MUS-LED"
+  },
+  {
+    "codigo": "F0280175040",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GFW-GTR-1000"
+  },
+  {
+    "codigo": "F0280175041",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GFW-GTR-2000"
+  },
+  {
+    "codigo": "F0280175042",
+    "rubro": "Soporte para guitarra",
+    "modelo": "GFW-GTR-3000"
+  },
+  {
+    "codigo": "T0322369211",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 8PW PRO"
+  },
+  {
+    "codigo": "T0322369212",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 10PW PRO"
+  },
+  {
+    "codigo": "T0322369210",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 12PW PRO"
+  },
+  {
+    "codigo": "T0322369209",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 15PW PRO"
+  },
+  {
+    "codigo": "T0322369205",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 18WP600"
+  },
+  {
+    "codigo": "T0322369070",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 12MB3P"
+  },
+  {
+    "codigo": "T0322369234",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 15SW5P"
+  },
+  {
+    "codigo": "T0322369233",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 18SW5P"
+  },
+  {
+    "codigo": "F0322369080",
+    "rubro": "Parlantes",
+    "modelo": "Selenium 18SWS1200"
+  },
+  {
+    "codigo": "T0322369113",
+    "rubro": "Kit de Repuesto",
+    "modelo": "Selenium REP 18SWS1000"
+  },
+  {
+    "codigo": "T0322369091",
+    "rubro": "Drivers fenolicos",
+    "modelo": "JBL D250X"
+  },
+  {
+    "codigo": "T0322369092",
+    "rubro": "Drivers fenolicos",
+    "modelo": "Selenium D305"
+  },
+  {
+    "codigo": "T0322369096",
+    "rubro": "Drivers fenolicos",
+    "modelo": "Selenium D405"
+  },
+  {
+    "codigo": "T0322369088",
+    "rubro": "Drivers fenolicos",
+    "modelo": "Selenium D100"
+  },
+  {
+    "codigo": "T0322369232",
+    "rubro": "Drivers fenolicos",
+    "modelo": "Selenium D200"
+  },
+  {
+    "codigo": "T0322369097",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D405TI"
+  },
+  {
+    "codigo": "T0322369098",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D408 TI"
+  },
+  {
+    "codigo": "T0322369094",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D3300 TI 8 Ohms"
+  },
+  {
+    "codigo": "T0322369095",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D3305 TI"
+  },
+  {
+    "codigo": "T0322369238",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D202TI"
+  },
+  {
+    "codigo": "T0322369089",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D220TI"
+  },
+  {
+    "codigo": "T0702369031",
+    "rubro": "Drivers titanio",
+    "modelo": "Selenium D4400 TI"
+  },
+  {
+    "codigo": "T0322369086",
+    "rubro": "Driver adaptador",
+    "modelo": "Selenium ADF2525"
+  },
+  {
+    "codigo": "T0322369087",
+    "rubro": "Driver adaptador",
+    "modelo": "Selenium ADM2526"
+  },
+  {
+    "codigo": "T0322369104",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HM 1725"
+  },
+  {
+    "codigo": "T0322369102",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HL 1450 N"
+  },
+  {
+    "codigo": "T0322369100",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HC 2325"
+  },
+  {
+    "codigo": "T0322369105",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HM 2525"
+  },
+  {
+    "codigo": "T0322369103",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HM 1125"
+  },
+  {
+    "codigo": "T0322369101",
+    "rubro": "Cornetas",
+    "modelo": "Selenium HL 1425"
+  },
+  { "codigo": "T0322369135", "rubro": "Tweeters", "modelo": "Selenium ST302X" },
+  {
+    "codigo": "T0322369131",
+    "rubro": "Repuestos para Tweeter",
+    "modelo": "Selenium RPST400"
+  },
+  { "codigo": "T0322369138", "rubro": "Tweeters", "modelo": "Selenium ST400" },
+  { "codigo": "T0322369136", "rubro": "Tweeters", "modelo": "Selenium ST304" },
+  {
+    "codigo": "T0322369120",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD300"
+  },
+  {
+    "codigo": "T0322369118",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD220TI"
+  },
+  {
+    "codigo": "T0322369117",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD100"
+  },
+  {
+    "codigo": "T0322369119",
+    "rubro": "Repuestos para Driver",
+    "modelo": "RPD250X"
+  },
+  {
+    "codigo": "T0322369225",
+    "rubro": "Repuestos para Driver",
+    "modelo": "RPD260 PRO"
+  },
+  {
+    "codigo": "T0322369129",
+    "rubro": "Repuestos para Tweeter",
+    "modelo": "Selenium RPST304"
+  },
+  {
+    "codigo": "T0322369122",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD3300TI 16 Ohms"
+  },
+  {
+    "codigo": "T0702369028",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD405/400"
+  },
+  {
+    "codigo": "T0322369130",
+    "rubro": "Repuestos para Tweeter",
+    "modelo": "Selenium RPST350"
+  },
+  {
+    "codigo": "T0322369121",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD300TI"
+  },
+  {
+    "codigo": "T0322369127",
+    "rubro": "Repuestos para Tweeter",
+    "modelo": "Selenium RPST200"
+  },
+  {
+    "codigo": "T0322369124",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD400TI"
+  },
+  {
+    "codigo": "T0322369123",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD3300TI 8 Ohms"
+  },
+  {
+    "codigo": "T0322369128",
+    "rubro": "Repuestos para Tweeter",
+    "modelo": "Selenium RPST300"
+  },
+  {
+    "codigo": "T0322369125",
+    "rubro": "Repuestos para Driver",
+    "modelo": "Selenium RPD4400TI"
+  },
+  {
+    "codigo": "T0840115009",
+    "rubro": "Cables",
+    "modelo": "3,5ST/2RCA x1MT-RCL 20901 D4"
+  },
+  {
+    "codigo": "T0840115010",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/2RCAx1.5MT-RCL 20902 D4."
+  },
+  {
+    "codigo": "T0840115003",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/2RCAx1.8MT-RCL 20903 D4."
+  },
+  {
+    "codigo": "T0840115011",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/2RCAx3MT-RCL 20904 D4."
+  },
+  {
+    "codigo": "T0840115012",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/26,5Mx1M-RCL 20911 D4."
+  },
+  {
+    "codigo": "T0840115013",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/26,5Mx1,5M-RCL 20912 D4."
+  },
+  {
+    "codigo": "T0840115014",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/26,5Mx1,8M-RCL 20913 D4."
+  },
+  {
+    "codigo": "T0840115015",
+    "rubro": "Cables",
+    "modelo": " 3,5ST/2x6,5Mx3M-RCL 20914 D4."
+  },
+  {
+    "codigo": "T0840115016",
+    "rubro": "Cables",
+    "modelo": " 6,5ST/2x6,5Mx1M-RCL 20921 D4."
+  },
+  {
+    "codigo": "T0840115017",
+    "rubro": "Cables",
+    "modelo": " 6,5ST/2x6,5Mx1,5M-RCL 20922 D4."
+  },
+  {
+    "codigo": "F0840115018",
+    "rubro": "Cables",
+    "modelo": " P6,5ST/2P6,5Mx1,8M-RCL 20923 D4."
+  },
+  {
+    "codigo": "F0840115019",
+    "rubro": "Cables",
+    "modelo": " 6,5ST/2x6,5Mx3M-RCL 20924 D4."
+  },
+  {
+    "codigo": "T0840115020",
+    "rubro": "Cables",
+    "modelo": "2x6,5M/2xRCAx1M RCL20931 D4"
+  },
+  {
+    "codigo": "T0840115021",
+    "rubro": "Cables",
+    "modelo": " 2x6,5M/2xRCAx1,5M-RCL 20932 D4"
+  },
+  {
+    "codigo": "T0840115022",
+    "rubro": "Cables",
+    "modelo": " 2x6,5M/2xRCAx1,8M-RCL 20933 D4."
+  },
+  {
+    "codigo": "T0840115023",
+    "rubro": "Cables",
+    "modelo": " 2x6,5M/2xRCAx3M-RCL 20934 D4."
+  },
+  {
+    "codigo": "F0840115024",
+    "rubro": "Cables",
+    "modelo": " 2xRCA/2xRCAx1M-RCL 20941 D4."
+  },
+  {
+    "codigo": "T0840115025",
+    "rubro": "Cables",
+    "modelo": " 2xRCA/2xRCAx1,5M-RCL 20942 D4."
+  },
+  {
+    "codigo": "T0840115026",
+    "rubro": "Cables",
+    "modelo": " 2xRCA/2xRCAx1,8M-RCL 20943 D4."
+  },
+  {
+    "codigo": "T0840115055",
+    "rubro": "Cables",
+    "modelo": " 2xRCA/2xRCAx3M-RCL 20944 D4."
+  },
+  {
+    "codigo": "T0840115035",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x6M-RCL 30206 D6 C."
+  },
+  {
+    "codigo": "T0840115029",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x3M BLACK-RCL 30203 D7"
+  },
+  {
+    "codigo": "T0840115036",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x6M BLACK-RCL 30206 D7"
+  },
+  {
+    "codigo": "T0840115041",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x9M BLACK-RCL 30209 D7"
+  },
+  {
+    "codigo": "T0840115056",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5-90*X6m BLACKJ-RCL 30256 D7"
+  },
+  {
+    "codigo": "T0840115031",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x3M -RCL 30203 D7 SILVER."
+  },
+  {
+    "codigo": "T0840115047",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x6M -RCL30256 D7 TELA"
+  },
+  {
+    "codigo": "T0840115038",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x6M -RCL 30206 D7 SILVER."
+  },
+  {
+    "codigo": "T0840115030",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x3M -RCL 30203 D7 GOLD."
+  },
+  {
+    "codigo": "T0840115032",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x3M-RCL 30203 TC C/BLACK"
+  },
+  {
+    "codigo": "T0840115039",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x6MRCL 30206 TC C/BLACK"
+  },
+  {
+    "codigo": "T0840115042",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x9M-RCL 30209 TC C/BLACK."
+  },
+  {
+    "codigo": "T0840115033",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x3M-RCL 30203 TC D/GOLD."
+  },
+  {
+    "codigo": "T0840115040",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x6M-RCL 30206 TC D/GOLD."
+  },
+  {
+    "codigo": "T0840115037",
+    "rubro": "Cables",
+    "modelo": "P6,5/P6,5x6M-RCL 30206 D7 GOLD"
+  },
+  {
+    "codigo": "T0840115034",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5x3M-RCL 30203 TC H/BEIGE."
+  },
+  {
+    "codigo": "T0840115044",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5-90*x3M-RCL 30253 TC C/BLACK."
+  },
+  {
+    "codigo": "F0840115047",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5-90*x6M-RCL 30256 TC C/BLACK."
+  },
+  {
+    "codigo": "T0840115063",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5-90*x3M-RCL 30253 D7 D/GOLD."
+  },
+  {
+    "codigo": "T0840115045",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5-90*x3M-RCL 30253 TC D/GOLD."
+  },
+  {
+    "codigo": "T0840115043",
+    "rubro": "Cables",
+    "modelo": " P6,5/P6,5-90*x3M-RCL 30253 TC H/BEIGE."
+  },
+  {
+    "codigo": "T0840115004",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x0,5M RCL 30300 D7."
+  },
+  {
+    "codigo": "T0840115048",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x1M RCL 30301 D7."
+  },
+  {
+    "codigo": "T0840115049",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x3M-RCL 30303 D7."
+  },
+  {
+    "codigo": "T0840115061",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x6M-RCL 30306 D6."
+  },
+  {
+    "codigo": "T0840115050",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x6M-RCL 30306 D7."
+  },
+  {
+    "codigo": "F0840115051",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x 9M-RCL 30309 D6."
+  },
+  {
+    "codigo": "T0840115052",
+    "rubro": "Cables",
+    "modelo": " XLRM-XLRH x9M-RCL 30309 D7."
+  },
+  {
+    "codigo": "F0840115062",
+    "rubro": "Cables",
+    "modelo": " P6,5M-XLRH x3M-RCL 30383 D6 F."
+  },
+  {
+    "codigo": "T0840115058",
+    "rubro": "Cables",
+    "modelo": " P6,5M-XLRH x6M-RCL 30386 D6 F BA."
+  },
+  {
+    "codigo": "T0840115057",
+    "rubro": "Cables",
+    "modelo": "RBO CAB PC F 5 BLK"
+  },
+  {
+    "codigo": "T0840115001",
+    "rubro": "Cables",
+    "modelo": "RBO CAB PC F 10 BLK"
+  },
+  {
+    "codigo": "T0840115002",
+    "rubro": "Cables",
+    "modelo": " RBO CAB PC F 30 BLK"
+  },
+  { "codigo": "F0840115028", "rubro": "Cables", "modelo": "RCL 30011 D5" },
+  { "codigo": "T0840115005", "rubro": "Cables", "modelo": "RCL10200 D6 BLK" },
+  { "codigo": "T0840115006", "rubro": "Cables", "modelo": "RCL 10300 D6 BLK." },
+  { "codigo": "T0840115060", "rubro": "Cables", "modelo": "RCL10301 D7 BL" },
+  { "codigo": "T0840115007", "rubro": "Cables", "modelo": "RCL 10300 D7 BLK." },
+  { "codigo": "T0840115008", "rubro": "Cables", "modelo": "RCL 10400 D7 BLK." },
+  {
+    "codigo": "F0840150001",
+    "rubro": "Manguera de sonido",
+    "modelo": "8/0 x 15mts - RCL 30900."
+  },
+  {
+    "codigo": "F0840150002",
+    "rubro": "Manguera de sonido",
+    "modelo": "24/4 x 30mts - RCL 30925."
+  },
+  {
+    "codigo": "T0840150004",
+    "rubro": "Manguera de sonido",
+    "modelo": "24/4 x 50mts - RCL 30940."
+  },
+  {
+    "codigo": "T0840150003",
+    "rubro": "Manguera de sonido",
+    "modelo": "32/8 x 30mts - RCL 30930."
+  },
+  {
+    "codigo": "T0840150005",
+    "rubro": "Manguera de sonido",
+    "modelo": "32/8 x 50mts - RCL 30945."
+  },
+  {
+    "codigo": "T0840175057",
+    "rubro": "Pipeta para microfono",
+    "modelo": "RS 20794."
+  },
+  {
+    "codigo": "T0840175003",
+    "rubro": "Atril de partitura",
+    "modelo": "RS10010 Note Stand c/ funda"
+  },
+  {
+    "codigo": "T0840175007",
+    "rubro": "Pie para microfono",
+    "modelo": "RS 20720B"
+  },
+  {
+    "codigo": "T0840175005",
+    "rubro": "Pie para microfono",
+    "modelo": "RS 20700 B."
+  },
+  {
+    "codigo": "T0840175019",
+    "rubro": "Soporte para bafle",
+    "modelo": "RS 28300 S/B/2C STEE (PAR)"
+  },
+  {
+    "codigo": "T0840175009",
+    "rubro": "Pie para microfono",
+    "modelo": "RS20730B"
+  },
+  {
+    "codigo": "T0840175008",
+    "rubro": "Pie para microfono",
+    "modelo": "RS 20730 B."
+  },
+  {
+    "codigo": "T0840175006",
+    "rubro": "Pie para microfono",
+    "modelo": "Rs 20710B"
+  },
+  {
+    "codigo": "T0840175017",
+    "rubro": "Soporte para teclado",
+    "modelo": " Rockstand ES 22000 B/4"
+  },
+  {
+    "codigo": "F0840175010",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand Guitarra RS 20830 B/10."
+  },
+  {
+    "codigo": "T0840175001",
+    "rubro": "Soporte para chelo",
+    "modelo": " Rockstand RS 21500B"
+  },
+  {
+    "codigo": "T0840175012",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Rockstand RS 20860 B/2"
+  },
+  {
+    "codigo": "T0840175013",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand Multiple  5 instrumentos RS 20861 B/2."
+  },
+  {
+    "codigo": "T0840175014",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand multiple  7 instrumentos RS 20862 B/2."
+  },
+  {
+    "codigo": "T0840175015",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand Multiple  9 instrumentos RS 20863 B/2."
+  },
+  {
+    "codigo": "T0840175004",
+    "rubro": "Atril de partitura",
+    "modelo": " Rockstand RS 10100B"
+  },
+  {
+    "codigo": "T0840175058",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand guitarra RS 20830 BL/10"
+  },
+  {
+    "codigo": "T0840175011",
+    "rubro": "Soporte para guitarra",
+    "modelo": " Stand guitarra con Flip RS 20840 B/10."
+  },
+  {
+    "codigo": "T0840124027",
+    "rubro": "Correas",
+    "modelo": "  RST NY1CP DRUMMER B."
+  },
+  {
+    "codigo": "T0840124025",
+    "rubro": "Correas",
+    "modelo": "  RST NY1CP BEER B."
+  },
+  {
+    "codigo": "T0840124009",
+    "rubro": "Correas",
+    "modelo": "  RST NB1CE FLAMBE G"
+  },
+  {
+    "codigo": "T0840124028",
+    "rubro": "Correas",
+    "modelo": "  RST NY1CP DRUMMER G."
+  },
+  {
+    "codigo": "T0840124005",
+    "rubro": "Correas",
+    "modelo": " RST NB1CE BULB G"
+  },
+  {
+    "codigo": "T0840124026",
+    "rubro": "Correas",
+    "modelo": "  RST NY1CP BEER G."
+  },
+  {
+    "codigo": "T0840124023",
+    "rubro": "Correas",
+    "modelo": "  RST NO1CP DOC G."
+  },
+  {
+    "codigo": "T0840124007",
+    "rubro": "Correas",
+    "modelo": "  RST NB1CE VIL G"
+  },
+  {
+    "codigo": "T0840124030",
+    "rubro": "Correas",
+    "modelo": "  RST NY1CP NINJA G."
+  },
+  {
+    "codigo": "F0841301006",
+    "rubro": "Correas",
+    "modelo": "SP 30315 SB Black"
+  },
+  {
+    "codigo": "F0841301003",
+    "rubro": "Correas",
+    "modelo": "SP 30318 SC Chrome"
+  },
+  { "codigo": "F0841301001", "rubro": "Correas", "modelo": "SP 30316 SG Gold" },
+  {
+    "codigo": "F0840124040",
+    "rubro": "Encordados",
+    "modelo": "46210 ML 4 040/100"
+  },
+  {
+    "codigo": "F0840124039",
+    "rubro": "Encordados",
+    "modelo": "46200 M 4 045/105"
+  },
+  {
+    "codigo": "T0840124041",
+    "rubro": "Encordados",
+    "modelo": "46300 ML 5B 040/130"
+  },
+  {
+    "codigo": "T0840140012",
+    "rubro": "Funda para guitarra eléctrica",
+    "modelo": "Rockbag RB20526B"
+  },
+  {
+    "codigo": "T0840140009",
+    "rubro": "Funda para guitarra clásica",
+    "modelo": "Rockbag RB20518B"
+  },
+  {
+    "codigo": "T0840140017",
+    "rubro": "Funda para guitarra clásica",
+    "modelo": "Rockbag RB20608 B/PLUS"
+  },
+  {
+    "codigo": "T0840140018",
+    "rubro": "Funda para guitarra acústica",
+    "modelo": "Rockbag RB20609B/PLUS"
+  },
+  {
+    "codigo": "T0840140007",
+    "rubro": "Funda para guitarra acústica",
+    "modelo": "Rockbag RB20509B"
+  },
+  {
+    "codigo": "T0840140026",
+    "rubro": "Funda para Bateria",
+    "modelo": "Rockbag para batería RB22900B"
+  },
+  {
+    "codigo": "T0840140001",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para accesorios RB22595B"
+  },
+  {
+    "codigo": "T0840140005",
+    "rubro": "Funda para guitarra eléctrica",
+    "modelo": "Rockbag Rb20506B"
+  },
+  {
+    "codigo": "T0840140024",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para accesorios RB22695B"
+  },
+  {
+    "codigo": "T0840140010",
+    "rubro": "Funda para guitarra acústica",
+    "modelo": "Student RB20519B"
+  },
+  {
+    "codigo": "T0840140008",
+    "rubro": "Funda para guitarra eléctrica",
+    "modelo": "Student RB20516B"
+  },
+  {
+    "codigo": "T0840140003",
+    "rubro": "Funda para bajo",
+    "modelo": "Student RB20515B"
+  },
+  {
+    "codigo": "T0840140015",
+    "rubro": "Funda para bajo",
+    "modelo": "Rockbag premium RB20605B/PLUS"
+  },
+  {
+    "codigo": "T0840140002",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para doble pedal 22691 B"
+  },
+  {
+    "codigo": "T0840140023",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para platillo de 20 RB22541B"
+  },
+  {
+    "codigo": "F0840140013",
+    "rubro": "Funda para guitarra clásica",
+    "modelo": "Rockbag RB20528B"
+  },
+  {
+    "codigo": "T0840140021",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para tambor RB22446B"
+  },
+  {
+    "codigo": "T0840115059",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para Tom RB22462BF"
+  },
+  {
+    "codigo": "T0840140011",
+    "rubro": "Funda para bajo",
+    "modelo": "Rockbag RB20525B"
+  },
+  {
+    "codigo": "T0840140027",
+    "rubro": "Funda para bateria",
+    "modelo": "Rockbag para batería RB22901B"
+  },
+  {
+    "codigo": "T0840140006",
+    "rubro": "Funda para guitarra clásica",
+    "modelo": "Rockbag RB20508B"
+  },
+  {
+    "codigo": "T0840140025",
+    "rubro": "Funda para Bateria",
+    "modelo": "Rockbag para platillos de 20 RB22741b/PLUS"
+  },
+  {
+    "codigo": "T0840140016",
+    "rubro": "Funda para guitarra eléctrica",
+    "modelo": "Rockbag RB20606 B/PLUS"
+  },
+  {
+    "codigo": "T0840140004",
+    "rubro": "Funda para bajo",
+    "modelo": "Rockbag RB20505B"
+  },
+  {
+    "codigo": "T0840140014",
+    "rubro": "Funda para guitarra acústica",
+    "modelo": "Rockbag RB20529B"
+  },
+  {
+    "codigo": "T0840140019",
+    "rubro": "Funda para Teclados",
+    "modelo": "Funda para teclado RB 21417B"
+  },
+  {
+    "codigo": "T0840140020",
+    "rubro": "Estuche para Teclado",
+    "modelo": "Rockbag para teclado RB21517B"
+  },
+  {
+    "codigo": "T0840140028",
+    "rubro": "Estuche para teclados",
+    "modelo": "Rockbag para teclado 61 teclas RC21517 B"
+  },
+  {
+    "codigo": "T0840140029",
+    "rubro": "Estuche para Teclados",
+    "modelo": "Rockbag para teclado 76 teclas RC21519 B"
+  },
+  {
+    "codigo": "T0840140030",
+    "rubro": "Estuche para Teclados",
+    "modelo": "Rockbag para teclado 88 teclas RC21521B"
+  },
+  {
+    "codigo": "T0840117014",
+    "rubro": "Funda para pedales",
+    "modelo": "RBO B2.0 Duo B"
+  },
+  {
+    "codigo": "T0840117010",
+    "rubro": "Funda para pedales",
+    "modelo": "RBO B2,1 Duo B"
+  },
+  {
+    "codigo": "T0840117011",
+    "rubro": "Funda para pedales",
+    "modelo": "RBO B3,1 Tres B"
+  },
+  {
+    "codigo": "T0840117012",
+    "rubro": "Funda para pedales",
+    "modelo": "RBO B4,1 Quad B"
+  },
+  {
+    "codigo": "T0840117013",
+    "rubro": "Funda para pedales",
+    "modelo": "RBO B4,2 Quad B"
+  },
+  {
+    "codigo": "T0840117001",
+    "rubro": "Funda para pedales",
+    "modelo": "Valija + Soporte para pedales Rockboard Arena GB "
+  },
+  {
+    "codigo": "T0840140022",
+    "rubro": "Funda para Bateria",
+    "modelo": "Rockbag para fierros RB22510B"
+  },
+  {
+    "codigo": "T0840117004",
+    "rubro": "Fuente de alimentacion",
+    "modelo": "Fuente multiple Rockboard Power Pit"
+  },
+  {
+    "codigo": "T0840306001",
+    "rubro": "Amplificador de auriculares",
+    "modelo": "RBO E HA-1 "
+  },
+  {
+    "codigo": "T0851303037",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "WA45CE BK"
+  },
+  {
+    "codigo": "T0851303038",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "WA45CE N"
+  },
+  {
+    "codigo": "T0851303039",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "WA45CE TSB"
+  },
+  {
+    "codigo": "T0851303040",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "WA47CE BK"
+  },
+  {
+    "codigo": "T0851303041",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "WA47CE N"
+  },
+  {
+    "codigo": "T0851303005",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA12N"
+  },
+  {
+    "codigo": "T0851303004",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA12B"
+  },
+  {
+    "codigo": "T0851303007",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA14 N"
+  },
+  {
+    "codigo": "T0851303008",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA14 TB"
+  },
+  {
+    "codigo": "T0851303006",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA14 B"
+  },
+  {
+    "codigo": "T0851303009",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA15 ATB Sunburst"
+  },
+  {
+    "codigo": "T0851303010",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA15 N Natural"
+  },
+  {
+    "codigo": "T0851333059",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA15 I Ice Tea"
+  },
+  {
+    "codigo": "T0851303060",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "EA20 Natural Festival Series"
+  },
+  {
+    "codigo": "T0851333053",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "AG40CE Natural Apprentice Series"
+  },
+  {
+    "codigo": "T0851303036",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "AG70CE Natural"
+  },
+  {
+    "codigo": "T0851333051",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "AD5CEb Black Apprentice Series"
+  },
+  {
+    "codigo": "T0851333050",
+    "rubro": "Guitarra Electroacusticas",
+    "modelo": "AD5CE Natural Apprentice Series"
+  },
+  { "codigo": "D1052302022", "rubro": "Monitores de estudio", "modelo": "A4V" },
+  {
+    "codigo": "D1052302023",
+    "rubro": "Monitores de estudio",
+    "modelo": "A44H"
+  },
+  { "codigo": "D1052302024", "rubro": "Monitores de estudio", "modelo": "A7V" },
+  {
+    "codigo": "D1052302025",
+    "rubro": "Monitores de estudio",
+    "modelo": "A8H L"
+  },
+  {
+    "codigo": "D1052302026",
+    "rubro": "Monitores de estudio",
+    "modelo": "A8H R"
+  },
+  {
+    "codigo": "D1052302027",
+    "rubro": "Monitores de estudio",
+    "modelo": "A77H"
+  },
+  { "codigo": "D1052302001", "rubro": "Monitores de estudio", "modelo": "T5V" },
+  { "codigo": "D1052302002", "rubro": "Monitores de estudio", "modelo": "T7V" },
+  { "codigo": "D1052302003", "rubro": "Monitores de estudio", "modelo": "T8V" },
+  {
+    "codigo": "D1052302004",
+    "rubro": "Monitores de estudio",
+    "modelo": "T10S"
+  },
+  { "codigo": "T0490150003", "rubro": "Procesadores", "modelo": "DL251" },
+  { "codigo": "T0490150001", "rubro": "Procesadores", "modelo": "DL153" },
+  { "codigo": "T0492985001", "rubro": "Procesadores", "modelo": "DL371" },
+  { "codigo": "T0372730002", "rubro": "Procesadores", "modelo": "Dante64" },
+  { "codigo": "T0492027013", "rubro": "Consola", "modelo": "Pro1" },
+  { "codigo": "T0492027008", "rubro": "Consola", "modelo": "Pro2/CC/TP" },
+  { "codigo": "T0492027005", "rubro": "Consola", "modelo": "Pro2/CC/ IP" },
+  { "codigo": "T0492027006", "rubro": "Consola", "modelo": "Pro3" },
+  { "codigo": "T0492027007", "rubro": "Consola", "modelo": "Pro X" },
+  { "codigo": "T0492985006", "rubro": "Consola", "modelo": "Neutron" },
+  { "codigo": "F1111805001", "rubro": "Microfonos", "modelo": "Origin" },
+  { "codigo": "F1111805002", "rubro": "Microfonos", "modelo": "Spirit" },
+  {
+    "codigo": "F1111805003",
+    "rubro": "Microfonos",
+    "modelo": "Element Bundle"
+  },
+  { "codigo": "F1111805004", "rubro": "Filtro", "modelo": "Swiftshields" },
+  { "codigo": "F1111805005", "rubro": "Filtro", "modelo": "Shield GN" },
+  { "codigo": "F1111805006", "rubro": "Soporte", "modelo": "Swift" },
+  { "codigo": "F1111805007", "rubro": "Microfonos", "modelo": "Stealth" },
+  {
+    "codigo": "F1111805008",
+    "rubro": "Microfonos",
+    "modelo": "Spirit Black Bundle"
+  },
+  { "codigo": "F1111805009", "rubro": "Filtro", "modelo": "Halo Shadow" },
+  { "codigo": "D0261585055", "rubro": "Intefaz", "modelo": "Red Net MP8R" },
+  { "codigo": "D0261585056", "rubro": "Intefaz", "modelo": "Red Net D64R" },
+  { "codigo": "D0261585057", "rubro": "Intefaz", "modelo": "Red Net A8R" },
+  { "codigo": "D0261585058", "rubro": "Intefaz", "modelo": "Red Net AM2" },
+  { "codigo": "D0261585059", "rubro": "Intefaz", "modelo": "Red Net X2P" },
+  {
+    "codigo": "D0261585052",
+    "rubro": "Intefaz",
+    "modelo": "Red Net PCle Card"
+  },
+  { "codigo": "D0261585062", "rubro": "Intefaz", "modelo": "Red Net D16R" },
+  { "codigo": "D0261585060", "rubro": "Intefaz", "modelo": "Red 4 PRE" },
+  { "codigo": "D0261585061", "rubro": "Intefaz", "modelo": "Red 8 PRE" },
+  { "codigo": "D0261585077", "rubro": "Intefaz", "modelo": "RedNet R1" },
+  { "codigo": "D0261585085", "rubro": "Placas usb", "modelo": "Red 16 Line" },
+  { "codigo": "D0261585050", "rubro": "Placas usb", "modelo": "HD32R" }
+]

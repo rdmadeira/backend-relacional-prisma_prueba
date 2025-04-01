@@ -1,4 +1,3 @@
-import { /* Concepto, Tipo_producto, Empresa, */ Prisma } from "@prisma/client";
 import { prisma } from "./prismaClient.js";
 
 import { ProductExcelTotal } from "../src/entities/products.js";
@@ -27,8 +26,6 @@ export async function createproductstoDB(flatData: {
           precio_arg: prod.precio_arg,
           costo_repo_usd: prod.costo_repo_usd,
           sku: prod.sku,
-          stock_disp: prod.stock_disp,
-          stock_larp: prod.stock_larp,
           tasa_iva: prod.tasa_iva,
           is_current: false,
           rubro: prod.rubro || "",
@@ -44,8 +41,6 @@ export async function createproductstoDB(flatData: {
           precio_arg: prod.precio_arg,
           costo_repo_usd: prod.costo_repo_usd,
           sku: prod.sku,
-          stock_disp: prod.stock_disp,
-          stock_larp: prod.stock_larp,
           tasa_iva: prod.tasa_iva,
           is_current: false,
           rubro: prod.rubro || "",
@@ -77,74 +72,139 @@ export async function createproductstoDB(flatData: {
   }
 }
 
-import marcas from "../src/data/marcas.json" with { type: "json" };
+// import marcas from "../src/data/marcas.json" with { type: "json" };
 
 // Hacer una forma de bulk multiples rows with sql notation, timeout very large for firebase:
 export async function updateProductstoDB(data: {
   productsToFlatArray: ProductExcelTotal[];
 }) {
   try {
-    // const arrayOfPromises = [];
+    const arrayOftransactions: any[] = [];
 
-    const marcasTevelam: string[] = marcas.tevelam;
-    const marcasDiscopro: string[] = marcas.discopro;
+    for (const prodData of data.productsToFlatArray) {
+      const prodId = prodData.codigo_de_producto.replace(
+        prodData?.codigo_de_producto?.slice(12, 16),
+        "",
+      );
 
-    const marcasTodas = marcasTevelam.concat(marcasDiscopro);
+      const existCod_Red = await prisma.codigo_Red.findUnique({
+        where: {
+          codigo: prodData.codigo_reducido,
+        },
+      });
 
-    const marcasOR = marcasTodas.map((item: string) => {
-      return {
-        marca: item,
-      };
-    });
+      const updatedProduct = prisma.producto.update({
+        where: {
+          id: prodId,
+        },
+        data: {
+          precio_arg: prodData.precio_arg,
+          precio_usd: prodData.precio_usd,
+          costo_repo_usd: prodData.costo_repo_usd,
+          mkup: prodData.mkup,
+        },
+      });
+      if (existCod_Red) {
+        const updatedCodRed = prisma.codigo_Red.update({
+          where: {
+            codigo: prodData.codigo_reducido,
+          },
+          data: {
+            stock_dis: prodData.stock_disp,
+            stock_lar: prodData.stock_larp,
+          },
+        });
 
-    const marcasORCodRed = marcasTodas.map((item: string) => {
-      return {
-        marcaId: item,
-      };
-    });
+        arrayOftransactions.push(updatedCodRed);
+      }
+      arrayOftransactions.push(updatedProduct);
+    }
 
-    const arrayOfPromises: Prisma.PrismaPromise<Prisma.BatchPayload>[] = [];
+    /* data.productsToFlatArray.forEach(async prodData => {
+      const prodId = prodData.codigo_de_producto.replace(
+        prodData?.codigo_de_producto?.slice(12, 16),
+        "",
+      );
 
-    data.productsToFlatArray.forEach(product => {
-      if (marcasOR.find(marcaOR => marcaOR.marca === product.marca)) {
-        const prodId = product.codigo_de_producto.replace(
-          product?.codigo_de_producto?.slice(12, 16),
+      const stocks = await prisma.codigo_Red.findMany({
+        where: {
+          productoId: prodId,
+        },
+      });
+      const stocks_disp = stocks
+        .map(item => item.stock_dis)
+        .reduce((a, b) => a + b, 0);
+      const stocks_larp = stocks
+        .map(item => item.stock_lar)
+        .reduce((a, b) => a + b, 0);
+
+      const updatedProduct = prisma.producto.update({
+        where: {
+          id: prodId,
+        },
+        data: {
+          precio_arg: prodData.precio_arg,
+          precio_usd: prodData.precio_usd,
+          costo_repo_usd: prodData.costo_repo_usd,
+          stock_disp: stocks_disp,
+          stock_larp: stocks_larp,
+          mkup: prodData.mkup,
+        },
+      });
+      const updatedCodRed = prisma.codigo_Red.update({
+        where: {
+          codigo: prodData.codigo_reducido,
+        },
+        data: {
+          stock_dis: prodData.stock_disp,
+          stock_lar: prodData.stock_larp,
+        },
+      });
+      arrayOftransactions.push(updatedProduct, updatedCodRed);
+      return;
+    }); */
+
+    const transaction = await prisma.$transaction(arrayOftransactions);
+    console.log(
+      "transaction",
+      transaction.find(item => item.codigo === "F1052302001"),
+    );
+
+    /* const transaction = await prisma.$transaction(
+      data.productsToFlatArray.flatMap(prodData => {
+        const prodId = prodData.codigo_de_producto.replace(
+          prodData?.codigo_de_producto?.slice(12, 16),
           "",
         );
-        const promise1 = prisma.producto.updateMany({
-          where: {
-            id: prodId,
-            OR: marcasOR,
-            is_current: true,
-          },
-          data: {
-            precio_arg: product.precio_arg,
-            precio_usd: product.precio_usd,
-            costo_repo_usd: product.costo_repo_usd,
-            mkup: product.mkup,
-            descripcion: product.descripcion,
-            stock_disp: product.stock_disp,
-            stock_larp: product.stock_larp,
-            rubro: product.rubro,
-          },
-        });
-        const promise2 = prisma.codigo_Red.updateMany({
-          where: {
-            AND: [{ codigo: product.codigo_reducido, OR: marcasORCodRed }],
-          },
-          data: {
-            codigo: product.codigo_reducido,
-            codigo_largo: product.codigo_de_producto,
-            stock_dis: product.stock_disp,
-            stock_lar: product.stock_larp,
-            productoId: prodId,
-            marcaId: product.marca,
-          },
-        });
-        arrayOfPromises.push(promise1, promise2);
-      }
-    });
-    await Promise.all(arrayOfPromises);
+        if (prodId === "ADA-PAR-ACT-001") console.log("prodId", prodId);
+
+        return [
+          prisma.codigo_Red.update({
+            where: {
+              codigo: prodData.codigo_reducido,
+            },
+            data: {
+              stock_dis: prodData.stock_disp,
+              stock_lar: prodData.stock_larp,
+            },
+          }),
+          prisma.producto.update({
+            where: {
+              id: prodId,
+            },
+            data: {
+              precio_arg: prodData.precio_arg,
+              precio_usd: prodData.precio_usd,
+              costo_repo_usd: prodData.costo_repo_usd,
+              stock_disp: prodData.stock_disp,
+              stock_larp: prodData.stock_larp,
+              mkup: prodData.mkup,
+            },
+          }),
+        ];
+      }),
+    );
+    console.log("transaction", transaction); */
 
     console.log("terminó el upgrade a las " + new Date(Date.now()).toString());
     return "successful upgraded in updateProductsToDB";

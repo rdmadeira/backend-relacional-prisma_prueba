@@ -29,20 +29,19 @@ model Tipo_producto {
 }
 
 model Producto {
-    id             String         @id @default(uuid())
+    id             String         @id @unique @default(uuid())
     descripcion    String
     precio_usd     Float
     precio_arg     Float
     tasa_iva       Float
     costo_repo_usd Float
     mkup           Float
-    stock_disp     Int
-    stock_larp     Int
     sku            String?
     is_current     Boolean
     rubro          String
     nombre         String         @default("")
     tipoId         String?
+    image          String?
     tipo_producto  Tipo_producto? @relation(fields: [tipoId], references: [id])
     ConceptoId     String?
     Concepto       Concepto?      @relation(fields: [ConceptoId], references: [id])

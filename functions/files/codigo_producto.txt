@@ -1,4 +1,0 @@
-1	MR-AUD
-2	MR-ILU
-3	MR-INS
-4	MR-VID

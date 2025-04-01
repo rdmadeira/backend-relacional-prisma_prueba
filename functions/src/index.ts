@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
+
 import cors from "cors";
 import { applicationDefault } from "firebase-admin/app";
 
@@ -17,7 +18,8 @@ const app: Application = express();
 dotenv.config({ path: process.cwd() });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
+//app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Headers",

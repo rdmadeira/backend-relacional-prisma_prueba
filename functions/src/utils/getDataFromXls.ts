@@ -1,12 +1,14 @@
 import /* { utils, read, stream } */ * as XLSX from "xlsx/xlsx.mjs";
 
 /* load 'fs' for readFile and writeFile support - https://www.npmjs.com/package/xlsx */
-XLSX.set_fs(fs);
 import * as fs from "fs";
+XLSX.set_fs(fs);
 
 /* load 'stream' for stream support - https://www.npmjs.com/package/xlsx*/
 import { Readable } from "stream";
 XLSX.stream.set_readable(Readable);
+
+// import path from "path";
 
 // import { WorkSheet } from "xlsx/types";
 import {
@@ -16,6 +18,84 @@ import {
   Marca,
 } from "../entities/products.js";
 import { readAllProducts } from "../../prisma/read.js";
+// const { pathname: root } = new URL("../src/", __dirname);
+
+//const getCurrentListsProducts = async () => {
+//  const codigosTotal = [];
+//  const xlsFolder = path.resolve("src", "xls");
+//  const dataFolder = path.resolve("src", "data");
+//
+//  const workbookDisco = await XLSX.readFile(xlsFolder + "/lista_discopro.xlsx");
+//  const sheetDisco = workbookDisco.Sheets[workbookDisco.SheetNames[0]];
+//  const codigosDisco = XLSX.utils
+//    .sheet_to_json(sheetDisco, {
+//      header: 1,
+//    })
+//    .map((item: any[]) => ({
+//      codigo: item[0],
+//      rubro: item[2],
+//      modelo: item[4],
+//    }))
+//    .filter(
+//      (item: any) =>
+//        item.codigo &&
+//        item.codigo !== "Código" &&
+//        item.codigo !== "Codigo" &&
+//        item.codigo !== "CODIGO" /* !== undefined || item !== null */,
+//    );
+//  codigosTotal.push(codigosDisco);
+//
+//  const workbookTevelam = await XLSX.readFile(
+//    xlsFolder + "/lista_tevelam.xlsx",
+//  );
+//  const sheetTevelam = workbookTevelam.Sheets[workbookTevelam.SheetNames[0]];
+//  const codigosTevelam = XLSX.utils
+//    .sheet_to_json(sheetTevelam, {
+//      header: 1,
+//    })
+//    .map((item: any[]) => ({
+//      codigo: item[0],
+//      rubro: item[3],
+//      modelo: item[4],
+//    }))
+//    .filter(
+//      (item: any) =>
+//        item.codigo &&
+//        item.codigo !== "Código" &&
+//        item.codigo !== "Codigo" &&
+//        item.codigo !== "CODIGO" /* !== undefined || item !== null */,
+//    );
+//  codigosTotal.push(codigosTevelam);
+//
+//  const workbookPro = await XLSX.readFile(
+//    xlsFolder + "/lista_audiopro_adam_aston.xlsx",
+//  );
+//  const sheetPro = workbookPro.Sheets[workbookPro.SheetNames[0]];
+//  const codigosPro = XLSX.utils
+//    .sheet_to_json(sheetPro, {
+//      header: 1,
+//    })
+//    .map((item: any[]) => ({
+//      codigo: item[0],
+//      rubro: item[2],
+//      modelo: item[4],
+//    }))
+//    .filter(
+//      (item: any) =>
+//        item.codigo &&
+//        item.codigo !== "Código" &&
+//        item.codigo !== "Codigo" &&
+//        item.codigo !== "CODIGO" /* !== undefined || item !== null */,
+//    );
+//  codigosTotal.push(codigosPro);
+//
+//
+//
+//  // new Set es para no tener repetidos:
+//  const dataToJson = Array.from(new Set(codigosTotal.flat()));
+//  console.log("codigosTotal", Array.from(new Set(codigosTotal.flat())));
+//  fs.writeFileSync(dataFolder + "/codigos.json", JSON.stringify(dataToJson));
+//};
 
 //Cambio de Header para adaptarse a la DB:
 //@ts-ignore
@@ -44,13 +124,14 @@ const adaptHeadersToDBKeys = sheet => {
 };
 
 // Seed & update:
+import currentProducts from "../data/codigos.json" with { type: "json" };
 export const obtainDataFromXlsx = async (
   buffer: Buffer<ArrayBufferLike>,
 ): Promise<{
   productsToFlatArray: ProductExcelTotal[];
 }> => {
   const myFile = XLSX.read(buffer);
-  const mySheet = myFile.Sheets["Hoja2"];
+  const mySheet = myFile.Sheets["ToUpgrade"];
   adaptHeadersToDBKeys(mySheet);
 
   // Transformar en stream y leer la data:
@@ -58,12 +139,14 @@ export const obtainDataFromXlsx = async (
 
   const productsToFlatArray: ProductExcelTotal[] = [];
 
-  /* const codReducidoToFlatArray: CodigoReducido[] = []; */
-
   return new Promise((resolve, reject) => {
     // tuve que usar Reject, Resolve para devolver un valor a la funcion asincrona y a los listeners
     myFileStream
       .on("data", (row: ProductExcelTotal) => {
+        const isCurrentIndex = currentProducts.findIndex(
+          item => item?.codigo?.slice(1) === row?.codigo_reducido?.slice(1),
+        );
+
         if (
           (row.tipo_de_producto === "MR-AUD" ||
             row.tipo_de_producto === "MR-ILU" ||
@@ -71,9 +154,18 @@ export const obtainDataFromXlsx = async (
             row.tipo_de_producto === "MR-VID") &&
           row.codigo_reducido &&
           typeof row.codigo_reducido === "string" &&
-          row.descripcion
+          row.descripcion &&
+          isCurrentIndex >= 0
         ) {
-          productsToFlatArray.push(row);
+          productsToFlatArray.push({
+            ...row,
+            rubro: currentProducts[isCurrentIndex].rubro,
+            nombre: currentProducts[isCurrentIndex].modelo.toString(),
+            tasa_iva:
+              typeof row.tasa_iva === "string"
+                ? parseFloat(row.tasa_iva)
+                : row.tasa_iva,
+          });
         }
       })
       .on("error", error => {
@@ -140,8 +232,7 @@ export const prepareProductsToDB = (data: {
       marcaId: product.marca,
     });
   });
-  console.log("productsToDB.length", productsToDB.length);
-  console.log("data.codReducidoToFlatArray", codRed.length);
+
   return { productsToDB, codRedToDB: codRed };
 };
 
@@ -184,3 +275,5 @@ export const getProductsFromDB = async (empresa: string, iscurrent: string) => {
 
   return allProducts;
 };
+
+// getCurrentListsProducts();
