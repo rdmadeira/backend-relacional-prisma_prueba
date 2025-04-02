@@ -60,7 +60,7 @@ export const updateProductsAndCodRedToDBHandle = async (
   /*  const uploads: {} = {}; */
 
   try {
-    bb.on("file", (name, file, info) => {
+    bb.on("file", (name: any, file: any, info: any) => {
       const { mimeType, filename, encoding } = info;
       console.log(
         `File: ${file}, filename: ${name}, encoding: ${encoding}, mimetipe: ${mimeType}`,
