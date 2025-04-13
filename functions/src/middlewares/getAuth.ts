@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import * as jose from "jose";
 import { OAuth2Client } from "google-auth-library";
 import NotAuthorizedError from "../errors/NotAuthorizedError.js";
+import authorizedUsers from "../data/authorizedUsers.json" with { type: "json" };
 
 const client = new OAuth2Client();
 
@@ -61,8 +62,6 @@ export const authenticator = async (
       const notAuthorized = new NotAuthorizedError("Not Authorized!");
       return next(notAuthorized);
     }
-
-    const authorizedUsers = ["rdmadeira2@gmail.com", "rodrigo@tevelam.com.ar"];
 
     if (!authorizedUsers.find(userEmail => userEmail === payload.email)) {
       const notAuthorized = new NotAuthorizedError("Not Authorized!");

@@ -29,6 +29,7 @@ export async function createproductstoDB(flatData: {
           tasa_iva: prod.tasa_iva,
           is_current: false,
           rubro: prod.rubro || "",
+          nombre: prod.nombre,
         },
         create: {
           id: prodId,
@@ -44,6 +45,7 @@ export async function createproductstoDB(flatData: {
           tasa_iva: prod.tasa_iva,
           is_current: false,
           rubro: prod.rubro || "",
+          nombre: prod.nombre,
         },
       });
       await prisma.codigo_Red.upsert({
@@ -102,6 +104,7 @@ export async function updateProductstoDB(data: {
           precio_usd: prodData.precio_usd,
           costo_repo_usd: prodData.costo_repo_usd,
           mkup: prodData.mkup,
+          nombre: prodData.nombre,
         },
       });
       if (existCod_Red) {
